@@ -54,13 +54,13 @@ export default function Logos() {
     <section ref={ref} className="bg-[#F8F7F4] py-16 px-8 md:px-12 border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto">
 
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-10 reveal">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10 reveal">
           Career & Education
         </p>
 
         {/* Employer logos */}
         <div className="mb-8 reveal reveal-delay-1">
-          <p className="text-[9px] tracking-[0.3em] uppercase text-[#CBD5E1] mb-6">Experience</p>
+          <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-6">Experience</p>
           <div className="flex flex-wrap gap-x-10 gap-y-6 items-center">
             {employers.map((item, i) => (
               <div key={i} className="group cursor-default">
@@ -70,7 +70,7 @@ export default function Logos() {
                 >
                   {item.name}
                 </p>
-                <p className="text-[10px] text-[#94A3B8] tracking-wider mt-0.5">{item.sub}</p>
+                <p className="text-[10px] text-[#64748B] tracking-wider mt-0.5">{item.sub}</p>
               </div>
             ))}
           </div>
@@ -80,7 +80,7 @@ export default function Logos() {
 
         {/* Education logos */}
         <div className="reveal reveal-delay-2">
-          <p className="text-[9px] tracking-[0.3em] uppercase text-[#CBD5E1] mb-6">Education</p>
+          <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-6">Education</p>
           <div className="flex flex-wrap gap-x-10 gap-y-6 items-center">
             {education.map((item, i) => (
               <div key={i} className="group cursor-default">
@@ -90,16 +90,11 @@ export default function Logos() {
                 >
                   {item.name}
                 </p>
-                <p className="text-[10px] text-[#94A3B8] tracking-wider mt-0.5">{item.sub}</p>
+                <p className="text-[10px] text-[#64748B] tracking-wider mt-0.5">{item.sub}</p>
               </div>
             ))}
           </div>
         </div>
-
-        <p className="text-[10px] text-[#CBD5E1] mt-8 reveal reveal-delay-3">
-          Hover to reveal · Actual logo assets can be added at{' '}
-          <code className="text-[#94A3B8]">public/images/logos/</code>
-        </p>
       </div>
     </section>
   );

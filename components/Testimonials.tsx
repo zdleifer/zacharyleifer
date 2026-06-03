@@ -35,7 +35,7 @@ export default function Testimonials() {
             <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-white">
               What Leaders Say
             </h2>
-            <p className="text-white/40 text-sm mt-3 max-w-lg">
+            <p className="text-white/60 text-sm mt-3 max-w-lg">
               Selected from LinkedIn recommendations by C-suite executives, investors, and direct colleagues.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Testimonials() {
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>
                   <p className="text-[#64748B] text-xs mt-0.5 leading-snug">{t.title}</p>
-                  <p className="text-[#334155] text-[10px] mt-1 tracking-wide uppercase">{t.context}</p>
+                  <p className="text-[#64748B] text-[10px] mt-1 tracking-wide uppercase">{t.context}</p>
                 </div>
               </div>
             </div>

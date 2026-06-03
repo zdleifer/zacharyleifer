@@ -28,7 +28,7 @@ export default function Experience() {
         {/* Section header */}
         <div className="flex items-end justify-between mb-20 reveal">
           <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-4">Career</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">Career</p>
             <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-[#0A0A0A]">
               Experience
             </h2>
@@ -55,11 +55,11 @@ export default function Experience() {
                 {role.metric && (
                   <div>
                     <div className="font-display text-3xl font-bold text-[#0A0A0A]">{role.metric}</div>
-                    <div className="text-[10px] tracking-wider uppercase text-[#94A3B8] mt-1">{role.metricLabel}</div>
+                    <div className="text-[10px] tracking-wider uppercase text-[#64748B] mt-1">{role.metricLabel}</div>
                   </div>
                 )}
                 <div className="lg:mt-6">
-                  <div className="text-xs text-[#94A3B8]">{role.years}</div>
+                  <div className="text-xs text-[#64748B]">{role.years}</div>
                 </div>
               </div>
 
@@ -70,11 +70,11 @@ export default function Experience() {
                     <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{role.title}</h3>
                     <div className="flex items-center gap-2 mt-1">
                       <span className="text-[#0A0A0A] font-medium text-sm">{role.company}</span>
-                      <span className="text-[#CBD5E1] text-sm">·</span>
-                      <span className="text-[#94A3B8] text-xs">{role.parent}</span>
+                      <span className="text-[#94A3B8] text-sm">·</span>
+                      <span className="text-[#64748B] text-xs">{role.parent}</span>
                     </div>
                   </div>
-                  <span className="text-xs text-[#94A3B8] whitespace-nowrap">{role.location}</span>
+                  <span className="text-xs text-[#64748B] whitespace-nowrap">{role.location}</span>
                 </div>
 
                 <p className="text-[#475569] text-sm mt-3 mb-5 leading-relaxed">{role.description}</p>
@@ -82,7 +82,7 @@ export default function Experience() {
                 <ul className="space-y-2">
                   {role.highlights.map((h, j) => (
                     <li key={j} className="text-sm text-[#64748B] flex items-start gap-3">
-                      <span className="text-[#CBD5E1] mt-1.5 flex-shrink-0">—</span>
+                      <span className="text-[#64748B] mt-1.5 flex-shrink-0 text-xs">●</span>
                       <span>{h}</span>
                     </li>
                   ))}
@@ -94,7 +94,7 @@ export default function Experience() {
 
         {/* Earlier career note */}
         <div className="mt-12 pt-8 border-t border-[#E2E8F0] reveal">
-          <p className="text-xs text-[#94A3B8] tracking-wide">
+          <p className="text-xs text-[#64748B] tracking-wide">
             Earlier: <span className="text-[#64748B]">Director of Marketing, Overlay Gaming</span> · <span className="text-[#64748B]">eCommerce Manager, Folli Follie Group</span> · <span className="text-[#64748B]">Marketing Producer, MLB Advanced Media (Yankees.com)</span>
           </p>
         </div>

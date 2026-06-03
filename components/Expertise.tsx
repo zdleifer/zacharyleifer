@@ -46,7 +46,7 @@ export default function Expertise() {
               <h3 className="font-display text-lg font-semibold text-white mb-8">{category.name}</h3>
               <ul className="space-y-3">
                 {category.areas.map((area, j) => (
-                  <li key={j} className="text-sm text-white/40 hover:text-white/70 transition-colors flex items-start gap-2">
+                  <li key={j} className="text-sm text-white/60 hover:text-white/70 transition-colors flex items-start gap-2">
                     <span className="text-[#475569] mt-1 flex-shrink-0 text-xs">›</span>
                     {area}
                   </li>

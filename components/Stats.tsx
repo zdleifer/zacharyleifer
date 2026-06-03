@@ -30,7 +30,7 @@ export default function Stats() {
   return (
     <section ref={ref} className="bg-[#F8F7F4] py-20 px-8 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-12 reveal">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-12 reveal">
           Impact at Scale
         </p>
 
@@ -46,7 +46,7 @@ export default function Stats() {
               <div className="text-sm font-semibold text-[#1A1A1A] mb-1 tracking-wide">
                 {stat.label}
               </div>
-              <div className="text-xs text-[#94A3B8] leading-relaxed">
+              <div className="text-xs text-[#64748B] leading-relaxed">
                 {stat.context}
               </div>
             </div>

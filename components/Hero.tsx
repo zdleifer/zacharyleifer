@@ -42,8 +42,8 @@ export default function Hero() {
 
             <div className="w-12 h-px bg-[#3B5998] mb-8" />
 
-            <p className="text-base md:text-lg text-white/45 leading-relaxed max-w-md mb-12">
-              CMO · CCO · GM — driving revenue, improving EBITDA, and turning customer data, AI, and technology into measurable business results.
+            <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-md mb-12">
+              CMO · CCO · GM. Driving revenue, improving EBITDA, and turning customer data, AI, and technology into measurable business results.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -75,7 +75,7 @@ export default function Hero() {
               <div className="relative w-[300px] md:w-[400px] lg:w-[420px]" style={{ maxHeight: '560px' }}>
                 <img
                   src="/images/headshot.png"
-                  alt="Zachary Leifer — Commercial Growth Executive, Las Vegas NV"
+                  alt="Zachary Leifer, Commercial Growth Executive, Las Vegas NV"
                   className="w-full object-cover object-top block"
                   style={{ maxHeight: '560px' }}
                 />

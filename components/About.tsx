@@ -46,9 +46,9 @@ export default function About() {
               "Senior commercial growth executive who drives revenue, improves EBITDA, and turns customer data, AI, and technology investments into measurable business results."
             </blockquote>
 
-            <div className="space-y-6 text-white/45 text-base leading-[1.9] reveal reveal-delay-1">
+            <div className="space-y-6 text-white/60 text-base leading-[1.9] reveal reveal-delay-1">
               <p>
-                I combine senior marketing leadership with executive enterprise technology experience — a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands. That crossover shaped how I think: strategy without execution is theory, and technology without commercial purpose is overhead.
+                I combine senior marketing leadership with executive enterprise technology experience. It is a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands. That crossover shaped how I think: strategy without execution is theory, and technology without commercial purpose is overhead.
               </p>
               <p>
                 My career spans Fortune 500 hospitality and gaming, global B2B and B2C platforms, and direct-to-consumer brands across Las Vegas and beyond. In every context, I've focused on the same fundamentals: set clear priorities, align teams around outcomes, build accountability into the operating model, and create the conditions for people to do their best work.
@@ -68,8 +68,8 @@ export default function About() {
                 <p className="font-display text-white text-lg font-semibold group-hover:text-white/90 transition-colors">
                   Harvard Business School
                 </p>
-                <p className="text-white/35 text-sm mt-1">Advanced Management Program · 2026</p>
-                <p className="text-[#334155] text-xs mt-1 italic">
+                <p className="text-white/55 text-sm mt-1">Advanced Management Program · 2026</p>
+                <p className="text-[#64748B] text-xs mt-1 italic">
                   Capstone: Enterprise Value from Data, Digital Transformation & AI
                 </p>
               </div>
@@ -78,7 +78,7 @@ export default function About() {
                 <p className="font-display text-white text-lg font-semibold group-hover:text-white/90 transition-colors">
                   Cornell University
                 </p>
-                <p className="text-white/35 text-sm mt-1">B.S., Applied Economics &amp; Management</p>
+                <p className="text-white/55 text-sm mt-1">B.S., Applied Economics &amp; Management</p>
               </div>
             </div>
           </div>

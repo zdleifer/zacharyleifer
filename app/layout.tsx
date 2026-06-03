@@ -156,7 +156,7 @@ export const metadata: Metadata = {
         url: "https://zacharyleifer.com/images/headshot.jpg",
         width: 1200,
         height: 630,
-        alt: "Zachary Leifer — Commercial Growth Executive, Las Vegas NV",
+        alt: "Zachary Leifer, Commercial Growth Executive, Las Vegas NV",
       },
     ],
     locale: "en_US",
@@ -167,7 +167,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zachary Leifer | Commercial Growth Executive | Las Vegas, NV",
     description:
-      "Senior commercial growth executive — CMO, CCO, GM. Harvard Business School AMP. Based in Las Vegas, NV.",
+      "Senior commercial growth executive. CMO, CCO, GM. Harvard Business School AMP. Based in Las Vegas, NV.",
     images: ["https://zacharyleifer.com/images/headshot.jpg"],
   },
   alternates: {
@@ -180,11 +180,11 @@ export const metadata: Metadata = {
     "geo.position": "36.1699;-115.1398",
     ICBM: "36.1699, -115.1398",
     // Dublin Core
-    "DC.title": "Zachary Leifer — Commercial Growth Executive",
+    "DC.title": "Zachary Leifer, Commercial Growth Executive",
     "DC.creator": "Zachary Leifer",
     "DC.subject": "Executive Leadership, CMO, Las Vegas",
     "DC.description":
-      "Senior commercial growth executive in Las Vegas, NV — CMO, CCO, GM with expertise in revenue strategy, digital transformation, and AI.",
+      "Senior commercial growth executive in Las Vegas, NV. CMO, CCO, GM with expertise in revenue strategy, digital transformation, and AI.",
     "DC.language": "en",
     // Additional discovery
     "og:locality": "Las Vegas",

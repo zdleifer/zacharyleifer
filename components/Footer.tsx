@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
               Let's Connect.
             </p>
-            <p className="text-white/40 text-base leading-relaxed max-w-xs">
+            <p className="text-white/60 text-base leading-relaxed max-w-xs">
               Open to executive leadership opportunities, board and advisory roles, and select consulting engagements.
             </p>
           </div>
@@ -42,14 +42,14 @@ export default function Footer() {
 
             <div>
               <p className="text-[10px] tracking-[0.3em] uppercase text-[#475569] mb-5">Location</p>
-              <p className="text-white/40 text-sm">Las Vegas, Nevada</p>
+              <p className="text-white/60 text-sm">Las Vegas, Nevada</p>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-          <span className="font-display text-white/30 text-sm">Zachary Leifer</span>
+          <span className="font-display text-white/50 text-sm">Zachary Leifer</span>
           <span className="text-white/20 text-xs">© 2026 · zacharyleifer.com</span>
         </div>
       </div>
