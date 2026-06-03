@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers static-assets config for the exported Next.js site.
+  // No Worker script — this is a static-only deployment serving ./out.
+  "name": "zacharyleifer",
+  "compatibility_date": "2026-06-03",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
