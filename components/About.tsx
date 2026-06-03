@@ -79,6 +79,9 @@ export default function About() {
                   Cornell University
                 </p>
                 <p className="text-white/55 text-sm mt-1">B.S., Applied Economics &amp; Management</p>
+                <p className="text-[#64748B] text-xs mt-1 italic">
+                  Charles H. Dyson School, SC Johnson College of Business
+                </p>
               </div>
             </div>
           </div>

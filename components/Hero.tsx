@@ -42,9 +42,17 @@ export default function Hero() {
 
             <div className="w-12 h-px bg-[#3B5998] mb-8" />
 
-            <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-md mb-12">
+            <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-md mb-8">
               CMO · CCO · GM. Driving revenue, improving EBITDA, and turning customer data, AI, and technology into measurable business results.
             </p>
+
+            {/* Industries */}
+            <div className="mb-12 max-w-md">
+              <p className="text-[9px] tracking-[0.3em] uppercase text-[#475569] mb-3">Industries</p>
+              <p className="text-xs text-white/50 leading-relaxed">
+                Integrated Resorts &amp; Gaming · Hospitality · Sports Wagering &amp; Racing · iGaming · eCommerce · Luxury Retail · Sports &amp; Digital Media
+              </p>
+            </div>
 
             <div className="flex flex-wrap gap-4">
               <a

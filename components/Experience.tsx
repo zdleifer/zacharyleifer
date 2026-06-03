@@ -48,55 +48,42 @@ export default function Experience() {
           {experience.map((role, i) => (
             <div
               key={i}
-              className={`py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal reveal-delay-${Math.min(i + 1, 4)}`}
+              className={`py-12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-4 reveal reveal-delay-${Math.min(i + 1, 4)}`}
             >
-              {/* Metric callout */}
-              <div className="lg:col-span-2 flex flex-row lg:flex-col items-start gap-4 lg:gap-0">
-                {role.metric && (
-                  <div>
-                    <div className="font-display text-3xl font-bold text-[#0A0A0A]">{role.metric}</div>
-                    <div className="text-[10px] tracking-wider uppercase text-[#64748B] mt-1">{role.metricLabel}</div>
-                  </div>
-                )}
-                <div className="lg:mt-6">
-                  <div className="text-xs text-[#64748B]">{role.years}</div>
-                </div>
+              {/* Year column — consistent position for every role */}
+              <div className="lg:col-span-2">
+                <div className="text-sm font-medium text-[#475569] tracking-wide">{role.years}</div>
+                <div className="text-xs text-[#94A3B8] mt-1">{role.location}</div>
               </div>
 
               {/* Role content */}
               <div className="lg:col-span-10">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-                  <div>
-                    <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{role.title}</h3>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className="text-[#0A0A0A] font-medium text-sm">{role.company}</span>
-                      <span className="text-[#94A3B8] text-sm">·</span>
-                      <span className="text-[#64748B] text-xs">{role.parent}</span>
-                    </div>
-                  </div>
-                  <span className="text-xs text-[#64748B] whitespace-nowrap">{role.location}</span>
+                <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{role.title}</h3>
+                <div className="flex flex-wrap items-center gap-2 mt-1">
+                  <span className="text-[#0A0A0A] font-medium text-sm">{role.company}</span>
+                  <span className="text-[#94A3B8] text-sm">·</span>
+                  <span className="text-[#64748B] text-xs">{role.parent}</span>
                 </div>
 
-                <p className="text-[#475569] text-sm mt-3 mb-5 leading-relaxed">{role.description}</p>
+                {/* Company description */}
+                <p className="text-[#94A3B8] text-xs italic mt-3 leading-relaxed max-w-3xl">
+                  {role.companyDescription}
+                </p>
 
-                <ul className="space-y-2">
-                  {role.highlights.map((h, j) => (
-                    <li key={j} className="text-sm text-[#64748B] flex items-start gap-3">
-                      <span className="text-[#64748B] mt-1.5 flex-shrink-0 text-xs">●</span>
-                      <span>{h}</span>
-                    </li>
-                  ))}
-                </ul>
+                {/* Achievements (only when present) */}
+                {role.highlights.length > 0 && (
+                  <ul className="space-y-2 mt-5">
+                    {role.highlights.map((h, j) => (
+                      <li key={j} className="text-sm text-[#475569] flex items-start gap-3">
+                        <span className="text-[#94A3B8] mt-1.5 flex-shrink-0 text-[8px]">●</span>
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Earlier career note */}
-        <div className="mt-12 pt-8 border-t border-[#E2E8F0] reveal">
-          <p className="text-xs text-[#64748B] tracking-wide">
-            Earlier: <span className="text-[#64748B]">Director of Marketing, Overlay Gaming</span> · <span className="text-[#64748B]">eCommerce Manager, Folli Follie Group</span> · <span className="text-[#64748B]">Marketing Producer, MLB Advanced Media (Yankees.com)</span>
-          </p>
         </div>
       </div>
     </section>

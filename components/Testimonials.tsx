@@ -85,7 +85,7 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className="text-xs tracking-[0.2em] uppercase text-[#475569] hover:text-white transition-colors border-b border-[#475569]/40 hover:border-white pb-0.5"
           >
-            View all 18 recommendations on LinkedIn →
+            View all recommendations on LinkedIn →
           </a>
         </div>
       </div>

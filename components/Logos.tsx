@@ -2,35 +2,16 @@
 
 import { useEffect, useRef } from 'react';
 
-const employers = [
-  {
-    name: 'Las Vegas Sands',
-    sub: 'The Venetian Resort · Fortune 500',
-    type: 'employer',
-  },
-  {
-    name: '1/ST Technology',
-    sub: 'The Stronach Group',
-    type: 'employer',
-  },
-  {
-    name: 'PokerAtlas',
-    sub: 'Overlay Gaming Corp.',
-    type: 'employer',
-  },
-];
-
-const education = [
-  {
-    name: 'Harvard Business School',
-    sub: 'Advanced Management Program',
-    type: 'education',
-  },
-  {
-    name: 'Cornell University',
-    sub: 'B.S. Applied Economics & Management',
-    type: 'education',
-  },
+// Set `logo` to a file in /public/images/logos/ to render the real mark.
+// Until then, a styled wordmark is shown automatically.
+const organizations = [
+  { name: 'Las Vegas Sands', logo: null },
+  { name: 'The Venetian', logo: null },
+  { name: '1/ST Technology', logo: null },
+  { name: 'The Stronach Group', logo: null },
+  { name: 'PokerAtlas', logo: null },
+  { name: 'MLB Advanced Media', logo: null },
+  { name: 'Folli Follie', logo: null },
 ];
 
 export default function Logos() {
@@ -53,47 +34,29 @@ export default function Logos() {
   return (
     <section ref={ref} className="bg-[#F8F7F4] py-16 px-8 md:px-12 border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto">
-
         <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10 reveal">
-          Career & Education
+          Organizations I&apos;ve Led & Advised
         </p>
 
-        {/* Employer logos */}
-        <div className="mb-8 reveal reveal-delay-1">
-          <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-6">Experience</p>
-          <div className="flex flex-wrap gap-x-10 gap-y-6 items-center">
-            {employers.map((item, i) => (
-              <div key={i} className="group cursor-default">
-                <p
-                  className="font-display font-bold text-[#0A0A0A]/30 group-hover:text-[#0A0A0A]/80 transition-colors duration-300"
-                  style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', letterSpacing: '0.03em' }}
+        <div className="flex flex-wrap items-center gap-x-12 gap-y-8 reveal reveal-delay-1">
+          {organizations.map((org, i) => (
+            <div key={i} className="flex items-center">
+              {org.logo ? (
+                <img
+                  src={org.logo}
+                  alt={org.name}
+                  className="logo-item h-8 md:h-9 w-auto object-contain"
+                />
+              ) : (
+                <span
+                  className="font-display font-bold text-[#0A0A0A]/35 hover:text-[#0A0A0A]/80 transition-colors duration-300 cursor-default"
+                  style={{ fontSize: 'clamp(1.05rem, 2vw, 1.35rem)', letterSpacing: '0.02em' }}
                 >
-                  {item.name}
-                </p>
-                <p className="text-[10px] text-[#64748B] tracking-wider mt-0.5">{item.sub}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="w-full h-px bg-[#E2E8F0] my-8" />
-
-        {/* Education logos */}
-        <div className="reveal reveal-delay-2">
-          <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-6">Education</p>
-          <div className="flex flex-wrap gap-x-10 gap-y-6 items-center">
-            {education.map((item, i) => (
-              <div key={i} className="group cursor-default">
-                <p
-                  className="font-display font-bold text-[#0A0A0A]/30 group-hover:text-[#0A0A0A]/80 transition-colors duration-300"
-                  style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', letterSpacing: '0.03em' }}
-                >
-                  {item.name}
-                </p>
-                <p className="text-[10px] text-[#64748B] tracking-wider mt-0.5">{item.sub}</p>
-              </div>
-            ))}
-          </div>
+                  {org.name}
+                </span>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

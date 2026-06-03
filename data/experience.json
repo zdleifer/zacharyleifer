@@ -1,64 +1,83 @@
 [
   {
+    "company": "State of Mind Strategies",
+    "parent": "Independent Advisory Practice",
+    "companyDescription": "Boutique consulting practice specializing in strategic consulting, marketing, digital transformation, and AI enablement.",
+    "title": "Strategic Marketing Advisor",
+    "years": "2024 - Present",
+    "location": "Las Vegas, NV",
+    "highlights": [
+      "Advise executives on marketing strategy, customer acquisition, CRM, and AI enablement",
+      "Direct agency selection and operating model redesign to improve accountability and performance",
+      "Design customer journey, CRM, and AI-driven workflow architectures"
+    ]
+  },
+  {
+    "company": "PokerAtlas",
+    "parent": "Overlay Gaming Corp.",
+    "companyDescription": "Global B2B and B2C gaming platform offering payments, tournament registration, and cash-game management tools.",
+    "title": "Chief Commercial Officer",
+    "years": "2025",
+    "location": "Las Vegas, NV",
+    "highlights": [
+      "Architected operational structure and hired key roles across sales, marketing, product, operations, and finance",
+      "Directed positioning and launch strategy for payments and subscription capabilities (14% increase in registered players)",
+      "Deployed CRM platform supporting sales, customer success, and support (18% increase in B2B customers in 9 months)"
+    ]
+  },
+  {
     "company": "1/ST Technology",
     "parent": "The Stronach Group",
+    "companyDescription": "Part of The Stronach Group, a global racing, wagering, and entertainment company that owns premier venues and events including Santa Anita Park, Gulfstream Park, and the Preakness Stakes.",
     "title": "Chief Marketing Officer",
     "years": "2020 - 2024",
     "location": "Remote",
-    "description": "End-to-end marketing leadership for a $1.5B annual revenue organization spanning three B2B businesses and two B2C brands in racing, wagering, and entertainment.",
-    "metric": "67%",
-    "metricLabel": "Revenue Growth",
     "highlights": [
-      "67% revenue growth while reducing costs 2.7%, contributing to 22% EBITDA CAGR over four years",
-      "Reduced customer acquisition costs by 56% and improved LTV/CAC by 73% via customer data platform",
-      "Directed go-to-market for new wagering app: $60M handle and $4M net gaming revenue in 10 months",
+      "Delivered 67% revenue growth while reducing costs 2.7%, contributing to a 22% EBITDA CAGR over four years",
+      "Reduced customer acquisition costs by 56% and improved LTV/CAC by 73% via a customer data platform",
+      "Directed go-to-market for a new wagering app: $60M handle and $4M net gaming revenue in 10 months",
       "Secured board-approved budget growth from $8M to $15M through comprehensive ROI forecasting"
     ]
   },
   {
     "company": "Las Vegas Sands / The Venetian",
     "parent": "Fortune 500 · ~$13B Revenue",
+    "companyDescription": "Fortune 500 integrated resort and casino operator (~$13B annual revenue), including The Venetian Resort Las Vegas and global operations across gaming, hospitality, and entertainment.",
     "title": "VP, Digital Marketing & eCommerce → VP, Corporate IT",
     "years": "2014 - 2020",
     "location": "Las Vegas, NV",
-    "description": "Progressively promoted through digital marketing leadership to VP of Digital Marketing & eCommerce, then recruited internally to lead corporate digital transformation as VP of IT.",
-    "metric": "$36M",
-    "metricLabel": "Direct Revenue",
     "highlights": [
-      "$36M incremental direct-channel revenue from $13M capital investment in new website and booking engine",
-      "Reversed 5-year negative trend with 24 consecutive months of growth and 50% ROAS improvement",
-      "18% CRM conversion rate increase via 360-degree customer data platform",
-      "Designed and led global cloud governance program across U.S., Singapore, and China"
+      "Generated $36M incremental direct-channel revenue from a $13M capital investment in new website and booking engine",
+      "Reversed a 5-year negative trend with 24 consecutive months of growth and a 50% increase in ROAS",
+      "Delivered an 18% increase in CRM conversion rates via a 360-degree customer data platform",
+      "Recruited internally to lead global cloud governance across the U.S., Singapore, and China"
     ]
   },
   {
-    "company": "PokerAtlas (Overlay Gaming Corp.)",
-    "parent": "Global Gaming B2B & B2C Platform",
-    "title": "Chief Commercial Officer",
-    "years": "2025",
+    "company": "Overlay Gaming",
+    "parent": "Gaming Technology",
+    "companyDescription": "Gaming technology company serving the poker and casino market.",
+    "title": "Director of Marketing",
+    "years": "2013 - 2014",
     "location": "Las Vegas, NV",
-    "description": "Executive leadership across sales, marketing, product, customer success, operations, and finance for a global gaming technology platform.",
-    "metric": "18%",
-    "metricLabel": "B2B Customer Growth",
-    "highlights": [
-      "18% increase in B2B customers in 9 months via CRM platform deployment",
-      "14% increase in registered players through payments and subscription launch strategy",
-      "Architected operational structure; hired key roles across sales, marketing, product, and finance"
-    ]
+    "highlights": []
   },
   {
-    "company": "State of Mind Strategies",
-    "parent": "Independent Advisory Practice",
-    "title": "Strategic Marketing Advisor",
-    "years": "2024 - Present",
-    "location": "Las Vegas, NV",
-    "description": "Boutique consulting practice focused on strategic marketing, digital transformation, and AI enablement for executive teams.",
-    "metric": null,
-    "metricLabel": null,
-    "highlights": [
-      "Advised executives on marketing strategy, customer acquisition, CRM, and AI enablement",
-      "Directed agency selection and operating model redesign to improve accountability and performance",
-      "Designed customer journey, CRM, and AI-driven workflow architectures"
-    ]
+    "company": "Folli Follie Group",
+    "parent": "Luxury Retail",
+    "companyDescription": "European luxury retail group, including the Folli Follie and Links of London brands.",
+    "title": "eCommerce Marketing Manager",
+    "years": "2011 - 2013",
+    "location": "New York, NY",
+    "highlights": []
+  },
+  {
+    "company": "MLB Advanced Media",
+    "parent": "Major League Baseball · Yankees.com",
+    "companyDescription": "The digital and technology arm of Major League Baseball, operating MLB.com and club sites including Yankees.com.",
+    "title": "Marketing Producer",
+    "years": "2006 - 2011",
+    "location": "New York, NY",
+    "highlights": []
   }
 ]
