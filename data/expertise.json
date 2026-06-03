@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "name": "Commercial Growth",
+      "areas": [
+        "P&L Management",
+        "Revenue Strategy",
+        "Organizational Scaling",
+        "Enterprise Value Creation",
+        "Pricing & Yield Management",
+        "Go-to-Market (GTM)"
+      ]
+    },
+    {
+      "name": "Executive Leadership",
+      "areas": [
+        "Cross-Functional Leadership",
+        "Performance Management",
+        "Customer Experience",
+        "Sales & Business Development",
+        "Change Leadership",
+        "Team Development",
+        "Compensation & Incentive Design"
+      ]
+    },
+    {
+      "name": "Digital & AI Transformation",
+      "areas": [
+        "Marketing Technology (MarTech)",
+        "Customer Data & Personalization",
+        "Product Strategy & Management",
+        "AI Strategy & Governance",
+        "Digital Transformation",
+        "Capital Allocation"
+      ]
+    }
+  ]
+}

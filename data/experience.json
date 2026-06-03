@@ -1,0 +1,64 @@
+[
+  {
+    "company": "1/ST Technology",
+    "parent": "The Stronach Group",
+    "title": "Chief Marketing Officer",
+    "years": "2020 – 2024",
+    "location": "Remote",
+    "description": "End-to-end marketing leadership for a $1.5B annual revenue organization spanning three B2B businesses and two B2C brands in racing, wagering, and entertainment.",
+    "metric": "67%",
+    "metricLabel": "Revenue Growth",
+    "highlights": [
+      "67% revenue growth while reducing costs 2.7%, contributing to 22% EBITDA CAGR over four years",
+      "Reduced customer acquisition costs by 56% and improved LTV/CAC by 73% via customer data platform",
+      "Directed go-to-market for new wagering app: $60M handle and $4M net gaming revenue in 10 months",
+      "Secured board-approved budget growth from $8M to $15M through comprehensive ROI forecasting"
+    ]
+  },
+  {
+    "company": "Las Vegas Sands / The Venetian",
+    "parent": "Fortune 500 · ~$13B Revenue",
+    "title": "VP, Digital Marketing & eCommerce → VP, Corporate IT",
+    "years": "2014 – 2020",
+    "location": "Las Vegas, NV",
+    "description": "Progressively promoted through digital marketing leadership to VP of Digital Marketing & eCommerce, then recruited internally to lead corporate digital transformation as VP of IT.",
+    "metric": "$36M",
+    "metricLabel": "Direct Revenue",
+    "highlights": [
+      "$36M incremental direct-channel revenue from $13M capital investment in new website and booking engine",
+      "Reversed 5-year negative trend with 24 consecutive months of growth and 50% ROAS improvement",
+      "18% CRM conversion rate increase via 360-degree customer data platform",
+      "Designed and led global cloud governance program across U.S., Singapore, and China"
+    ]
+  },
+  {
+    "company": "PokerAtlas (Overlay Gaming Corp.)",
+    "parent": "Global Gaming B2B & B2C Platform",
+    "title": "Chief Commercial Officer",
+    "years": "2025",
+    "location": "Las Vegas, NV",
+    "description": "Executive leadership across sales, marketing, product, customer success, operations, and finance for a global gaming technology platform.",
+    "metric": "18%",
+    "metricLabel": "B2B Customer Growth",
+    "highlights": [
+      "18% increase in B2B customers in 9 months via CRM platform deployment",
+      "14% increase in registered players through payments and subscription launch strategy",
+      "Architected operational structure; hired key roles across sales, marketing, product, and finance"
+    ]
+  },
+  {
+    "company": "State of Mind Strategies",
+    "parent": "Independent Advisory Practice",
+    "title": "Strategic Marketing Advisor",
+    "years": "2024 – Present",
+    "location": "Las Vegas, NV",
+    "description": "Boutique consulting practice focused on strategic marketing, digital transformation, and AI enablement for executive teams.",
+    "metric": null,
+    "metricLabel": null,
+    "highlights": [
+      "Advised executives on marketing strategy, customer acquisition, CRM, and AI enablement",
+      "Directed agency selection and operating model redesign to improve accountability and performance",
+      "Designed customer journey, CRM, and AI-driven workflow architectures"
+    ]
+  }
+]
