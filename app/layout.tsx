@@ -23,10 +23,9 @@ const personSchema = {
   url: "https://zacharyleifer.com",
   image: "https://zacharyleifer.com/images/headshot.jpg",
   jobTitle: "Chief Marketing Officer",
-  telephone: "+15167681543",
   email: "zacharyleifer@gmail.com",
   description:
-    "Senior commercial growth executive based in Las Vegas, NV. CMO, CCO, and GM with expertise in revenue strategy, P&L management, digital transformation, and AI enablement. Harvard Business School Advanced Management Program graduate.",
+    "Senior commercial growth executive based in Las Vegas, NV. CMO, CCO, and GM who builds the marketing and commercial operating system, including data architecture, CRM and CDP infrastructure, and measurement, that turns strategy into measurable growth. Harvard Business School Advanced Management Program graduate. Open to board, advisory, and senior operating roles.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
@@ -40,6 +39,12 @@ const personSchema = {
     longitude: "-115.1398",
   },
   sameAs: ["https://linkedin.com/in/zacharyleifer"],
+  award: [
+    "2015 Gold HSMAI Adrian Award",
+    "2015 Silver HSMAI Adrian Award",
+    "2015 Bronze HSMAI Adrian Award (Breakfast Offer Campaign)",
+    "2015 Bronze HSMAI Adrian Award (The Palazzo Suite Campaign)",
+  ],
   alumniOf: [
     {
       "@type": "EducationalOrganization",
@@ -67,6 +72,15 @@ const personSchema = {
     "EBITDA Growth",
     "Customer Acquisition",
     "CRM Strategy",
+    "Marketing Operating Model",
+    "Marketing Operating System",
+    "Marketing Measurement and Analytics",
+    "AI Governance",
+    "AI Enablement",
+    "Generative Engine Optimization",
+    "Board Advisory",
+    "Operating Partner",
+    "Gaming and Hospitality Marketing",
     "Las Vegas Executive Leadership",
   ],
   worksFor: {
@@ -98,7 +112,7 @@ const personSchema = {
 export const metadata: Metadata = {
   title: "Zachary Leifer | CMO · CCO · GM | Commercial Growth Executive | Las Vegas, NV",
   description:
-    "Zachary Leifer is a senior commercial growth executive in Las Vegas, NV. Former CMO at 1/ST Technology ($1.5B revenue, 67% growth), CCO at PokerAtlas, VP at Las Vegas Sands / The Venetian Resort. Harvard Business School AMP graduate. Open to C-suite, board, and advisory roles.",
+    "Zachary Leifer is a senior commercial growth executive in Las Vegas, NV. CMO, CCO, and GM who builds the marketing and commercial operating system that drives measurable growth. Former CMO at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR), CCO at PokerAtlas, and VP at Las Vegas Sands / The Venetian. Harvard Business School AMP graduate. Open to board, advisory, and senior operating roles.",
   keywords: [
     "Chief Marketing Officer Las Vegas",
     "CMO Las Vegas",
@@ -190,7 +204,6 @@ export const metadata: Metadata = {
     "og:locality": "Las Vegas",
     "og:region": "NV",
     "og:country-name": "United States",
-    "og:phone_number": "+1-516-768-1543",
     "og:email": "zacharyleifer@gmail.com",
   },
 };
