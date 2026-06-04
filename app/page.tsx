@@ -8,6 +8,7 @@ import CaseStudies from '@/components/CaseStudies';
 import Experience from '@/components/Experience';
 import Testimonials from '@/components/Testimonials';
 import Insights from '@/components/Insights';
+import Recognition from '@/components/Recognition';
 import Expertise from '@/components/Expertise';
 import Footer from '@/components/Footer';
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Experience />
       <Testimonials />
       <Insights />
+      <Recognition />
       <Expertise />
       <Footer />
     </main>
