@@ -67,7 +67,7 @@ export default function About() {
                 <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">Education</p>
                 <div className="bg-white rounded-md h-24 w-fit px-7 flex items-center mb-4">
                   <img
-                    src="/images/logos/harvard.jpg"
+                    src="/images/logos/harvard-shield.svg"
                     alt="Harvard Business School"
                     className="max-h-14 w-auto object-contain"
                   />
