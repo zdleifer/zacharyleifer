@@ -6,16 +6,16 @@ import { useEffect, useRef } from 'react';
 // similar optical weight (wide logos shorter, square logos taller).
 const organizations = [
   { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[24px]' },
-  { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[30px]' },
-  { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[48px]' },
-  { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[50px]' },
+  { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[26px]' },
+  { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[40px]' },
+  { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[42px]' },
   { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[38px]' },
-  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[58px]' },
-  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-[40px]' },
+  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[48px]' },
+  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-[38px]' },
   { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
-  { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[56px]' },
-  { name: 'yankees.com', logo: '/images/logos/yankees.png', h: 'h-[36px]' },
-  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[54px]' },
+  { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[46px]' },
+  { name: 'yankees.com', logo: '/images/logos/yankees.png', h: 'h-[34px]' },
+  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[46px]' },
 ];
 
 export default function Logos() {
@@ -46,7 +46,7 @@ export default function Logos() {
           {organizations.map((org, i) => (
             <div
               key={i}
-              className="bg-white rounded-lg border border-[#E2E8F0] shadow-sm h-24 px-9 flex items-center justify-center hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-lg border border-[#E2E8F0] shadow-sm h-20 px-8 flex items-center justify-center hover:shadow-md transition-shadow duration-300"
             >
               <img
                 src={org.logo}
