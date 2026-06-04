@@ -6,10 +6,10 @@ import { useEffect, useRef } from 'react';
 // similar optical weight (wide logos shorter, square logos taller).
 const organizations = [
   { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[20px]' },
-  { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[22px]' },
+  { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[19px]' },
   { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[34px]' },
   { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[36px]' },
-  { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[38px]' },
+  { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[32px]' },
   { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[48px]' },
   { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-[38px]' },
   { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
