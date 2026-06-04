@@ -22,8 +22,25 @@ export default function Expertise() {
   }, []);
 
   return (
-    <section id="expertise" ref={ref} className="bg-[#0A0A0A] py-28 px-8 md:px-12">
-      <div className="max-w-7xl mx-auto">
+    <section id="expertise" ref={ref} className="relative overflow-hidden bg-[#0A0A0A] py-28 px-8 md:px-12">
+      {/* Faint data-point matrix — subtle nod to data, AI & technology */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.07]"
+        style={{
+          backgroundImage:
+            'radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1.6px)',
+          backgroundSize: '26px 26px',
+        }}
+      />
+      {/* Soft fade so the pattern dissolves toward the edges */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, transparent 30%, #0A0A0A 95%)',
+        }}
+      />
+      <div className="relative max-w-7xl mx-auto">
 
         {/* Header */}
         <div className="mb-20 reveal">

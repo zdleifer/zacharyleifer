@@ -39,12 +39,12 @@ export default function Logos() {
           {organizations.map((org, i) => (
             <div
               key={i}
-              className="bg-white rounded-lg border border-[#E2E8F0] shadow-sm h-20 px-8 flex items-center justify-center hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-lg border border-[#E2E8F0] shadow-sm h-24 px-9 flex items-center justify-center hover:shadow-md transition-shadow duration-300"
             >
               <img
                 src={org.logo}
                 alt={org.name}
-                className="max-h-10 w-auto max-w-[170px] object-contain"
+                className="max-h-12 w-auto max-w-[210px] object-contain"
               />
             </div>
           ))}
