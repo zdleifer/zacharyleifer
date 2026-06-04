@@ -2,16 +2,12 @@
 
 import { useEffect, useRef } from 'react';
 
-// Set `logo` to a file in /public/images/logos/ to render the real mark.
-// Until then, a styled wordmark is shown automatically.
 const organizations = [
-  { name: 'Las Vegas Sands', logo: null },
-  { name: 'The Venetian', logo: null },
-  { name: '1/ST Technology', logo: null },
-  { name: 'The Stronach Group', logo: null },
-  { name: 'PokerAtlas', logo: null },
-  { name: 'MLB Advanced Media', logo: null },
-  { name: 'Folli Follie', logo: null },
+  { name: 'Las Vegas Sands', logo: '/images/logos/las-vegas-sands.jpg' },
+  { name: '1/ST Technology', logo: '/images/logos/1st-technology.jpg' },
+  { name: 'Xpressbet', logo: '/images/logos/xpressbet.jpg' },
+  { name: 'AmTote', logo: '/images/logos/amtote.jpg' },
+  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg' },
 ];
 
 export default function Logos() {
@@ -38,23 +34,17 @@ export default function Logos() {
           Organizations I&apos;ve Led & Advised
         </p>
 
-        <div className="flex flex-wrap items-center gap-x-12 gap-y-8 reveal reveal-delay-1">
+        <div className="flex flex-wrap items-center gap-5 reveal reveal-delay-1">
           {organizations.map((org, i) => (
-            <div key={i} className="flex items-center">
-              {org.logo ? (
-                <img
-                  src={org.logo}
-                  alt={org.name}
-                  className="logo-item h-8 md:h-9 w-auto object-contain"
-                />
-              ) : (
-                <span
-                  className="font-display font-bold text-[#0A0A0A]/35 hover:text-[#0A0A0A]/80 transition-colors duration-300 cursor-default"
-                  style={{ fontSize: 'clamp(1.05rem, 2vw, 1.35rem)', letterSpacing: '0.02em' }}
-                >
-                  {org.name}
-                </span>
-              )}
+            <div
+              key={i}
+              className="bg-white rounded-lg border border-[#E2E8F0] shadow-sm h-20 w-40 flex items-center justify-center px-6 hover:shadow-md transition-shadow duration-300"
+            >
+              <img
+                src={org.logo}
+                alt={org.name}
+                className="max-h-10 max-w-full object-contain"
+              />
             </div>
           ))}
         </div>
