@@ -14,6 +14,7 @@ const organizations = [
   { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[58px]' },
   { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[24px]' },
   { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[54px]' },
+  { name: 'yankees.com', logo: '/images/logos/yankees.png', h: 'h-[36px]' },
   { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[56px]' },
 ];
 
