@@ -3,24 +3,28 @@
     "quote": "Zack brought real operating discipline to the CMO role. By linking investment directly to customer behavior and unit economics, he turned marketing into a predictable commercial engine. Low ego and high standards. He's an invaluable business partner. I recommend him without hesitation for a corporate CMO role where growth and innovation are the mandate, and unit economics are the measure.",
     "name": "Michael Jordan",
     "title": "CIO | CTO | Digital COO",
-    "context": "Worked together at 1/ST Technology"
+    "context": "Worked together at 1/ST Technology",
+    "image": "/images/logos/michael-jordan.jpg"
   },
   {
     "quote": "Whatever Zack gets his focus on will win. His unique combination of right-brained creative thinking and deep understanding of existing and emerging technology allowed him to lead end to end programs from flawless brand strategy to best-in-class data-driven performance marketing.",
     "name": "Tony Orelli",
     "title": "Investor & Advisor",
-    "context": "5-year working relationship"
+    "context": "5-year working relationship",
+    "image": "/images/logos/tony-orelli.jpg"
   },
   {
     "quote": "He built a great team at 1/ST and allowed us to move our revenue and profits considerably over the last 4 years. I would recommend Zach to anyone in need of acquisition and retention marketing, and anyone who needs a creative marketing approach to existing business challenges.",
     "name": "Paul Williams",
     "title": "Global CIO | CTO | Digital CEO",
-    "context": "Direct manager at 1/ST Technology"
+    "context": "Direct manager at 1/ST Technology",
+    "image": "/images/logos/paul-williams.jpg"
   },
   {
     "quote": "Zack is one of the very rare leaders who can lead both business and IT as a whole. He showed strong business sense in understanding current business details, and also shared ideas for potential business improvement and innovations. Work with Smart People.",
     "name": "Sharon Cao",
     "title": "Enterprise Architect, Standard Chartered Bank",
-    "context": "Global collaboration at Las Vegas Sands"
+    "context": "Global collaboration at Las Vegas Sands",
+    "image": "/images/logos/sharon-cao.jpg"
   }
 ]

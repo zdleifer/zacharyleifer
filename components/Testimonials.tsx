@@ -61,12 +61,12 @@ export default function Testimonials() {
               </blockquote>
 
               <div className="flex items-start gap-4 border-t border-white/[0.08] pt-6">
-                {/* Monogram avatar */}
-                <div className="w-10 h-10 rounded-full bg-[#1E293B] flex items-center justify-center flex-shrink-0">
-                  <span className="font-display text-sm font-bold text-[#475569]">
-                    {t.name.split(' ').map((n: string) => n[0]).join('').slice(0, 2)}
-                  </span>
-                </div>
+                {/* Recommender photo */}
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  className="w-12 h-12 rounded-full object-cover flex-shrink-0 ring-1 ring-white/15"
+                />
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>
                   <p className="text-[#64748B] text-xs mt-0.5 leading-snug">{t.title}</p>

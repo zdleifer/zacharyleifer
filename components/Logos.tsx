@@ -10,8 +10,6 @@ const organizations = [
   { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[34px]' },
   { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[36px]' },
   { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[32px]' },
-  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[48px]' },
-  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-[38px]' },
   { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
   { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[41px]' },
   { name: 'yankees.com', logo: '/images/logos/yankees.png', h: 'h-[26px]' },
