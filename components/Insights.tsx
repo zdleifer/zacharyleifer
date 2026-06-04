@@ -16,6 +16,12 @@ const items = [
     href: 'https://www.linkedin.com/pulse/ai-already-your-company-creating-enterprise-value-secure-leifer-3q0ve',
   },
   {
+    type: 'Podcast',
+    title: 'Awesome in Action',
+    meta: 'NC Labs Podcast · 2021',
+    href: 'https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7',
+  },
+  {
     type: 'Deck',
     title: 'The GEO Frontier',
     meta: 'Generative Engine Optimization',
