@@ -7,14 +7,14 @@ import { useEffect, useRef } from 'react';
 const organizations = [
   { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[38px]' },
   { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
-  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[52px]' },
-  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-10' },
-  { name: '1/ST Technology', logo: '/images/logos/1st-technology.jpg', h: 'h-16' },
-  { name: 'Xpressbet', logo: '/images/logos/xpressbet.jpg', h: 'h-[68px]' },
-  { name: 'AmTote', logo: '/images/logos/amtote.jpg', h: 'h-[68px]' },
-  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[22px]' },
-  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[50px]' },
-  { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[52px]' },
+  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[58px]' },
+  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-[40px]' },
+  { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[34px]' },
+  { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[54px]' },
+  { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[58px]' },
+  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[24px]' },
+  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[54px]' },
+  { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[56px]' },
 ];
 
 export default function Logos() {
@@ -41,7 +41,7 @@ export default function Logos() {
           Organizations I&apos;ve Led & Advised
         </p>
 
-        <div className="flex flex-wrap items-center gap-5 reveal reveal-delay-1">
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-5 reveal reveal-delay-1">
           {organizations.map((org, i) => (
             <div
               key={i}
@@ -50,7 +50,7 @@ export default function Logos() {
               <img
                 src={org.logo}
                 alt={org.name}
-                className={`${org.h} w-auto object-contain`}
+                className={`${org.h} w-auto max-w-full object-contain`}
               />
             </div>
           ))}
