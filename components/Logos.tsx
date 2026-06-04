@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 // Per-logo height tuned to each logo's aspect ratio so they read at a
 // similar optical weight (wide logos shorter, square logos taller).
 const organizations = [
-  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[20px]' },
+  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-[19px]' },
   { name: '1/ST Technology', logo: '/images/logos/1st-technology-c.jpg', h: 'h-[19px]' },
   { name: 'Xpressbet', logo: '/images/logos/xpressbet-c.jpg', h: 'h-[34px]' },
   { name: 'AmTote', logo: '/images/logos/amtote-c.jpg', h: 'h-[36px]' },
