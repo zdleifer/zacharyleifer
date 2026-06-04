@@ -33,6 +33,12 @@ const items = [
     meta: 'AI and the modern operating model',
     href: '/decks/rewiring-the-c-suite.pdf',
   },
+  {
+    type: 'Deck',
+    title: 'The 2026 AI Marketing Playbook',
+    meta: 'Practical AI for marketing teams',
+    href: '/decks/2026-ai-marketing-playbook.pdf',
+  },
 ];
 
 export default function Insights() {
