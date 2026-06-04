@@ -65,11 +65,11 @@ export default function About() {
             <div className="mt-16 pt-12 border-t border-white/[0.08] grid grid-cols-1 sm:grid-cols-2 gap-8 reveal reveal-delay-2">
               <div className="group">
                 <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">Education</p>
-                <div className="bg-white rounded-md h-12 w-fit px-4 flex items-center mb-4">
+                <div className="bg-white rounded-md h-20 w-fit px-6 flex items-center mb-4">
                   <img
                     src="/images/logos/harvard.jpg"
                     alt="Harvard Business School"
-                    className="max-h-7 w-auto object-contain"
+                    className="max-h-12 w-auto object-contain"
                   />
                 </div>
                 <p className="font-display text-white text-lg font-semibold group-hover:text-white/90 transition-colors">
@@ -82,11 +82,11 @@ export default function About() {
               </div>
               <div className="group">
                 <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">&nbsp;</p>
-                <div className="bg-white rounded-md h-12 w-fit px-4 flex items-center mb-4">
+                <div className="bg-white rounded-md h-20 w-fit px-6 flex items-center mb-4">
                   <img
-                    src="/images/logos/cornell.png"
+                    src="/images/logos/cornell-cropped.png"
                     alt="Cornell University"
-                    className="max-h-7 w-auto object-contain"
+                    className="max-h-11 w-auto object-contain"
                   />
                 </div>
                 <p className="font-display text-white text-lg font-semibold group-hover:text-white/90 transition-colors">
