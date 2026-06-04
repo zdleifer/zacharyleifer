@@ -65,12 +65,18 @@ export default function About() {
             <div className="mt-16 pt-12 border-t border-white/[0.08] grid grid-cols-1 sm:grid-cols-2 gap-8 reveal reveal-delay-2">
               <div className="group">
                 <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">Education</p>
-                <div className="bg-white rounded-md h-24 w-fit px-7 flex items-center mb-4">
+                <div className="bg-white rounded-md h-24 w-fit px-7 flex items-center gap-4 mb-4">
                   <img
                     src="/images/logos/harvard-shield.svg"
                     alt="Harvard Business School"
-                    className="max-h-14 w-auto object-contain"
+                    className="h-14 w-auto object-contain"
                   />
+                  <span className="block w-px h-12 bg-black" />
+                  <span className="font-bold leading-[1.03] text-[1.35rem] tracking-tight">
+                    <span className="block text-[#b7133f]">Harvard</span>
+                    <span className="block text-black">Business</span>
+                    <span className="block text-black">School</span>
+                  </span>
                 </div>
                 <p className="font-display text-white text-lg font-semibold group-hover:text-white/90 transition-colors">
                   Harvard Business School
