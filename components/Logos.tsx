@@ -2,13 +2,18 @@
 
 import { useEffect, useRef } from 'react';
 
+// Per-logo height tuned to each logo's aspect ratio so they read at a
+// similar optical weight (wide logos shorter, square logos taller).
 const organizations = [
-  { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg' },
-  { name: '1/ST Technology', logo: '/images/logos/1st-technology.jpg' },
-  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png' },
-  { name: 'Xpressbet', logo: '/images/logos/xpressbet.jpg' },
-  { name: 'AmTote', logo: '/images/logos/amtote.jpg' },
-  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg' },
+  { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
+  { name: 'Venetian Macao', logo: '/images/logos/venetian-macao.png', h: 'h-[52px]' },
+  { name: 'Marina Bay Sands', logo: '/images/logos/marina-bay-sands.svg', h: 'h-10' },
+  { name: '1/ST Technology', logo: '/images/logos/1st-technology.jpg', h: 'h-[50px]' },
+  { name: 'Xpressbet', logo: '/images/logos/xpressbet.jpg', h: 'h-14' },
+  { name: 'AmTote', logo: '/images/logos/amtote.jpg', h: 'h-14' },
+  { name: 'PokerAtlas', logo: '/images/logos/pokeratlas.png', h: 'h-7' },
+  { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[50px]' },
+  { name: 'Links of London', logo: '/images/logos/links-of-london.svg', h: 'h-[38px]' },
 ];
 
 export default function Logos() {
@@ -44,7 +49,7 @@ export default function Logos() {
               <img
                 src={org.logo}
                 alt={org.name}
-                className="max-h-12 w-auto max-w-[210px] object-contain"
+                className={`${org.h} w-auto object-contain`}
               />
             </div>
           ))}
