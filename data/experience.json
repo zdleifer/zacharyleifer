@@ -59,7 +59,8 @@
   {
     "group": "Las Vegas Sands",
     "company": "The Venetian Resort",
-    "parent": "Las Vegas Sands · Flagship Property (~$4B)",
+    "parent": "Las Vegas Sands · Flagship Property",
+    "scale": "~$4B Revenue",
     "companyDescription": "The Venetian and The Palazzo, among the largest hotel-resort casinos in the world.",
     "title": "Vice President, Digital Marketing & eCommerce",
     "years": "2017 - 2019",
@@ -75,6 +76,7 @@
     "group": "Las Vegas Sands",
     "company": "The Venetian Resort",
     "parent": "Las Vegas Sands · Flagship Property",
+    "scale": "~$4B Revenue",
     "companyDescription": "Digital marketing and eCommerce leadership for Las Vegas Sands' flagship Las Vegas resort.",
     "title": "Director → Executive Director, Digital Marketing & eCommerce",
     "years": "2014 - 2017",

@@ -12,6 +12,7 @@ type Role = {
   location: string;
   highlights: string[];
   group?: string;
+  scale?: string;
 };
 
 type Block =
@@ -163,6 +164,12 @@ export default function Experience() {
                         </h4>
                         <div className="flex flex-wrap items-center gap-2 mt-1">
                           <span className="text-[#475569] text-sm">{role.company}</span>
+                          {role.scale && (
+                            <>
+                              <span className="text-[#94A3B8] text-sm">·</span>
+                              <span className="text-[#64748B] text-xs">{role.scale}</span>
+                            </>
+                          )}
                           <span className="text-[#94A3B8] text-sm">·</span>
                           <span className="text-[#64748B] text-xs">{role.years}</span>
                         </div>
