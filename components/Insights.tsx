@@ -16,12 +16,6 @@ const items = [
     href: 'https://www.linkedin.com/pulse/ai-already-your-company-creating-enterprise-value-secure-leifer-3q0ve',
   },
   {
-    type: 'Press',
-    title: '1/ST Technology Names Abel Cedillo Brand Ambassador',
-    meta: 'Past The Wire · Quoted as CMO',
-    href: 'https://pastthewire.com/1-st-technology-announces-abel-cedillo-as-newest-brand-ambassador/',
-  },
-  {
     type: 'Podcast',
     title: 'Awesome in Action',
     meta: 'NC Labs Podcast · 2021',

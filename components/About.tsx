@@ -43,12 +43,12 @@ export default function About() {
           <div className="lg:col-span-9">
             {/* Pull quote */}
             <blockquote className="font-display text-[clamp(1.4rem,2.8vw,2.1rem)] italic font-normal text-white/75 leading-snug mb-16 border-l-2 border-[#3B5998] pl-8 reveal">
-              "Senior commercial growth executive who drives revenue, improves EBITDA, and turns customer data, AI, and technology investments into measurable business results."
+              "Strategy without execution is theory. Technology without commercial purpose is overhead."
             </blockquote>
 
             <div className="space-y-6 text-white/60 text-base leading-[1.9] reveal reveal-delay-1">
               <p>
-                I combine senior marketing leadership with executive enterprise technology experience. It is a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands. That crossover shaped how I think: strategy without execution is theory, and technology without commercial purpose is overhead.
+                I combine senior marketing leadership with executive enterprise technology experience. It is a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands, giving me a vantage point across both the commercial and technology sides of the business.
               </p>
               <p>
                 My career spans Fortune 500 hospitality and gaming, global B2B and B2C platforms, and direct-to-consumer brands across Las Vegas and beyond. In every context, I've focused on the same fundamentals: set clear priorities, align teams around outcomes, build accountability into the operating model, and create the conditions for people to do their best work.
