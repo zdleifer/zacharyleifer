@@ -42,6 +42,7 @@
     ]
   },
   {
+    "group": "Las Vegas Sands",
     "company": "Las Vegas Sands Corp.",
     "parent": "Fortune 500 · NYSE: LVS · ~$13B Revenue",
     "companyDescription": "Fortune 500 global developer of integrated resort destinations, among the world's largest gaming and hospitality companies.",
@@ -56,6 +57,7 @@
     ]
   },
   {
+    "group": "Las Vegas Sands",
     "company": "The Venetian Resort",
     "parent": "Las Vegas Sands · Flagship Property (~$4B)",
     "companyDescription": "The Venetian and The Palazzo, among the largest hotel-resort casinos in the world.",
@@ -70,6 +72,7 @@
     ]
   },
   {
+    "group": "Las Vegas Sands",
     "company": "The Venetian Resort",
     "parent": "Las Vegas Sands · Flagship Property",
     "companyDescription": "Digital marketing and eCommerce leadership for Las Vegas Sands' flagship Las Vegas resort.",
