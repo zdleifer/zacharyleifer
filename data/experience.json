@@ -7,81 +7,122 @@
     "years": "2024 - Present",
     "location": "Las Vegas, NV",
     "highlights": [
-      "Launched a DTC healthcare venture in 8 weeks, scaling it from $0 to $500K gross revenue in 5 months at 68% gross margin",
-      "Advise executives on marketing strategy, customer acquisition, CRM, and AI enablement",
-      "Lead agency selection and operating-model redesign, and design customer journey, CRM, and AI-driven workflow architectures"
+      "Launched a DTC healthcare venture in 8 weeks, scaling it from $0 to $500K gross revenue in 5 months at 68% gross margin, with bootstrapped, automated end-to-end operations",
+      "Advise executives on marketing strategy, customer acquisition, retention, CRM, and AI enablement",
+      "Lead agency selection (RFP, SOW, evaluation) and operating-model redesign to improve accountability and performance",
+      "Architect customer journey, CRM, and AI-driven workflow systems"
     ]
   },
   {
     "company": "PokerAtlas",
     "parent": "Overlay Gaming Corp.",
-    "companyDescription": "Global B2B and B2C gaming platform offering payments, tournament registration, and cash-game management tools.",
+    "companyDescription": "Global B2B and B2C gaming platform offering payments, tournament registration, and customer engagement tools.",
     "title": "Chief Commercial Officer",
     "years": "2025",
     "location": "Las Vegas, NV",
     "highlights": [
-      "Architected operational structure and hired key roles across sales, marketing, product, operations, and finance",
-      "Directed positioning and launch strategy for payments and subscription capabilities (14% increase in registered players)",
-      "Deployed CRM platform supporting sales, customer success, and support (18% increase in B2B customers in 9 months)"
+      "Built the multi-year operating P&L and long-term org structure, and led end-to-end hiring across sales, product, revenue operations, finance, and customer success",
+      "Drove go-to-market, product marketing, and launch for online tournament registration and payments, a multi-property bankroll solution, and a paid subscription service (14% increase in registered players)",
+      "Implemented cross-functional management tools and CRM-driven workflows (18% increase in B2B customers in 9 months)",
+      "Stood up stage-based governance and KPI reporting to improve forecast visibility and accountability"
     ]
   },
   {
     "company": "1/ST Technology",
     "parent": "The Stronach Group",
-    "companyDescription": "Part of The Stronach Group, a global racing, wagering, and entertainment company that owns premier venues and events including Santa Anita Park, Gulfstream Park, and the Preakness Stakes.",
+    "companyDescription": "Horse racing's largest racing and gaming technology company (AmTote, Xpressbet, 1/ST BET, PariMAX), supporting venues including Santa Anita Park, Gulfstream Park, and the Preakness Stakes.",
     "title": "Chief Marketing Officer",
     "years": "2020 - 2024",
     "location": "Remote",
     "highlights": [
-      "Owned marketing strategy and the operating model across B2B group sales, leisure, and casino",
-      "Built the cloud customer data platform and measurement framework behind the growth (full results in Selected Work above)"
+      "Led marketing for all B2B and B2C brands across a $1.5B-revenue business, restructuring and scaling the team",
+      "Built the cloud customer data platform and a predictive customer-valuation model powering attribution, segmentation, and reinvestment governance (full results in Selected Work above)",
+      "Led growth and reinvestment strategy for XB SELECT, the VIP wagering service, across high-value player acquisition and retention",
+      "Directed creative, content, and performance agency RFPs, SOW design, and KPI/QBR governance"
     ]
   },
   {
-    "company": "Las Vegas Sands / The Venetian",
-    "parent": "Fortune 500 · ~$13B Revenue",
-    "companyDescription": "Fortune 500 integrated resort and casino operator (~$13B annual revenue), including The Venetian Resort Las Vegas and global operations across gaming, hospitality, and entertainment.",
-    "title": "VP, Digital Marketing & eCommerce → VP, Corporate IT",
-    "years": "2014 - 2020",
+    "company": "Las Vegas Sands Corp.",
+    "parent": "Fortune 500 · NYSE: LVS · ~$13B Revenue",
+    "companyDescription": "Fortune 500 global developer of integrated resort destinations, among the world's largest gaming and hospitality companies.",
+    "title": "Vice President, Corporate Information Technology",
+    "years": "2019 - 2020",
     "location": "Las Vegas, NV",
     "highlights": [
-      "Led digital marketing and eCommerce, then was recruited to run global corporate cloud governance",
-      "Rebuilt the direct booking experience and a 360-degree customer data platform (full results in Selected Work above)"
+      "Recruited from VP of Digital Marketing into Corporate IT on the strength of capital-project delivery, measured ROI, and global MarTech leadership",
+      "Designed and led a global cloud governance program across the U.S., Singapore, and China",
+      "Led global product and engineering teams to deliver casino technology, including digitalization of the global casino comp process and location-based offer capabilities",
+      "Set capital-project, ROI, and delivery governance standards for property marketing-technology teams worldwide"
+    ]
+  },
+  {
+    "company": "The Venetian Resort",
+    "parent": "Las Vegas Sands · Flagship Property (~$4B)",
+    "companyDescription": "The Venetian and The Palazzo, among the largest hotel-resort casinos in the world.",
+    "title": "Vice President, Digital Marketing & eCommerce",
+    "years": "2017 - 2019",
+    "location": "Las Vegas, NV",
+    "highlights": [
+      "Owned a $25M+ budget with a mandate to grow direct-channel revenue and EBITDA for the flagship resort (results in Selected Work above)",
+      "Architected the MarTech platform and customer data platform for a 360-degree customer view and personalization across hotel and casino",
+      "Led the design of a price-elasticity model to optimize pricing and offers and maximize RevPAR against local competition",
+      "Led digital execution for The Venetian brand relaunch and the Grazie loyalty rebrand, serving on both brand steering committees"
+    ]
+  },
+  {
+    "company": "The Venetian Resort",
+    "parent": "Las Vegas Sands · Flagship Property",
+    "companyDescription": "Digital marketing and eCommerce leadership for Las Vegas Sands' flagship Las Vegas resort.",
+    "title": "Director → Executive Director, Digital Marketing & eCommerce",
+    "years": "2014 - 2017",
+    "location": "Las Vegas, NV",
+    "highlights": [
+      "Built internal product and development teams, reducing reliance on external agencies",
+      "Led acquisition across all paid digital channels against clear revenue and cost-per-acquisition targets",
+      "Directed the 2015 website and booking-engine redesign, earning a Gold HSMAI Adrian Award for Brand Site Improvements",
+      "Defined the next-generation guest digital experience across web, mobile, email, social, SEM, and SEO"
     ]
   },
   {
     "company": "Overlay Gaming",
     "parent": "Gaming Technology",
-    "companyDescription": "Gaming technology company serving the poker and casino market.",
+    "companyDescription": "The first licensed online gaming marketing-services provider, holding affiliate licenses in Nevada and New Jersey.",
     "title": "Director of Marketing",
     "years": "2013 - 2014",
     "location": "Las Vegas, NV",
     "highlights": [
-      "Grew site traffic 30% and expanded the customer database 52% across poker and casino products"
+      "Managed a site migration and the convergence of three brands while growing traffic 30%",
+      "Grew the customer database 52% through event, acquisition, and product-led marketing",
+      "Built SEO strategy to top-three positioning for 150+ key terms",
+      "Directed all online and offline marketing: brand advertising, events, PR, affiliate, SEM, SEO, social, and email"
     ]
   },
   {
     "company": "Folli Follie Group",
     "parent": "Luxury Retail",
-    "companyDescription": "European luxury retail group, including the Folli Follie and Links of London brands.",
-    "title": "eCommerce Marketing Manager",
+    "companyDescription": "European luxury group, including the Folli Follie and Links of London brands, with 800+ points of sale worldwide.",
+    "title": "eCommerce Marketing Manager, North America",
     "years": "2011 - 2013",
     "location": "New York, NY",
     "highlights": [
-      "Launched the U.S. eCommerce site and grew revenue 248% year over year",
-      "Increased LinksofLondon.com sales 67% and site conversion 68% on a $2M budget"
+      "Launched the U.S. eCommerce site and grew revenue 248% year over year (FolliFollie.com)",
+      "Increased LinksofLondon.com sales 67%, traffic 44%, and site conversion 68% on a $2M budget",
+      "Ran all eCommerce operations and marketing: merchandising, fulfillment, customer service, SEM, SEO, social, email, and remarketing",
+      "Built global digital-commerce applications leveraging mobile, loyalty, and gamification"
     ]
   },
   {
     "company": "MLB Advanced Media",
     "parent": "Major League Baseball · Yankees.com",
     "companyDescription": "The digital and technology arm of Major League Baseball, operating MLB.com and club sites including Yankees.com.",
-    "title": "Marketing Producer",
+    "title": "Marketing Producer, Yankees.com",
     "years": "2006 - 2011",
     "location": "New York, NY",
     "highlights": [
-      "Grew Yankees Magazine subscriptions 1000% and club memberships 60%",
-      "Drove 25% year-over-year traffic growth for four consecutive years and 30% ticket-sales growth"
+      "Producer for Yankees.com: grew traffic 25% year over year for four straight years, memberships 60%, and Yankees Magazine subscriptions 1000%",
+      "Managed email to 1M+ fans and mobile and social communications to 7M+ fans",
+      "Produced client sponsorship programs for brands including AT&T, Chevy, Delta, Ford, MetLife, and Sony",
+      "Drove awareness, traffic, and sales growth through SEM, SEO, and strategic partnerships"
     ]
   }
 ]
