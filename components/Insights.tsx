@@ -22,6 +22,12 @@ const items = [
     href: 'https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7',
   },
   {
+    type: 'Presentation',
+    title: 'Digital Transformation in the Age of the Customer',
+    meta: 'World Tote Association',
+    href: '/decks/digital-transformation-age-of-the-customer.pdf',
+  },
+  {
     type: 'Deck',
     title: 'The GEO Frontier',
     meta: 'Generative Engine Optimization',
