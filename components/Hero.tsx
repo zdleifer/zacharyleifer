@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh]">
 
           {/* Left: Text */}
-          <div className="order-2 lg:order-1 flex flex-col justify-center">
+          <div className="order-1 flex flex-col justify-center">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-8">
               Commercial Growth Executive
             </p>
@@ -74,7 +74,7 @@ export default function Hero() {
           </div>
 
           {/* Right: Photo */}
-          <div className="order-1 lg:order-2 flex justify-center items-end h-full pt-16 lg:pt-0">
+          <div className="order-2 flex justify-center items-center h-full pt-10 lg:pt-0">
             <div className="relative">
               {/* Accent frames */}
               <div className="absolute -bottom-3 -right-3 w-full h-full border border-[#3B5998]/25 rounded-sm" />
