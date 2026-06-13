@@ -1,7 +1,18 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import testimonials from '@/data/testimonials.json';
+import testimonialsData from '@/data/testimonials.json';
+
+type Testimonial = {
+  quote: string;
+  name: string;
+  title: string;
+  context: string;
+  image?: string;
+  initials?: string;
+};
+
+const testimonials = testimonialsData as Testimonial[];
 
 export default function Testimonials() {
   const ref = useRef<HTMLElement>(null);
