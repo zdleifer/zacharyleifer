@@ -36,7 +36,7 @@ export default function Testimonials() {
               What Leaders Say
             </h2>
             <p className="text-white/60 text-sm mt-3 max-w-lg">
-              Selected from LinkedIn recommendations by C-suite executives, investors, and direct colleagues.
+              Selected from LinkedIn recommendations by C-suite executives, technology and data leaders, investors, and direct colleagues.
             </p>
           </div>
         </div>
@@ -61,12 +61,20 @@ export default function Testimonials() {
               </blockquote>
 
               <div className="flex items-start gap-4 border-t border-white/[0.08] pt-6">
-                {/* Recommender photo */}
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover flex-shrink-0 ring-1 ring-white/15"
-                />
+                {/* Recommender photo, or monogram avatar when no photo */}
+                {'image' in t && t.image ? (
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="w-12 h-12 rounded-full object-cover flex-shrink-0 ring-1 ring-white/15"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full flex-shrink-0 ring-1 ring-white/15 bg-[#0D1423] flex items-center justify-center">
+                    <span className="font-display text-white/80 text-sm font-semibold tracking-wide select-none">
+                      {'initials' in t ? t.initials : ''}
+                    </span>
+                  </div>
+                )}
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>
                   <p className="text-[#64748B] text-xs mt-0.5 leading-snug">{t.title}</p>
