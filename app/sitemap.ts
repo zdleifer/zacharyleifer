@@ -10,5 +10,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
+    {
+      url: 'https://zacharyleifer.com/blog/org-chart-rewritten',
+      lastModified: new Date('2026-05-07'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://zacharyleifer.com/blog/ai-enterprise-value',
+      lastModified: new Date('2026-05-05'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
   ];
 }
