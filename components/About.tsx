@@ -47,11 +47,14 @@ export default function About() {
             </blockquote>
 
             <div className="space-y-6 text-white/60 text-base leading-[1.9] reveal reveal-delay-1">
-              <p>
-                I combine senior marketing leadership with executive enterprise technology experience. It is a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands, giving me a vantage point across both the commercial and technology sides of the business.
+              <p className="text-white/80">
+                Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO, CCO, and GM, with senior leadership experience across integrated resorts, gaming, hospitality, sports wagering, and technology. His career includes leadership roles at Las Vegas Sands, The Venetian Resort, 1/ST Technology, PokerAtlas, and MLB Advanced Media.
               </p>
               <p>
-                My career spans Fortune 500 hospitality and gaming, global B2B and B2C platforms, and direct-to-consumer brands across Las Vegas and beyond. In every context, I've focused on the same fundamentals: set clear priorities, align teams around outcomes, build accountability into the operating model, and create the conditions for people to do their best work.
+                I combine senior marketing leadership with executive enterprise technology experience — a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands, giving me a vantage point across both the commercial and technology sides of the business.
+              </p>
+              <p>
+                Based in Las Vegas, Nevada, my work spans Fortune 500 hospitality and gaming, global B2B and B2C platforms, and direct-to-consumer brands. In every context, I've focused on the same fundamentals: set clear priorities, align teams around outcomes, build accountability into the operating model, and create the conditions for people to do their best work.
               </p>
               <p>
                 I recently completed the Harvard Business School Advanced Management Program, with a capstone focused on{' '}

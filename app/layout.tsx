@@ -110,6 +110,20 @@ const personSchema = {
   },
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zachary Leifer",
+  url: "https://zacharyleifer.com",
+  description:
+    "Official site of Zachary Leifer, Las Vegas-based commercial growth executive, former CMO, CCO, and GM specializing in gaming, hospitality, AI, customer data, and revenue growth.",
+  author: {
+    "@type": "Person",
+    name: "Zachary Leifer",
+    url: "https://zacharyleifer.com",
+  },
+};
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -341,6 +355,10 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#070B14" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}

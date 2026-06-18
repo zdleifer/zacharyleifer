@@ -39,7 +39,27 @@ export default function Positioning() {
           with the discipline to execute and prove the return.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 pt-10 border-t border-[#E2E8F0] reveal reveal-delay-2">
+        {/* Who I Help */}
+        <div className="mt-12 pt-10 border-t border-[#E2E8F0] reveal reveal-delay-2">
+          <p className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-5">Who I Help</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              'CEOs needing stronger commercial execution and a measurable marketing operating model',
+              'Boards needing marketing, AI, customer data, or digital-risk expertise at the table',
+              'Companies in gaming, hospitality, sports wagering, iGaming, and consumer technology',
+              'Investors evaluating growth, marketing efficiency, or go-to-market readiness',
+              'Organizations connecting AI and customer data to P&L rather than running experiments',
+              'Leadership teams building from founder-led growth to repeatable commercial systems',
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 text-sm text-[#475569]">
+                <span className="text-[#3B5998] mt-1 flex-shrink-0 text-[8px]">●</span>
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 pt-10 border-t border-[#E2E8F0] reveal reveal-delay-3">
           <div>
             <p className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-3">Open To</p>
             <p className="text-[#1A1A1A] text-sm leading-relaxed">

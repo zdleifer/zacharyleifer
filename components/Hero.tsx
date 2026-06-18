@@ -62,13 +62,13 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-8 py-4 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
               >
-                Connect on LinkedIn
+                Discuss an Opportunity
               </a>
               <a
                 href="mailto:zacharyleifer@gmail.com"
                 className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
               >
-                Get in Touch
+                Send a Note
               </a>
             </div>
           </div>

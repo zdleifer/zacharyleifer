@@ -6,14 +6,14 @@ const items = [
   {
     type: 'Article',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
-    meta: 'LinkedIn · 2026',
-    href: 'https://www.linkedin.com/pulse/org-chart-being-rewritten-your-company-ready-zachary-leifer-dxgye',
+    meta: 'May 2026',
+    href: '/blog/org-chart-rewritten',
   },
   {
     type: 'Article',
     title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
-    meta: 'LinkedIn · 2026',
-    href: 'https://www.linkedin.com/pulse/ai-already-your-company-creating-enterprise-value-secure-leifer-3q0ve',
+    meta: 'May 2026',
+    href: '/blog/ai-enterprise-value',
   },
   {
     type: 'Podcast',
@@ -89,8 +89,8 @@ export default function Insights() {
             <a
               key={i}
               href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={item.href.startsWith('http') ? '_blank' : undefined}
+              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="group bg-white rounded-lg border border-[#E2E8F0] shadow-sm p-8 flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
             >
               <div>
