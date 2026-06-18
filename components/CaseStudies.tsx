@@ -6,6 +6,7 @@ const cases = [
   {
     org: '1/ST Technology',
     role: 'Chief Marketing Officer · 2020-2024',
+    headline: '67% revenue growth · 22% EBITDA CAGR · 56% lower CAC · 73% LTV/CAC improvement',
     challenge:
       'A racing, wagering, and entertainment business needed to modernize its commercial engine and prove the return on marketing to the board.',
     action:
@@ -16,6 +17,7 @@ const cases = [
   {
     org: 'Las Vegas Sands / The Venetian',
     role: 'VP Digital Marketing & eCommerce, then VP Corporate IT · 2014-2020',
+    headline: '$36M direct revenue from a $13M investment · 24 consecutive months of growth · 50% ROAS lift',
     challenge:
       'A Fortune 500 resort of roughly $13B in revenue faced a five-year decline in direct-channel bookings.',
     action:
@@ -72,6 +74,9 @@ export default function CaseStudies() {
                 <p className="text-[#64748B] text-xs mt-1 tracking-wide">{c.role}</p>
               </div>
               <div className="lg:col-span-9 space-y-5">
+                <p className="text-white/50 text-xs tracking-wide border-l-2 border-[#3B5998] pl-4 py-1 font-mono">
+                  {c.headline}
+                </p>
                 <div>
                   <p className="text-[9px] tracking-[0.3em] uppercase text-[#475569] mb-1.5">The Challenge</p>
                   <p className="text-white/70 text-sm leading-relaxed">{c.challenge}</p>

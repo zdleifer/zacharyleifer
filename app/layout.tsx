@@ -21,9 +21,8 @@ const personSchema = {
   "@type": "Person",
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com",
-  image: "https://zacharyleifer.com/images/headshot.jpg",
-  jobTitle: "Chief Marketing Officer",
-  email: "zacharyleifer@gmail.com",
+  image: "https://zacharyleifer.com/images/headshot.png",
+  jobTitle: ["Chief Marketing Officer", "Chief Commercial Officer", "General Manager", "Commercial Growth Executive"],
   description:
     "Senior commercial growth executive based in Las Vegas, NV. CMO, CCO, and GM who builds the marketing and commercial operating system, including data architecture, CRM and CDP infrastructure, and measurement, that turns strategy into measurable growth. Harvard Business School Advanced Management Program graduate. Open to board, advisory, and senior operating roles.",
   address: {
@@ -86,6 +85,8 @@ const personSchema = {
   worksFor: {
     "@type": "Organization",
     name: "State of Mind Strategies",
+    url: "https://zacharyleifer.com",
+    description: "Boutique strategic consulting practice specializing in marketing, digital transformation, and AI enablement.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Las Vegas",
@@ -109,10 +110,132 @@ const personSchema = {
   },
 };
 
-export const metadata: Metadata = {
-  title: "Zachary Leifer | CMO · CCO · GM | Commercial Growth Executive | Las Vegas, NV",
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "State of Mind Strategies",
+  url: "https://zacharyleifer.com",
+  founder: {
+    "@type": "Person",
+    name: "Zachary Leifer",
+    url: "https://zacharyleifer.com",
+  },
   description:
-    "Zachary Leifer is a senior commercial growth executive in Las Vegas, NV. CMO, CCO, and GM who builds the marketing and commercial operating system that drives measurable growth. Former CMO at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR), CCO at PokerAtlas, and VP at Las Vegas Sands / The Venetian. Harvard Business School AMP graduate. Open to board, advisory, and senior operating roles.",
+    "Boutique strategic consulting practice specializing in marketing, digital transformation, and AI enablement. Founded by Zachary Leifer, former CMO at 1/ST Technology and VP at Las Vegas Sands.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Las Vegas",
+    addressRegion: "NV",
+    addressCountry: "US",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What industries does Zachary Leifer specialize in?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zachary Leifer specializes in integrated resorts and gaming, hospitality, sports wagering and horse racing, iGaming, eCommerce, luxury retail, and sports media. He has held CMO and VP roles at Las Vegas Sands, 1/ST Technology, PokerAtlas, and MLB Advanced Media, spanning Fortune 500 enterprise and high-growth platforms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What results did Zachary Leifer achieve at 1/ST Technology?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "As CMO at 1/ST Technology from 2020 to 2024, Zachary Leifer drove 67% revenue growth and a 22% EBITDA CAGR, reduced customer acquisition cost by 56%, and improved LTV/CAC by 73%. A wagering app he launched generated $60M in handle and $4M in net gaming revenue within 10 months.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Zachary Leifer available for board or advisory roles?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Zachary Leifer is actively open to board director, advisory, and senior operating roles. He brings particular value in growth strategy, AI enablement, marketing operating models, and digital transformation, with credentialed experience across Fortune 500 hospitality, gaming technology, and consumer platforms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Zachary Leifer's approach to AI and digital transformation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zachary Leifer treats AI as a commercial operating tool, not a technology project. His focus is building data infrastructure, CDP architecture, and measurement systems that make AI actionable for revenue growth and customer retention. His Harvard Business School AMP capstone focused on enterprise value from data and AI.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Zachary Leifer's background in gaming and hospitality?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zachary Leifer spent six years at Las Vegas Sands/The Venetian as VP Digital Marketing and VP Corporate IT, generating $36M in direct revenue from a $13M investment. He also served as CMO at 1/ST Technology (horse racing and wagering) and CCO at PokerAtlas, a global gaming platform.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What marketing technology and CDP experience does Zachary Leifer have?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zachary Leifer has built two enterprise customer data platforms from the ground up — at Las Vegas Sands/The Venetian and at 1/ST Technology — delivering predictive customer-valuation models, personalization, and attribution. His CDP work at 1/ST reduced CAC by 56% and improved LTV/CAC by 73%.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Zachary Leifer's educational background?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zachary Leifer completed the Advanced Management Program at Harvard Business School in 2026, with a capstone focused on enterprise value from data, digital transformation, and AI. He holds a Bachelor of Science in Applied Economics and Management from Cornell University.",
+      },
+    },
+  ],
+};
+
+const reviewSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: { "@type": "Person", name: "Zachary Leifer", url: "https://zacharyleifer.com" },
+    author: { "@type": "Person", name: "Michael Jordan", jobTitle: "Chief Operating Officer, 1/ST Technology" },
+    reviewBody:
+      "Zack brought real operating discipline to the CMO role. By linking investment directly to customer behavior and unit economics, he turned marketing into a predictable commercial engine. Low ego and high standards. I recommend him without hesitation for a corporate CMO role where growth and innovation are the mandate.",
+    publisher: { "@type": "Organization", name: "LinkedIn" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: { "@type": "Person", name: "Zachary Leifer", url: "https://zacharyleifer.com" },
+    author: { "@type": "Person", name: "Paul Williams", jobTitle: "Chief Technology Officer, 1/ST Technology" },
+    reviewBody:
+      "He built a great team at 1/ST and allowed us to move our revenue and profits considerably over the last 4 years. I would recommend Zach to anyone in need of acquisition and retention marketing, and anyone who needs a creative marketing approach to existing business challenges.",
+    publisher: { "@type": "Organization", name: "LinkedIn" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: { "@type": "Person", name: "Zachary Leifer", url: "https://zacharyleifer.com" },
+    author: { "@type": "Person", name: "David Kahn", jobTitle: "Key Account Director, Google Cloud" },
+    reviewBody:
+      "An amazingly rare blend of deep marketing knowledge, strong technical proficiency, and proven leadership skills that puts him on the bleeding edge of his craft. He translates that combination into powerful, meaningful business solutions and drives innovation like I've never seen. He truly is an A+ talent.",
+    publisher: { "@type": "Organization", name: "LinkedIn" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: { "@type": "Person", name: "Zachary Leifer", url: "https://zacharyleifer.com" },
+    author: { "@type": "Person", name: "Kevin U, Ph.D.", jobTitle: "SVP & CIO, Enterprise Data & AI, Fidelity Investments" },
+    reviewBody:
+      "Zach is one of the very rare leaders who can lead both business and IT as a whole. He showed strong business sense and shared ideas for potential business improvement and innovations. One of the most clever and hardworking persons I have ever met.",
+    publisher: { "@type": "Organization", name: "LinkedIn" },
+  },
+];
+
+export const metadata: Metadata = {
+  title: "Zachary Leifer | CMO · CCO · GM | Las Vegas",
+  description:
+    "Zachary Leifer — CMO, CCO, GM. Las Vegas, NV. 67% revenue growth at 1/ST Technology. Harvard Business School AMP. Former VP, Las Vegas Sands. Open to board, advisory & C-suite roles. Builds the marketing operating system — CDP, CRM, AI — that turns strategy into measurable growth. Former CMO at 1/ST Technology, CCO at PokerAtlas, VP at The Venetian.",
   keywords: [
     "Chief Marketing Officer Las Vegas",
     "CMO Las Vegas",
@@ -167,7 +290,7 @@ export const metadata: Metadata = {
     siteName: "Zachary Leifer",
     images: [
       {
-        url: "https://zacharyleifer.com/images/headshot.jpg",
+        url: "https://zacharyleifer.com/images/headshot.png",
         width: 1200,
         height: 630,
         alt: "Zachary Leifer, Commercial Growth Executive, Las Vegas NV",
@@ -182,7 +305,7 @@ export const metadata: Metadata = {
     title: "Zachary Leifer | Commercial Growth Executive | Las Vegas, NV",
     description:
       "Senior commercial growth executive. CMO, CCO, GM. Harvard Business School AMP. Based in Las Vegas, NV.",
-    images: ["https://zacharyleifer.com/images/headshot.jpg"],
+    images: ["https://zacharyleifer.com/images/headshot.png"],
   },
   alternates: {
     canonical: "https://zacharyleifer.com",
@@ -204,7 +327,6 @@ export const metadata: Metadata = {
     "og:locality": "Las Vegas",
     "og:region": "NV",
     "og:country-name": "United States",
-    "og:email": "zacharyleifer@gmail.com",
   },
 };
 
@@ -223,6 +345,21 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        {reviewSchemas.map((r, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(r) }}
+          />
+        ))}
       </head>
       <body
         className="min-h-full"
