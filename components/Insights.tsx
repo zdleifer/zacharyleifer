@@ -4,16 +4,28 @@ import { useEffect, useRef } from 'react';
 
 const items = [
   {
+    type: 'Research',
+    title: 'Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives',
+    meta: 'HBS AMP Capstone · September 2026',
+    href: '/blog/why-data-transformations-fail/',
+  },
+  {
+    type: 'Article',
+    title: 'What Running Corporate IT Taught Me About Running Marketing',
+    meta: 'September 2026',
+    href: '/blog/marketing-to-corporate-it/',
+  },
+  {
     type: 'Article',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
     meta: 'May 2026',
-    href: '/blog/org-chart-rewritten',
+    href: '/blog/org-chart-rewritten/',
   },
   {
     type: 'Article',
     title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
     meta: 'May 2026',
-    href: '/blog/ai-enterprise-value',
+    href: '/blog/ai-enterprise-value/',
   },
   {
     type: 'Podcast',
@@ -75,12 +87,10 @@ export default function Insights() {
             </h2>
           </div>
           <a
-            href="https://www.linkedin.com/in/zacharyleifer/recent-activity/articles/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/blog/"
             className="hidden md:inline-flex text-xs tracking-widest uppercase text-[#475569] hover:text-[#0A0A0A] transition-colors border-b border-[#475569]/40 hover:border-[#0A0A0A] pb-0.5"
           >
-            All on LinkedIn →
+            All writing →
           </a>
         </div>
 

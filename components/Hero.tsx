@@ -42,10 +42,10 @@ export default function Hero() {
 
             <div className="w-12 h-px bg-[#3B5998] mb-8" />
 
-            <p className="text-white font-medium tracking-wide mb-3">CMO · CCO · GM · President</p>
+            <p className="text-white font-medium tracking-wide mb-3">CMO · CCO · Former VP Corporate IT</p>
 
             <p className="text-base md:text-lg text-white/75 leading-relaxed max-w-md mb-8">
-              Las Vegas-based commercial growth executive helping companies turn marketing, customer data, AI, and enterprise technology into revenue growth, EBITDA improvement, and enterprise value.
+              Las Vegas-based executive who has run both marketing and corporate IT inside the same Fortune 500 company, turning customer data, AI, and enterprise technology into revenue growth, EBITDA improvement, and enterprise value.
             </p>
 
             {/* Industries */}

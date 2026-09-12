@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import speakingFaqs from '@/data/speaking-faqs.json';
 
 export const metadata: Metadata = {
   title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
   description:
     'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Former CMO at 1/ST Technology, VP at Las Vegas Sands. Harvard Business School AMP. Based in Las Vegas, NV.',
-  alternates: { canonical: 'https://zacharyleifer.com/speaking' },
+  alternates: { canonical: 'https://zacharyleifer.com/speaking/' },
   openGraph: {
     type: 'website',
     title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
     description:
       'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Former CMO at 1/ST Technology, VP at Las Vegas Sands. Harvard Business School. Based in Las Vegas, NV.',
-    url: 'https://zacharyleifer.com/speaking',
+    url: 'https://zacharyleifer.com/speaking/',
     images: [
       {
         url: 'https://zacharyleifer.com/images/headshot.png',
@@ -27,8 +28,8 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Zachary Leifer — Speaker',
-  url: 'https://zacharyleifer.com/speaking',
+  name: 'Zachary Leifer, Speaker',
+  url: 'https://zacharyleifer.com/speaking/',
   description:
     'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Based in Las Vegas, NV.',
   mainEntity: {
@@ -51,60 +52,18 @@ const webPageSchema = {
   },
 };
 
+// Generated from data/speaking-faqs.json, the same source the visible FAQ renders from,
+// so the markup can never assert an answer this page does not display.
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What topics does Zachary Leifer speak on?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Zachary Leifer speaks on AI strategy and governance, customer data and CDP strategy, commercial growth and revenue operating models, digital transformation, marketing technology, and the intersection of marketing and enterprise IT leadership. His talks draw on direct operating experience in gaming, hospitality, wagering, and eCommerce.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Zachary Leifer available for keynote speaking engagements?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Zachary Leifer is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, and podcasts. He is based in Las Vegas, Nevada, and available nationally and internationally.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: "What makes Zachary Leifer's speaking perspective unique?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Zachary Leifer is one of the few executives who has led both CMO and CIO functions at the same Fortune 500 company. His talks are grounded in real P&L results — not frameworks — including 67% revenue growth at 1/ST Technology and $36M in direct revenue at Las Vegas Sands / The Venetian.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What industries does Zachary Leifer speak to?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Zachary Leifer speaks to audiences in gaming, hospitality, sports wagering, iGaming, eCommerce, luxury retail, financial services, private equity, and any industry where AI strategy, customer data, and commercial growth are on the agenda.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How can I book Zachary Leifer to speak at my event?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'To inquire about booking Zachary Leifer for your conference, executive event, podcast, or panel, email zacharyleifer@gmail.com. Please include your event date, format, audience, and session topic.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Has Zachary Leifer spoken at industry conferences before?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Past appearances include a presentation for the World Tote Association on digital transformation, the NC Labs podcast (Awesome in Action, 2021), Harvard Business School Advanced Management Program events in 2026, and executive forums in gaming, hospitality, and marketing technology.',
-      },
-    },
-  ],
+  mainEntity: speakingFaqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
 };
+
 
 const talks = [
   {
@@ -120,7 +79,7 @@ const talks = [
     category: 'Customer Data & Growth',
     title: 'From Customer Data to Commercial Value: Why Most Personalization Programs Fail to Deliver',
     abstract:
-      'Companies invest heavily in CDPs, CRM, loyalty, analytics, and personalization — but many fail to change actual customer economics. Drawing on CDP deployments in hospitality, wagering, and eCommerce, this session explains how to move from data collection to actionable insight, better acquisition and retention decisions, stronger LTV, and revenue growth you can prove to a board.',
+      'Companies invest heavily in CDPs, CRM, loyalty, analytics, and personalization, but many fail to change actual customer economics. Drawing on CDP deployments in hospitality, wagering, and eCommerce, this session explains how to move from data collection to actionable insight, better acquisition and retention decisions, stronger LTV, and revenue growth you can prove to a board.',
     bestFor: ['Marketers', 'Hospitality leaders', 'Gaming executives', 'Loyalty professionals', 'Customer experience leaders'],
   },
   {
@@ -128,7 +87,7 @@ const talks = [
     category: 'The CMO–CIO–CFO Triangle',
     title: 'The Growth Operating System: How Marketing, Technology, and Finance Must Work Together',
     abstract:
-      'The biggest growth constraint is rarely the marketing plan or technology stack. It is the disconnect between commercial strategy, technology investment, financial discipline, and execution. This session offers a practical model for aligning marketing, IT, finance, data, and operations around shared outcomes — built from six years spanning VP Marketing and VP Corporate IT at the same Fortune 500 company.',
+      'The biggest growth constraint is rarely the marketing plan or technology stack. It is the disconnect between commercial strategy, technology investment, financial discipline, and execution. This session offers a practical model for aligning marketing, IT, finance, data, and operations around shared outcomes, built from six years spanning VP Marketing and VP Corporate IT at the same Fortune 500 company.',
     bestFor: ['Executive teams', 'Leadership offsites', 'Boards', 'Transformation programs', 'Technology and marketing conferences'],
   },
   {
@@ -136,7 +95,7 @@ const talks = [
     category: 'Gaming & Hospitality',
     title: 'What Hospitality and Gaming Can Teach Every Business About Loyalty, Data, and Customer Experience',
     abstract:
-      'The hospitality and gaming industries pioneered customer data strategy, loyalty architecture, and personalization at scale. This session translates those hard-won lessons — including real examples from Las Vegas Sands, 1/ST Technology, and PokerAtlas — into a framework any industry can apply to improve customer acquisition, retention, and lifetime value.',
+      'The hospitality and gaming industries pioneered customer data strategy, loyalty architecture, and personalization at scale. This session translates those hard-won lessons, including real examples from Las Vegas Sands, 1/ST Technology, and PokerAtlas, into a framework any industry can apply to improve customer acquisition, retention, and lifetime value.',
     bestFor: ['Hospitality and gaming events', 'Loyalty conferences', 'Marketing technology summits', 'Cross-industry executive forums'],
   },
   {
@@ -144,42 +103,17 @@ const talks = [
     category: 'Marketing Operating Model',
     title: 'Why the MarTech Stack Is Not the Answer: Building a Marketing Operating System That Produces Results',
     abstract:
-      'Most marketing organizations invest in tools without building the operating model — the data architecture, accountability framework, measurement system, and team structure — required to use them. This session explains what a marketing operating system looks like, how to build one, and how to prove the return to finance and the board.',
+      'Most marketing organizations invest in tools without building the operating model, the data architecture, accountability framework, measurement system, and team structure, required to use them. This session explains what a marketing operating system looks like, how to build one, and how to prove the return to finance and the board.',
     bestFor: ['CMOs', 'Marketing leaders', 'MarTech conferences', 'CIO/CMO joint sessions', 'CFO-facing marketing discussions'],
   },
 ];
 
-const faqs = [
-  {
-    q: 'What topics does Zachary Leifer speak on?',
-    a: 'Zachary Leifer speaks on AI strategy and governance, customer data and CDP strategy, commercial growth and revenue operating models, digital transformation, marketing technology, and the intersection of marketing and enterprise IT leadership. His talks draw on direct operating experience in gaming, hospitality, wagering, and eCommerce.',
-  },
-  {
-    q: 'Is Zachary Leifer available for keynote speaking engagements?',
-    a: 'Yes. Zachary Leifer is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, and podcasts. He is based in Las Vegas, Nevada, and available nationally and internationally.',
-  },
-  {
-    q: "What makes Zachary Leifer's speaking perspective unique?",
-    a: 'Zachary Leifer is one of the few executives who has led both CMO and CIO functions at the same Fortune 500 company. His talks are grounded in real P&L results — not frameworks — including 67% revenue growth at 1/ST Technology and $36M in direct revenue at Las Vegas Sands / The Venetian.',
-  },
-  {
-    q: 'What industries does Zachary Leifer speak to?',
-    a: 'Zachary Leifer speaks to audiences in gaming, hospitality, sports wagering, iGaming, eCommerce, luxury retail, financial services, private equity, and any industry where AI strategy, customer data, and commercial growth are on the agenda.',
-  },
-  {
-    q: 'How can I book Zachary Leifer to speak at my event?',
-    a: 'To inquire about booking Zachary Leifer for your conference, executive event, podcast, or panel, email zacharyleifer@gmail.com. Please include your event date, format, audience, and session topic.',
-  },
-  {
-    q: 'Has Zachary Leifer spoken at industry conferences before?',
-    a: 'Yes. Past appearances include a presentation for the World Tote Association on digital transformation, the NC Labs podcast (Awesome in Action, 2021), Harvard Business School AMP events in 2026, and executive forums in gaming, hospitality, and marketing technology.',
-  },
-];
+const faqs = speakingFaqs;
 
 const appearances = [
   { event: 'World Tote Association', topic: 'Digital Transformation in the Age of the Customer', year: '2024' },
   { event: 'NC Labs Podcast', topic: 'Awesome in Action', year: '2021' },
-  { event: 'Harvard Business School', topic: 'Advanced Management Program — AI & Enterprise Value Capstone', year: '2026' },
+  { event: 'Harvard Business School', topic: 'Advanced Management Program, AI & Enterprise Value Capstone presentation', year: '2026' },
 ];
 
 export default function SpeakingPage() {
@@ -187,11 +121,11 @@ export default function SpeakingPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema).replace(/</g, '\\u003c') }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
       />
       <Nav />
 
@@ -276,10 +210,10 @@ export default function SpeakingPage() {
                   A practitioner, not a presenter.
                 </h2>
                 <p className="text-[#334155] text-base leading-[1.9] mb-6">
-                  Zachary Leifer is one of the few executives who has led both commercial and enterprise technology functions at the same organizations — a crossover that shapes how he thinks about AI, data, and growth. At Las Vegas Sands and The Venetian, he led digital marketing and eCommerce before being recruited into VP of Corporate IT, generating $36M in direct revenue from a $13M investment.
+                  Zachary Leifer is one of the few executives who has led both commercial and enterprise technology functions at the same organizations, a crossover that shapes how he thinks about AI, data, and growth. At Las Vegas Sands and The Venetian, he led digital marketing and eCommerce before being recruited into VP of Corporate IT, generating $36M in direct revenue from a $13M investment.
                 </p>
                 <p className="text-[#334155] text-base leading-[1.9] mb-10">
-                  As CMO at 1/ST Technology, he drove 67% revenue growth, reduced customer acquisition cost by 56%, and improved LTV/CAC by 73% by building a cloud CDP and predictive customer-valuation model. He recently completed the Advanced Management Program at Harvard Business School. His sessions give executives a practical, P&amp;L-grounded framework for connecting AI, customer data, marketing, and technology to commercial outcomes — without disconnected pilots or activity for its own sake.
+                  As CMO at 1/ST Technology, he drove 67% revenue growth, reduced customer acquisition cost by 56%, and improved LTV/CAC by 73% by building a cloud CDP and predictive customer-valuation model. He recently completed the Advanced Management Program at Harvard Business School. His sessions give executives a practical, P&amp;L-grounded framework for connecting AI, customer data, marketing, and technology to commercial outcomes, without disconnected pilots or activity for its own sake.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-[#E2E8F0]">

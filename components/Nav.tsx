@@ -24,7 +24,8 @@ export default function Nav() {
     { label: 'Work', href: `${base}#work` },
     { label: 'Experience', href: `${base}#experience` },
     { label: 'Insights', href: `${base}#insights` },
-    { label: 'Speaking', href: '/speaking' },
+    { label: 'Writing', href: '/blog/' },
+    { label: 'Speaking', href: '/speaking/' },
     { label: 'Connect', href: `${base}#contact` },
   ];
 

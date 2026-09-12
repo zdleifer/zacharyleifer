@@ -1,6 +1,6 @@
 # Zachary Leifer — zacharyleifer.com
 
-> Zachary Leifer is a senior commercial growth executive (CMO, CCO, GM) based in Las Vegas, NV.
+> Zachary Leifer is a senior commercial growth executive (CMO, CCO) based in Las Vegas, NV.
 > Former CMO at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR over four years), CCO at
 > PokerAtlas, and VP at Las Vegas Sands / The Venetian ($36M direct revenue from $13M investment).
 > Harvard Business School Advanced Management Program graduate. Open to board director, advisory,
@@ -14,10 +14,20 @@
 
 ## Speaking
 
-- [Zachary Leifer — Speaker](https://zacharyleifer.com/speaking): Available for keynotes, executive
+- [Zachary Leifer — Speaker](https://zacharyleifer.com/speaking/): Available for keynotes, executive
   panels, leadership roundtables, board sessions, workshops, and podcasts on AI strategy, customer
   data, commercial growth, and digital transformation. Based in Las Vegas, NV. Available nationally
   and internationally.
+
+## Writing
+
+- [Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives](https://zacharyleifer.com/blog/why-data-transformations-fail/):
+  Original survey research from his Harvard Business School AMP capstone on why data and digital
+  initiatives fail to deliver, why AI is repeating the pattern, and the readiness architecture
+  that changes the odds.
+- [What Running Corporate IT Taught Me About Running Marketing](https://zacharyleifer.com/blog/marketing-to-corporate-it/):
+  Four lessons from being recruited out of VP Digital Marketing into VP Corporate IT at a Fortune 500.
+- [All articles](https://zacharyleifer.com/blog/)
 
 ## Key Facts
 

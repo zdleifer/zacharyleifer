@@ -5,15 +5,15 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'The Org Chart Is Being Rewritten. Is Your Company Ready? | Zachary Leifer',
   description:
-    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change — it is whether you will redesign it intentionally or let the disruption happen to you.',
+    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.',
   authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
-  alternates: { canonical: 'https://zacharyleifer.com/blog/org-chart-rewritten' },
+  alternates: { canonical: 'https://zacharyleifer.com/blog/org-chart-rewritten/' },
   openGraph: {
     type: 'article',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
     description:
-      'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change — it is whether you will redesign it intentionally.',
-    url: 'https://zacharyleifer.com/blog/org-chart-rewritten',
+      'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
+    url: 'https://zacharyleifer.com/blog/org-chart-rewritten/',
     authors: ['Zachary Leifer'],
     publishedTime: '2026-05-07',
   },
@@ -29,9 +29,9 @@ const articleSchema = {
     url: 'https://zacharyleifer.com',
   },
   datePublished: '2026-05-07',
-  url: 'https://zacharyleifer.com/blog/org-chart-rewritten',
+  url: 'https://zacharyleifer.com/blog/org-chart-rewritten/',
   description:
-    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change — it is whether you will redesign it intentionally or let the disruption happen to you.',
+    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.',
   publisher: {
     '@type': 'Person',
     name: 'Zachary Leifer',
@@ -44,7 +44,7 @@ export default function OrgChartArticle() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
       />
       <Nav />
       <main className="bg-[#F8F7F4] min-h-screen">
@@ -83,7 +83,7 @@ export default function OrgChartArticle() {
           <div className="prose prose-slate max-w-none text-[#334155] leading-[1.9] text-base space-y-6">
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
-              The traditional pyramid organizational structure has dominated business for nearly a century. AI is fundamentally challenging that model. The question is not whether your org chart will change — it is whether you will redesign it intentionally or let the disruption happen to you.
+              The traditional pyramid organizational structure has dominated business for nearly a century. AI is fundamentally challenging that model. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.
             </p>
 
             <p>
@@ -95,7 +95,7 @@ export default function OrgChartArticle() {
             </h2>
 
             <p>
-              The traditional management pyramid was not designed around people. It was designed around information. Information was slow, expensive to move, and unevenly distributed. Middle management existed to route it — to gather data from the front lines, synthesize it, and pass decisions back down. The wider the base, the more information nodes you needed.
+              The traditional management pyramid was not designed around people. It was designed around information. Information was slow, expensive to move, and unevenly distributed. Middle management existed to route it, to gather data from the front lines, synthesize it, and pass decisions back down. The wider the base, the more information nodes you needed.
             </p>
 
             <p>
@@ -111,7 +111,7 @@ export default function OrgChartArticle() {
             </p>
 
             <p>
-              This is not a story about mass layoffs, though in some cases that will happen. It is a story about what kind of work gets valued. The work that gets done by following a process becomes automated. The work that requires judgment, priority-setting, ambiguity resolution, and coaching becomes more valuable — not less.
+              This is not a story about mass layoffs, though in some cases that will happen. It is a story about what kind of work gets valued. The work that gets done by following a process becomes automated. The work that requires judgment, priority-setting, ambiguity resolution, and coaching becomes more valuable, not less.
             </p>
 
             <p>
@@ -146,7 +146,7 @@ export default function OrgChartArticle() {
 
             <ol className="list-decimal pl-6 space-y-3">
               <li>
-                <strong>How many of your core processes predate AI and have never been questioned?</strong> Not just automated — genuinely interrogated. Does the process exist because it creates value, or because it was the best way to do something before AI existed?
+                <strong>How many of your core processes predate AI and have never been questioned?</strong> Not just automated, genuinely interrogated. Does the process exist because it creates value, or because it was the best way to do something before AI existed?
               </li>
               <li>
                 <strong>Does your technology infrastructure allow AI to work across organizational silos?</strong> AI is most powerful when it can see the whole system. Fragmented data, disconnected platforms, and siloed teams limit what AI can do more than any algorithm constraint.
@@ -165,7 +165,7 @@ export default function OrgChartArticle() {
             </p>
 
             <p>
-              For a century, value was created through coordination, information routing, and process execution. The org chart reflected that. AI is shifting where value comes from — toward judgment, design, and the ability to direct and improve systems that do the execution work.
+              For a century, value was created through coordination, information routing, and process execution. The org chart reflected that. AI is shifting where value comes from, toward judgment, design, and the ability to direct and improve systems that do the execution work.
             </p>
 
             <p>
@@ -182,7 +182,7 @@ export default function OrgChartArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO, CCO, and GM with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO and CCO with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
