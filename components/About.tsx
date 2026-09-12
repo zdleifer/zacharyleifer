@@ -48,7 +48,7 @@ export default function About() {
 
             <div className="space-y-6 text-white/60 text-base leading-[1.9] reveal reveal-delay-1">
               <p className="text-white/80">
-                Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO, CCO, and GM, with senior leadership experience across integrated resorts, gaming, hospitality, sports wagering, and technology. His career includes leadership roles at Las Vegas Sands, The Venetian Resort, 1/ST Technology, PokerAtlas, and MLB Advanced Media.
+                Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO and CCO, with senior leadership experience across integrated resorts, gaming, hospitality, sports wagering, and technology. His career includes leadership roles at Las Vegas Sands, The Venetian Resort, 1/ST Technology, PokerAtlas, and MLB Advanced Media.
               </p>
               <p>
                 I combine senior marketing leadership with executive enterprise technology experience — a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands, giving me a vantage point across both the commercial and technology sides of the business.

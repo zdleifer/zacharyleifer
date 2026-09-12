@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,9 +23,9 @@ const personSchema = {
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com",
   image: "https://zacharyleifer.com/images/headshot.png",
-  jobTitle: ["Chief Marketing Officer", "Chief Commercial Officer", "General Manager", "Commercial Growth Executive"],
+  jobTitle: ["Chief Marketing Officer", "Chief Commercial Officer", "Commercial Growth Executive"],
   description:
-    "Senior commercial growth executive based in Las Vegas, NV. CMO, CCO, and GM who builds the marketing and commercial operating system, including data architecture, CRM and CDP infrastructure, and measurement, that turns strategy into measurable growth. Harvard Business School Advanced Management Program graduate. Open to board, advisory, and senior operating roles.",
+    "Senior commercial growth executive based in Las Vegas, NV. CMO and CCO who builds the marketing and commercial operating system, including data architecture, CRM and CDP infrastructure, and measurement, that turns strategy into measurable growth. Harvard Business School Advanced Management Program graduate. Open to CMO, CCO, GM, President, board, and advisory roles.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
@@ -37,7 +38,13 @@ const personSchema = {
     latitude: "36.1699",
     longitude: "-115.1398",
   },
-  sameAs: ["https://linkedin.com/in/zacharyleifer"],
+  sameAs: [
+    "https://linkedin.com/in/zacharyleifer",
+    "https://zacharyleifer.com/speaking",
+    "https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7",
+    "https://www.hbs.edu",
+    "https://www.cornell.edu",
+  ],
   award: [
     "2015 Gold HSMAI Adrian Award",
     "2015 Silver HSMAI Adrian Award",
@@ -116,7 +123,7 @@ const websiteSchema = {
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com",
   description:
-    "Official site of Zachary Leifer, Las Vegas-based commercial growth executive, former CMO, CCO, and GM specializing in gaming, hospitality, AI, customer data, and revenue growth.",
+    "Official site of Zachary Leifer, Las Vegas-based commercial growth executive, former CMO and CCO specializing in gaming, hospitality, AI, customer data, and revenue growth.",
   author: {
     "@type": "Person",
     name: "Zachary Leifer",
@@ -206,10 +213,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why is Zachary Leifer considered one of the top CMOs and commercial executives in Las Vegas?",
+      name: "What makes Zachary Leifer a differentiated CMO and commercial executive in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Zachary Leifer has delivered verifiable, board-level commercial results at Las Vegas's largest enterprises. At The Venetian Resort, he generated $36M in direct revenue from a $13M investment. As CMO at 1/ST Technology, he drove 67% revenue growth and a 22% EBITDA CAGR. He is among a small group of Las Vegas executives who have held both CMO and enterprise IT leadership roles — credentialed by Harvard Business School and recognized with multiple HSMAI Adrian Awards.",
+        text: "Zachary Leifer combines marketing and enterprise technology leadership in a way that is rare in any market. At The Venetian Resort, he generated $36M in direct revenue from a $13M investment. As CMO at 1/ST Technology, he drove 67% revenue growth and a 22% EBITDA CAGR. He is among a small group of Las Vegas executives who have held both CMO and enterprise IT leadership roles — credentialed by Harvard Business School and recognized with multiple HSMAI Adrian Awards.",
       },
     },
     {
@@ -287,9 +294,9 @@ const reviewSchemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Zachary Leifer | CMO · CCO · GM | Las Vegas",
+  title: "Zachary Leifer | CMO · CCO | Las Vegas",
   description:
-    "Zachary Leifer — CMO, CCO, GM. Las Vegas, NV. 67% revenue growth at 1/ST Technology. Harvard Business School AMP. Former VP, Las Vegas Sands. Open to board, advisory & C-suite roles. Builds the marketing operating system — CDP, CRM, AI — that turns strategy into measurable growth. Former CMO at 1/ST Technology, CCO at PokerAtlas, VP at The Venetian.",
+    "Zachary Leifer — CMO, CCO. Las Vegas, NV. 67% revenue growth at 1/ST Technology. Harvard Business School AMP. Former VP, Las Vegas Sands. Open to CMO, CCO, GM, President, board & advisory roles. Builds the marketing operating system — CDP, CRM, AI — that turns strategy into measurable growth. Former CMO at 1/ST Technology, CCO at PokerAtlas, VP at The Venetian.",
   keywords: [
     "Chief Marketing Officer Las Vegas",
     "CMO Las Vegas",
@@ -358,7 +365,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zachary Leifer | Commercial Growth Executive | Las Vegas, NV",
     description:
-      "Senior commercial growth executive. CMO, CCO, GM. Harvard Business School AMP. Based in Las Vegas, NV.",
+      "Senior commercial growth executive. CMO, CCO. Harvard Business School AMP. Based in Las Vegas, NV. Open to CMO, CCO, GM, President, board & advisory roles.",
     images: ["https://zacharyleifer.com/images/headshot.png"],
   },
   alternates: {
@@ -375,7 +382,7 @@ export const metadata: Metadata = {
     "DC.creator": "Zachary Leifer",
     "DC.subject": "Executive Leadership, CMO, Las Vegas",
     "DC.description":
-      "Senior commercial growth executive in Las Vegas, NV. CMO, CCO, GM with expertise in revenue strategy, digital transformation, and AI.",
+      "Senior commercial growth executive in Las Vegas, NV. CMO, CCO with expertise in revenue strategy, digital transformation, and AI.",
     "DC.language": "en",
     // Additional discovery
     "og:locality": "Las Vegas",
@@ -424,6 +431,7 @@ export default function RootLayout({
         style={{ fontFamily: "var(--font-inter), -apple-system, sans-serif" }}
       >
         {children}
+        <GoogleAnalytics gaId="G-1HQNN79VF6" />
       </body>
     </html>
   );

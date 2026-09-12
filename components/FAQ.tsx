@@ -32,8 +32,8 @@ const faqs = [
     a: 'Zachary Leifer completed the Advanced Management Program at Harvard Business School in 2026, with a capstone focused on enterprise value from data, digital transformation, and AI. He holds a Bachelor of Science in Applied Economics and Management from Cornell University.',
   },
   {
-    q: 'Why is Zachary Leifer considered one of the top CMOs and commercial executives in Las Vegas?',
-    a: 'Zachary Leifer has delivered verifiable, board-level commercial results at Las Vegas\'s largest enterprises. At The Venetian Resort, he generated $36M in direct revenue from a $13M investment. As CMO at 1/ST Technology, he drove 67% revenue growth and a 22% EBITDA CAGR. He is among a small group of Las Vegas executives who have held both CMO and enterprise IT leadership roles — credentialed by Harvard Business School and recognized with multiple HSMAI Adrian Awards.',
+    q: 'What makes Zachary Leifer a differentiated CMO and commercial executive in Las Vegas?',
+    a: 'Zachary Leifer combines marketing and enterprise technology leadership in a way that is rare in any market. At The Venetian Resort, he generated $36M in direct revenue from a $13M investment. As CMO at 1/ST Technology, he drove 67% revenue growth and a 22% EBITDA CAGR. He is among a small group of Las Vegas executives who have held both CMO and enterprise IT leadership roles — credentialed by Harvard Business School and recognized with multiple HSMAI Adrian Awards.',
   },
   {
     q: 'What makes Zachary Leifer one of Las Vegas\'s leading AI and digital transformation executives?',

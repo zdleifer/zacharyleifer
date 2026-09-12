@@ -12,7 +12,7 @@ export default function Footer() {
               Let's Connect.
             </p>
             <p className="text-white/60 text-base leading-relaxed max-w-xs">
-              Open to executive leadership opportunities, board and advisory roles, and select consulting engagements.
+              Open to CMO, CCO, GM, President, board director, advisory, operating partner, and commercial transformation roles.
             </p>
           </div>
 
