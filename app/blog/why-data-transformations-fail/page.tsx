@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
-const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives';
+const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives';
 const DESC =
-  'Capstone research by Zachary Leifer for the Harvard Business School Advanced Management Program: a survey of 74 senior executives on why data and digital initiatives fail to deliver, why AI is repeating the same pattern, and the readiness architecture that changes the odds.';
+  'Capstone research by Zachary Leifer for the Harvard Business School Advanced Management Program: a survey of 82 senior executives on why data and digital initiatives fail to deliver, why AI is repeating the same pattern, and the readiness architecture that changes the odds.';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';
 const PUBLISHED = '2026-09-12';
 
@@ -75,7 +75,7 @@ const findings = [
   {
     stat: 'Zero',
     label:
-      'of the respondents whose organizations did none of the five conditions reported an initiative that fully delivered. That group was a minority of the 74, so read it as a pattern rather than a precise rate.',
+      'of the respondents whose organizations did none of the five conditions reported an initiative that fully delivered. That group was a minority of the 82, so read it as a pattern rather than a precise rate.',
   },
 ];
 
@@ -122,7 +122,7 @@ export default function WhyDataTransformationsFail() {
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
               Most data, digital, and now AI initiatives do not fail because the business case was wrong.
-              They fail because the organization was never adjusted to deliver it. I surveyed 74
+              They fail because the organization was never adjusted to deliver it. I surveyed 82
               senior executives to find out how often that happens, and what separates the
               initiatives that deliver from the ones that quietly do not.
             </p>
@@ -136,7 +136,7 @@ export default function WhyDataTransformationsFail() {
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-6">
-              What 74 executives reported
+              What 82 executives reported
             </h2>
 
             <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#0A0A0A]/10 my-10">
@@ -154,7 +154,7 @@ export default function WhyDataTransformationsFail() {
             </div>
 
             <p className="text-sm text-[#64748B]">
-              Survey of 74 senior executives, 2026. Figures are self-reported and describe the
+              Survey of 82 senior executives, 2026. Figures are self-reported and describe the
               respondents&rsquo; own organizations.
             </p>
 

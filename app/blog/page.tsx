@@ -22,11 +22,11 @@ export const metadata: Metadata = {
 const posts = [
   {
     slug: 'why-data-transformations-fail',
-    title: 'Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives',
+    title: 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives',
     date: '2026-09-12',
     display: 'September 12, 2026',
     blurb:
-      'The capstone research from my Harvard Business School AMP: a survey of 74 senior executives on why initiatives fail to deliver, and the readiness architecture that changes the odds.',
+      'The capstone research from my Harvard Business School AMP: a survey of 82 senior executives on why initiatives fail to deliver, and the readiness architecture that changes the odds.',
   },
   {
     slug: 'marketing-to-corporate-it',

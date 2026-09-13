@@ -21,7 +21,7 @@
 
 ## Writing
 
-- [Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives](https://zacharyleifer.com/blog/why-data-transformations-fail/):
+- [Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives](https://zacharyleifer.com/blog/why-data-transformations-fail/):
   Original survey research from his Harvard Business School AMP capstone on why data and digital
   initiatives fail to deliver, why AI is repeating the pattern, and the readiness architecture
   that changes the odds.

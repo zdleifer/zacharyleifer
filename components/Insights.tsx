@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 const items = [
   {
     type: 'Research',
-    title: 'Why Data and Digital Transformations Fail: Evidence from 74 Senior Executives',
+    title: 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives',
     meta: 'HBS AMP Capstone · September 2026',
     href: '/blog/why-data-transformations-fail/',
   },
