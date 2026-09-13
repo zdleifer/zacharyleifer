@@ -1,15 +1,18 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { OG_IMAGE } from '@/data/og-image';
 
 const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives';
 const DESC =
-  'Capstone research by Zachary Leifer for the Harvard Business School Advanced Management Program: a survey of 82 senior executives on why data and digital initiatives fail to deliver, why AI is repeating the same pattern, and the readiness architecture that changes the odds.';
+  'HBS AMP capstone research by Zachary Leifer: 82 senior executives on why data and digital transformations fail to deliver value, and why AI repeats the pattern.';
+// Shorter title tag. The full headline stays as the H1, og:title and schema headline.
+const SEO_TITLE = 'Why Data and Digital Transformations Fail';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';
 const PUBLISHED = '2026-09-12';
 
 export const metadata: Metadata = {
-  title: `${TITLE} | Zachary Leifer`,
+  title: `${SEO_TITLE} | Zachary Leifer`,
   description: DESC,
   authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
   alternates: { canonical: URL },
@@ -20,7 +23,13 @@ export const metadata: Metadata = {
     url: URL,
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
-    images: [{ url: 'https://zacharyleifer.com/images/headshot.png' }],
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESC,
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
@@ -34,7 +43,7 @@ const articleSchema = {
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
   },
-  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer' },
+  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   datePublished: PUBLISHED,
   dateModified: PUBLISHED,
   url: URL,

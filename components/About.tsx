@@ -34,9 +34,9 @@ export default function About() {
 
           {/* Label */}
           <div className="lg:col-span-3 reveal">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
+            <h2 className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
               About
-            </p>
+            </h2>
           </div>
 
           {/* Content */}
@@ -48,19 +48,18 @@ export default function About() {
 
             <div className="space-y-6 text-white/60 text-base leading-[1.9] reveal reveal-delay-1">
               <p className="text-white/80">
-                Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO and CCO, with senior leadership experience across integrated resorts, gaming, hospitality, sports wagering, and technology. His career includes leadership roles at Las Vegas Sands, The Venetian Resort, 1/ST Technology, PokerAtlas, and MLB Advanced Media.
+                Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who helps companies create more predictable value from data, digital transformation, technology and AI. Through State of Mind Strategies, he advises executives on marketing strategy and customer growth, and on AI Strategy, AI Investment Governance, AI Readiness and AI Value Realization.
               </p>
               <p>
-                I combine senior marketing leadership with executive enterprise technology experience, a rare combination that came together when I was recruited from VP of Digital Marketing &amp; eCommerce into VP of Corporate IT at Las Vegas Sands, giving me a vantage point across both the commercial and technology sides of the business.
+                He has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. His career spans integrated resorts and gaming, hospitality, sports wagering and horse racing, B2B and B2C gaming technology, eCommerce, direct-to-consumer brands and sports media, beginning at MLB Advanced Media.
               </p>
               <p>
-                Based in Las Vegas, Nevada, my work spans Fortune 500 hospitality and gaming, global B2B and B2C platforms, and direct-to-consumer brands. In every context, I've focused on the same fundamentals: set clear priorities, align teams around outcomes, build accountability into the operating model, and create the conditions for people to do their best work.
+                His differentiator is having led both the commercial functions responsible for growth and the enterprise technology capabilities required to enable it. At Las Vegas Sands, a Fortune 500 leader in integrated resorts and gaming, he was recruited from Vice President of Digital Marketing and eCommerce at The Venetian Resort into Corporate Information Technology. That experience gave him perspective on both sides of transformation: defining the commercial opportunity and aligning the data, technology, operating model and organization required to capture it. In every role, he has focused on the same fundamentals of clear priorities, teams aligned around outcomes, accountability built into the operating model, and conditions that let people do their best work.
               </p>
               <p>
-                I recently completed the Harvard Business School Advanced Management Program, with a capstone focused on{' '}
-                <em className="text-white/65">
-                  Driving Enterprise Value from Data, Digital Transformation, and Artificial Intelligence
-                </em>.
+                Zachary completed the Harvard Business School Advanced Management Program in 2026, where his{' '}
+                <a href="/blog/why-data-transformations-fail/" className="text-white/80 underline decoration-white/25 underline-offset-4 hover:text-white transition-colors">capstone research on why data and digital transformations fail</a>, a survey of 82 senior executives, focused on{' '}
+                <em className="text-white/65">Driving Enterprise Value from Data, Digital Transformation, and Artificial Intelligence</em>. He holds a B.S. in Applied Economics and Management from Cornell University.
               </p>
             </div>
 

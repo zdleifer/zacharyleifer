@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { OG_IMAGE } from '@/data/og-image';
 
 const URL = 'https://zacharyleifer.com/blog/';
 
@@ -15,7 +16,13 @@ export const metadata: Metadata = {
     description:
       'Articles on marketing and technology leadership, customer data, AI, and commercial operating models.',
     url: URL,
-    images: [{ url: 'https://zacharyleifer.com/images/headshot.png' }],
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Writing & Perspectives | Zachary Leifer',
+    description: 'Articles on marketing and technology leadership, customer data, AI, and commercial operating models.',
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
@@ -59,13 +66,13 @@ const listSchema = {
   '@type': 'CollectionPage',
   '@id': URL,
   name: 'Writing & Perspectives',
-  about: { '@id': 'https://zacharyleifer.com/#zachary-leifer' },
+  about: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   hasPart: posts.map((p) => ({
     '@type': 'Article',
     headline: p.title,
     url: `https://zacharyleifer.com/blog/${p.slug}/`,
     datePublished: p.date,
-    author: { '@id': 'https://zacharyleifer.com/#zachary-leifer' },
+    author: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   })),
 };
 

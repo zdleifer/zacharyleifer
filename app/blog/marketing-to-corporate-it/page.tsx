@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { OG_IMAGE } from '@/data/og-image';
 
 const TITLE = 'What Running Corporate IT Taught Me About Running Marketing';
 const DESC =
@@ -20,7 +21,13 @@ export const metadata: Metadata = {
     url: URL,
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
-    images: [{ url: 'https://zacharyleifer.com/images/headshot.png' }],
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESC,
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
@@ -34,7 +41,7 @@ const articleSchema = {
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
   },
-  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer' },
+  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   datePublished: PUBLISHED,
   dateModified: PUBLISHED,
   url: URL,
@@ -82,7 +89,7 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              The reason for the move was not that I was secretly an engineer. It was that marketing had started behaving like a capital-project organization. We had put roughly $13M into a new website and booking engine, run it like an infrastructure program rather than a campaign, and it returned $36M in incremental direct revenue with 24 consecutive months of growth. What got me recruited was not creative work. It was delivering a large technology investment on a schedule with a number attached to it.
+              The reason for the move was not that I was secretly an engineer. It was that marketing had started behaving like a capital-project organization. We had put roughly $13M into a new website and booking engine, run it like an infrastructure program rather than a campaign, and it returned $36M in incremental direct-channel revenue with 24 consecutive months of growth. What got me recruited was not creative work. It was delivering a large technology investment on a schedule with a number attached to it.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">

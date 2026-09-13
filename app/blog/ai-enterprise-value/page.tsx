@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { OG_IMAGE } from '@/data/og-image';
 
 export const metadata: Metadata = {
   title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure? | Zachary Leifer',
@@ -16,6 +17,13 @@ export const metadata: Metadata = {
     url: 'https://zacharyleifer.com/blog/ai-enterprise-value/',
     authors: ['Zachary Leifer'],
     publishedTime: '2026-05-05',
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
+    description: 'Most companies have AI adoption happening organically, in scattered pockets. Here is how to move from experimentation to measurable enterprise value.',
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
@@ -24,6 +32,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
   author: {
+    '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
@@ -33,6 +42,7 @@ const articleSchema = {
   description:
     'Most companies have AI adoption happening organically, in scattered pockets, disconnected from the workflows that drive growth. Here is how to move from experimentation to measurable enterprise value.',
   publisher: {
+    '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
@@ -189,7 +199,7 @@ export default function AIEnterpriseValueArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, former CMO and CCO with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

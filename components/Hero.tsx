@@ -31,7 +31,7 @@ export default function Hero() {
           {/* Left: Text */}
           <div className="order-1 flex flex-col justify-center">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-8">
-              Commercial Growth Executive
+              Commercial Growth &amp; Transformation Executive
             </p>
 
             <h1 className="font-display text-[clamp(3.5rem,8vw,7rem)] font-bold leading-[0.95] text-white mb-8">
@@ -42,10 +42,10 @@ export default function Hero() {
 
             <div className="w-12 h-px bg-[#3B5998] mb-8" />
 
-            <p className="text-white font-medium tracking-wide mb-3">CMO · CCO · Former VP Corporate IT</p>
+            <p className="text-white font-medium tracking-wide mb-3"><span className="whitespace-nowrap">Chief Marketing Officer ·</span> <span className="whitespace-nowrap">Chief Commercial Officer ·</span> <span className="whitespace-nowrap">Fortune 500 Enterprise</span> <span className="whitespace-nowrap">Technology Leadership ·</span> <span className="whitespace-nowrap">Speaker</span></p>
 
             <p className="text-base md:text-lg text-white/75 leading-relaxed max-w-md mb-8">
-              Las Vegas-based executive who has run both marketing and corporate IT inside the same Fortune 500 company, turning customer data, AI, and enterprise technology into revenue growth, EBITDA improvement, and enterprise value.
+              I help companies create more predictable value from data, digital transformation, technology and AI. Based in Las Vegas, with executive experience running both marketing and corporate IT inside the same Fortune 500 company.
             </p>
 
             {/* Industries */}

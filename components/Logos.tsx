@@ -12,7 +12,7 @@ const organizations = [
   { name: 'Las Vegas Sands', logo: '/images/logos/sands-corp.png', h: 'h-[32px]' },
   { name: 'The Venetian Resort Las Vegas', logo: '/images/logos/venetian-logo.svg', h: 'h-[38px]' },
   { name: 'Links of London', logo: '/images/logos/links-london.png', h: 'h-[41px]' },
-  { name: 'yankees.com', logo: '/images/logos/yankees.png', h: 'h-[26px]' },
+  { name: 'Yankees.com', logo: '/images/logos/yankees.png', h: 'h-[26px]' },
   { name: 'MLB Advanced Media', logo: '/images/logos/mlb.jpg', h: 'h-[41px]' },
 ];
 
@@ -37,7 +37,7 @@ export default function Logos() {
     <section ref={ref} className="bg-[#F8F7F4] py-16 px-8 md:px-12 border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto">
         <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10 reveal">
-          Organizations I&apos;ve Led & Advised
+          Career Experience
         </p>
 
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-5 reveal reveal-delay-1">

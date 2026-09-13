@@ -31,7 +31,7 @@ export default function Stats() {
     <section ref={ref} className="bg-[#F8F7F4] py-20 px-8 md:px-12">
       <div className="max-w-7xl mx-auto">
         <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-12 reveal">
-          Impact at Scale
+          Selected Operator Outcomes
         </p>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-[#E2E8F0]">

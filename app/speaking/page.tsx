@@ -2,26 +2,26 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import speakingFaqs from '@/data/speaking-faqs.json';
+import { OG_IMAGE } from '@/data/og-image';
 
 export const metadata: Metadata = {
   title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
   description:
-    'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Former CMO at 1/ST Technology, VP at Las Vegas Sands. Harvard Business School AMP. Based in Las Vegas, NV.',
+    'Zachary Leifer speaks on AI Strategy, AI Investment Governance, customer data and commercial growth. Keynotes, panels and executive sessions from Las Vegas.',
   alternates: { canonical: 'https://zacharyleifer.com/speaking/' },
   openGraph: {
     type: 'website',
     title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
     description:
-      'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Former CMO at 1/ST Technology, VP at Las Vegas Sands. Harvard Business School. Based in Las Vegas, NV.',
+      'Zachary Leifer speaks on AI Strategy, AI Investment Governance, customer data and commercial growth. Keynotes, panels and executive sessions from Las Vegas.',
     url: 'https://zacharyleifer.com/speaking/',
-    images: [
-      {
-        url: 'https://zacharyleifer.com/images/headshot.png',
-        width: 1200,
-        height: 630,
-        alt: 'Zachary Leifer, Speaker on AI Strategy and Commercial Growth, Las Vegas NV',
-      },
-    ],
+    images: [{ ...OG_IMAGE, alt: 'Zachary Leifer, speaker on AI strategy, digital transformation and commercial growth, Las Vegas' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
+    description: 'Zachary Leifer speaks on AI Strategy, AI Investment Governance, customer data and commercial growth. Keynotes, panels and executive sessions from Las Vegas.',
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
@@ -33,22 +33,10 @@ const webPageSchema = {
   description:
     'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Based in Las Vegas, NV.',
   mainEntity: {
+    '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
-    knowsAbout: [
-      'AI Strategy',
-      'AI Governance',
-      'Customer Data Platforms',
-      'Commercial Growth',
-      'Revenue Strategy',
-      'Digital Transformation',
-      'Gaming Industry',
-      'Hospitality',
-      'Marketing Operating Models',
-      'Marketing Technology',
-      'Enterprise Technology Leadership',
-    ],
   },
 };
 
@@ -210,7 +198,7 @@ export default function SpeakingPage() {
                   A practitioner, not a presenter.
                 </h2>
                 <p className="text-[#334155] text-base leading-[1.9] mb-6">
-                  Zachary Leifer is one of the few executives who has led both commercial and enterprise technology functions at the same organizations, a crossover that shapes how he thinks about AI, data, and growth. At Las Vegas Sands and The Venetian, he led digital marketing and eCommerce before being recruited into VP of Corporate IT, generating $36M in direct revenue from a $13M investment.
+                  Zachary Leifer is one of the few executives who has led both commercial and enterprise technology functions at the same organizations, a crossover that shapes how he thinks about AI, data, and growth. At Las Vegas Sands and The Venetian, he led digital marketing and eCommerce before being recruited into VP of Corporate IT, generating $36M in incremental direct-channel revenue from a $13M investment.
                 </p>
                 <p className="text-[#334155] text-base leading-[1.9] mb-10">
                   As CMO at 1/ST Technology, he drove 67% revenue growth, reduced customer acquisition cost by 56%, and improved LTV/CAC by 73% by building a cloud CDP and predictive customer-valuation model. He recently completed the Advanced Management Program at Harvard Business School. His sessions give executives a practical, P&amp;L-grounded framework for connecting AI, customer data, marketing, and technology to commercial outcomes, without disconnected pilots or activity for its own sake.

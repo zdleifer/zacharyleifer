@@ -1,8 +1,8 @@
 # Zachary Leifer — zacharyleifer.com
 
 > Zachary Leifer is a senior commercial growth executive (CMO, CCO) based in Las Vegas, NV.
-> Former CMO at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR over four years), CCO at
-> PokerAtlas, and VP at Las Vegas Sands / The Venetian ($36M direct revenue from $13M investment).
+> Chief Marketing Officer at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR over four years), CCO at
+> PokerAtlas, and VP at Las Vegas Sands / The Venetian ($36M incremental direct-channel revenue from $13M investment).
 > Harvard Business School Advanced Management Program graduate. Open to board director, advisory,
 > and senior operating roles in gaming, hospitality, technology, and consumer industries.
 
@@ -34,7 +34,7 @@
 - Name: Zachary Leifer
 - Location: Las Vegas, Nevada, USA
 - Current Role: Strategic Marketing Advisor, State of Mind Strategies (2024–present)
-- Former Roles: CMO at 1/ST Technology (2020–2024), CCO at PokerAtlas (2025), VP Digital
+- Executive Roles: CMO at 1/ST Technology (2020–2024), CCO at PokerAtlas (2025), VP Digital
   Marketing & eCommerce + VP Corporate IT at Las Vegas Sands / The Venetian (2014–2020)
 - Education: Harvard Business School Advanced Management Program (2026); B.S. Applied Economics
   & Management, Cornell University
@@ -44,7 +44,7 @@
 ## Impact Metrics
 
 - 67% revenue growth and 22% EBITDA CAGR at 1/ST Technology (2020–2024)
-- $36M direct revenue from $13M investment at Las Vegas Sands / The Venetian
+- $36M incremental direct-channel revenue from $13M investment at Las Vegas Sands / The Venetian
 - 56% reduction in customer acquisition cost via CDP at 1/ST Technology
 - 73% improvement in LTV/CAC at 1/ST Technology
 - $60M in wagering handle within 10 months of new app launch
@@ -52,7 +52,7 @@
 ## Expertise
 
 Revenue Strategy · P&L Management · Customer Data Platform (CDP) · CRM · AI Strategy ·
-Digital Transformation · Marketing Technology · Go-to-Market Strategy · Board Advisory ·
+Digital Transformation · Marketing Technology · Go-to-Market Strategy · Board Governance ·
 Gaming & Hospitality · Integrated Resorts · Sports Wagering · eCommerce
 
 ## Contact

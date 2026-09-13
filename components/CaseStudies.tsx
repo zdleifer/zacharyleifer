@@ -17,13 +17,13 @@ const cases = [
   {
     org: 'Las Vegas Sands / The Venetian',
     role: 'Director to VP Digital Marketing & eCommerce, then VP Corporate IT · 2014-2020',
-    headline: '$36M direct revenue from a $13M investment · 24 consecutive months of growth · 50% ROAS lift',
+    headline: '$36M incremental direct-channel revenue from a $13M investment · 24 consecutive months of growth · 50% ROAS lift',
     challenge:
       'The flagship Las Vegas property of a Fortune 500 resort operator faced a five-year decline in direct-channel bookings.',
     action:
       'Led a $13M investment in a new website and booking engine, built a 360-degree customer data platform, and was then recruited internally to run global cloud governance.',
     result:
-      'Generated $36M in incremental direct revenue from the $13M investment, reversed the trend with 24 consecutive months of growth and a 50% lift in ROAS, and improved CRM conversion 18%. Earned the rare crossover from marketing into enterprise technology leadership across the U.S., Singapore, and China.',
+      'Generated $36M in incremental direct-channel revenue from the $13M investment, reversed the trend with 24 consecutive months of growth and a 50% lift in ROAS, and improved CRM conversion 18%. Earned the rare crossover from marketing into enterprise technology leadership across the U.S., Singapore, and China.',
   },
 ];
 
