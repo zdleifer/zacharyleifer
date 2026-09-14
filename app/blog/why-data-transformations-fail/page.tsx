@@ -119,9 +119,9 @@ export default function WhyDataTransformationsFail() {
       <main className="bg-[#F8F7F4] min-h-screen">
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
@@ -132,9 +132,9 @@ export default function WhyDataTransformationsFail() {
             <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-[#0A0A0A] leading-tight mb-6">
               {TITLE}
             </h1>
-            <div className="flex items-center gap-4 text-sm text-[#64748B]">
+            <div className="flex items-center gap-4 text-sm text-[#475569]">
               <span>Zachary Leifer</span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <time dateTime={PUBLISHED}>September 12, 2026</time>
             </div>
           </header>
@@ -168,7 +168,7 @@ export default function WhyDataTransformationsFail() {
               ))}
             </div>
 
-            <p className="text-sm text-[#64748B]">
+            <p className="text-sm text-[#475569]">
               Survey of 82 senior executives, 2026. All figures are self-reported by respondents
               about their own organizations.
             </p>
@@ -358,7 +358,7 @@ export default function WhyDataTransformationsFail() {
           </div>
 
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
-            <p className="text-sm text-[#64748B]">
+            <p className="text-sm text-[#475569]">
               Zachary Leifer is a Las Vegas-based commercial growth executive who has held vice
               president roles in both digital marketing and corporate information technology at Las
               Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST

@@ -35,7 +35,7 @@ const personSchema = {
     addressCountry: "US",
     postalCode: "89101",
   },
-  sameAs: ["https://linkedin.com/in/zacharyleifer"],
+  sameAs: ["https://www.linkedin.com/in/zacharyleifer/"],
   subjectOf: {
     "@type": "PodcastEpisode",
     url: "https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7",
@@ -46,10 +46,10 @@ const personSchema = {
     },
   },
   award: [
-    "2015 Gold HSMAI Adrian Award",
-    "2015 Silver HSMAI Adrian Award",
-    "2015 Bronze HSMAI Adrian Award (Breakfast Offer Campaign)",
-    "2015 Bronze HSMAI Adrian Award (The Palazzo Suite Campaign)",
+    "2015 Gold HSMAI Adrian Award: Brand Site Improvements",
+    "2015 Silver HSMAI Adrian Award: Ultimo Campaign",
+    "2015 Bronze HSMAI Adrian Award: Breakfast Offer Campaign",
+    "2015 Bronze HSMAI Adrian Award: The Palazzo Suite Campaign",
   ],
   alumniOf: [
     {
@@ -124,6 +124,8 @@ const personSchema = {
     },
     {
       "@type": "Role",
+      roleName: "Chief Marketing Officer",
+      description: "Chief Marketing Officer at 1/ST Technology",
       startDate: "2020",
       endDate: "2024",
       hasOccupation: {
@@ -133,6 +135,8 @@ const personSchema = {
     },
     {
       "@type": "Role",
+      roleName: "Chief Commercial Officer",
+      description: "Chief Commercial Officer at PokerAtlas",
       startDate: "2025",
       endDate: "2025",
       hasOccupation: {

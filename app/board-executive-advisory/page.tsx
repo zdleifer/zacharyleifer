@@ -84,9 +84,9 @@ export default function BoardExecutiveAdvisoryPage() {
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
           {/* Breadcrumb */}
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             Board &amp; Executive Advisory
           </p>
 
@@ -98,9 +98,9 @@ export default function BoardExecutiveAdvisoryPage() {
             <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-[#0A0A0A] leading-tight mb-6">
               Zachary Leifer: Board Candidate &amp; Executive Advisor
             </h1>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[#64748B]">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[#475569]">
               <span>Las Vegas, Nevada</span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <span>Available nationally and internationally</span>
             </div>
           </header>
@@ -333,7 +333,7 @@ export default function BoardExecutiveAdvisoryPage() {
 
           {/* Footer nav */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
-            <p className="text-sm text-[#64748B]">
+            <p className="text-sm text-[#475569]">
               Zachary Leifer is a Las Vegas-based commercial growth and transformation executive with Chief
               Marketing Officer, Chief Commercial Officer and Fortune 500 enterprise technology leadership
               experience. He completed the Harvard Business School Advanced Management Program in 2026.{' '}

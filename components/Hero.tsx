@@ -56,7 +56,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://linkedin.com/in/zacharyleifer"
+                href="https://www.linkedin.com/in/zacharyleifer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-8 py-4 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
@@ -106,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll cue */}
-        <div aria-hidden="true" className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25">
+        <div aria-hidden="true" className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-white/25">
           <div className="w-px h-10 bg-gradient-to-b from-transparent to-white/20" />
           <span className="text-[9px] tracking-[0.35em] uppercase">Scroll</span>
         </div>

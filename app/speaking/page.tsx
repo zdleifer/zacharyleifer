@@ -152,7 +152,7 @@ export default function SpeakingPage() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://linkedin.com/in/zacharyleifer"
+                    href="https://www.linkedin.com/in/zacharyleifer/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-8 py-4 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
@@ -304,7 +304,7 @@ export default function SpeakingPage() {
               {talks.map((talk) => (
                 <div key={talk.number} className="py-12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-4">
                   <div className="lg:col-span-3">
-                    <p className="font-display text-5xl font-bold text-white/10 leading-none">{talk.number}</p>
+                    <p aria-hidden="true" className="font-display text-5xl font-bold text-white/10 leading-none">{talk.number}</p>
                     <p className="text-[9px] tracking-[0.3em] uppercase text-[#7B96CC] mt-3">{talk.category}</p>
                   </div>
                   <div className="lg:col-span-9">
@@ -331,7 +331,7 @@ export default function SpeakingPage() {
             <div className="mt-12 pt-10 border-t border-white/10 text-center">
               <p className="text-white/60 text-sm mb-4">All talks are customizable for your audience, format and duration.</p>
               <a
-                href="https://linkedin.com/in/zacharyleifer"
+                href="https://www.linkedin.com/in/zacharyleifer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
@@ -426,7 +426,7 @@ export default function SpeakingPage() {
               </div>
               <div className="lg:col-span-5 lg:text-right">
                 <a
-                  href="https://linkedin.com/in/zacharyleifer"
+                  href="https://www.linkedin.com/in/zacharyleifer/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-10 py-5 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"

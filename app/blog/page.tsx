@@ -94,9 +94,9 @@ export default function BlogIndex() {
       <main className="bg-[#F8F7F4] min-h-screen">
         <div className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             <span className="text-[#0A0A0A]">Writing &amp; Perspectives</span>
           </p>
 
@@ -115,7 +115,7 @@ export default function BlogIndex() {
               <article key={p.slug} className="py-10">
                 <time
                   dateTime={p.date}
-                  className="block text-[10px] tracking-[0.3em] uppercase text-[#64748B] mb-3"
+                  className="block text-[10px] tracking-[0.3em] uppercase text-[#475569] mb-3"
                 >
                   {p.display}
                 </time>

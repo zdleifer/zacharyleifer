@@ -101,7 +101,7 @@ export default function Experience() {
             </h2>
           </div>
           <a
-            href="https://linkedin.com/in/zacharyleifer"
+            href="https://www.linkedin.com/in/zacharyleifer/"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex text-xs tracking-widest uppercase text-[#475569] hover:text-[#0A0A0A] transition-colors border-b border-[#475569]/40 hover:border-[#0A0A0A] pb-0.5"

@@ -57,7 +57,7 @@ export default function Nav() {
 
           {/* Desktop LinkedIn CTA */}
           <a
-            href="https://linkedin.com/in/zacharyleifer"
+            href="https://www.linkedin.com/in/zacharyleifer/"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:inline-flex shrink-0 whitespace-nowrap items-center gap-2 text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border border-white/20 hover:border-white/50 px-4 py-2 rounded"
@@ -93,7 +93,7 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="https://linkedin.com/in/zacharyleifer"
+              href="https://www.linkedin.com/in/zacharyleifer/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

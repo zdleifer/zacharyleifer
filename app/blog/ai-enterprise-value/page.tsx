@@ -84,9 +84,9 @@ export default function AIEnterpriseValueArticle() {
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
           {/* Breadcrumb */}
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
@@ -96,15 +96,15 @@ export default function AIEnterpriseValueArticle() {
             <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-[#0A0A0A] leading-tight mb-6">
               AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?
             </h1>
-            <div className="flex flex-wrap items-center gap-4 text-sm text-[#64748B]">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-[#475569]">
               <span>Zachary Leifer</span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <time dateTime="2026-05-05">May 5, 2026</time>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <span>
                 Updated <time dateTime={MODIFIED}>September 13, 2026</time>
               </span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <a
                 href="https://www.linkedin.com/pulse/ai-already-your-company-creating-enterprise-value-secure-leifer-3q0ve"
                 target="_blank"
@@ -228,7 +228,7 @@ export default function AIEnterpriseValueArticle() {
 
           {/* Footer CTA */}
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
               Zachary Leifer is a Las Vegas-based commercial growth executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
             </p>
@@ -240,7 +240,7 @@ export default function AIEnterpriseValueArticle() {
                 ← Full Profile
               </a>
               <a
-                href="https://linkedin.com/in/zacharyleifer"
+                href="https://www.linkedin.com/in/zacharyleifer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs tracking-[0.2em] uppercase text-[#475569] hover:text-[#0A0A0A] transition-colors border-b border-[#475569]/40 hover:border-[#0A0A0A] pb-0.5"

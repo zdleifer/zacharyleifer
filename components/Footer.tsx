@@ -48,7 +48,7 @@ export default function Footer() {
                   <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
                 <a
-                  href="https://linkedin.com/in/zacharyleifer"
+                  href="https://www.linkedin.com/in/zacharyleifer/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"

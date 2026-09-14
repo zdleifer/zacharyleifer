@@ -86,9 +86,9 @@ export default function VenetianCaseStudy() {
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
           {/* Breadcrumb */}
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             <span>The Venetian case study</span>
           </p>
 
@@ -98,12 +98,12 @@ export default function VenetianCaseStudy() {
             <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-[#0A0A0A] leading-tight mb-6">
               {H1}
             </h1>
-            <p className="text-sm text-[#64748B] leading-relaxed">
+            <p className="text-sm text-[#475569] leading-relaxed">
               Director to Executive Director to Vice President, Digital Marketing and eCommerce, The Venetian Resort Las Vegas (then part of Las Vegas Sands), 2014–2019; Vice President, Corporate Information Technology, Las Vegas Sands, 2019–2020. Results achieved during my executive tenure.
             </p>
-            <div className="flex items-center gap-4 text-sm text-[#64748B] mt-4">
+            <div className="flex items-center gap-4 text-sm text-[#475569] mt-4">
               <span>Zachary Leifer</span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <time dateTime={PUBLISHED}>September 13, 2026</time>
             </div>
           </header>
@@ -225,7 +225,7 @@ export default function VenetianCaseStudy() {
 
           {/* Related work */}
           <div className="mt-16">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">Related</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">Related</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="/work/1st-technology-commercial-growth/" className={link}>
@@ -252,7 +252,7 @@ export default function VenetianCaseStudy() {
 
           {/* Author bio */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
-            <p className="text-sm text-[#64748B]">
+            <p className="text-sm text-[#475569]">
               Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands. He helps companies create more predictable value from data, digital transformation, technology and AI.{' '}
               <a href="/" className={link}>
                 Read the full profile

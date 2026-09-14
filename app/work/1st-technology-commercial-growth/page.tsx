@@ -87,9 +87,9 @@ export default function FirstTechnologyCaseStudy() {
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
 
           {/* Breadcrumb */}
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
-            <span className="mx-2">·</span>
+            <span aria-hidden="true" className="mx-2">·</span>
             <span>1/ST Technology case study</span>
           </p>
 
@@ -102,9 +102,9 @@ export default function FirstTechnologyCaseStudy() {
             <p className="text-sm text-[#475569] leading-relaxed mb-4">
               Chief Marketing Officer, 1/ST Technology, 2020–2024. Results achieved during my executive tenure.
             </p>
-            <div className="flex items-center gap-4 text-sm text-[#64748B]">
+            <div className="flex items-center gap-4 text-sm text-[#475569]">
               <span>Zachary Leifer</span>
-              <span>·</span>
+              <span aria-hidden="true">·</span>
               <time dateTime={PUBLISHED}>September 13, 2026</time>
             </div>
           </header>
@@ -267,8 +267,8 @@ export default function FirstTechnologyCaseStudy() {
 
           {/* Author bio */}
           <div className="mt-16 pt-10 border-t border-[#0A0A0A]/10">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
-            <p className="text-sm text-[#64748B] leading-relaxed">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">About the Author</p>
+            <p className="text-sm text-[#475569] leading-relaxed">
               Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who helps companies create more predictable value from data, digital transformation, technology and AI. He has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands.{' '}
               <a href="/" className={linkClass}>
                 Read the full profile

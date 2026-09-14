@@ -90,7 +90,7 @@ export default function Testimonials() {
         {/* LinkedIn CTA */}
         <div className="mt-12 text-center reveal">
           <a
-            href="https://linkedin.com/in/zacharyleifer"
+            href="https://www.linkedin.com/in/zacharyleifer/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs tracking-[0.2em] uppercase text-[#94A3B8] hover:text-white transition-colors border-b border-[#475569]/40 hover:border-white pb-0.5"
