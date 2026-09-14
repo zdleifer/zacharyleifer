@@ -13,7 +13,7 @@ const MODIFIED = '2026-09-13';
 export const metadata: Metadata = {
   title: `${TITLE} | Zachary Leifer`,
   description: DESC,
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
@@ -41,15 +41,26 @@ const articleSchema = {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
-  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
+  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' },
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
-  image: 'https://zacharyleifer.com/images/headshot.png',
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   description: DESC,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Zachary Leifer', item: 'https://zacharyleifer.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Writing & Perspectives', item: 'https://zacharyleifer.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: TITLE },
+  ],
 };
 
 export default function MarketingToCorporateITArticle() {
@@ -59,6 +70,10 @@ export default function MarketingToCorporateITArticle() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
       <Nav />
       <main className="bg-[#F8F7F4] min-h-screen">
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
@@ -67,7 +82,7 @@ export default function MarketingToCorporateITArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
           {/* Header */}

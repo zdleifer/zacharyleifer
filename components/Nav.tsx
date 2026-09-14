@@ -33,17 +33,17 @@ export default function Nav() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 nav-blur transition-all duration-500 ${
-          scrolled || menuOpen ? 'bg-[#0A0A0A]/95 border-b border-white/10' : 'bg-transparent'
+          scrolled || menuOpen || !isHome ? 'bg-[#0A0A0A]/95 border-b border-white/10' : 'bg-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-8 md:px-12 h-16 flex items-center justify-between">
           {/* Monogram */}
-          <a href={isHome ? '#' : '/'} className="font-display text-xl font-bold text-white tracking-wider">
+          <a href={isHome ? '#' : '/'} aria-label="Zachary Leifer, home" className="font-display text-xl font-bold text-white tracking-wider">
             ZL
           </a>
 
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-10">
             {links.map((link) => (
               <a
                 key={link.href}
@@ -62,7 +62,7 @@ export default function Nav() {
             rel="noopener noreferrer"
             className="hidden lg:inline-flex shrink-0 whitespace-nowrap items-center gap-2 text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border border-white/20 hover:border-white/50 px-4 py-2 rounded"
           >
-            LinkedIn →
+            LinkedIn <span aria-hidden="true">→</span>
           </a>
 
           {/* Mobile Hamburger */}
@@ -97,9 +97,9 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-4 text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors"
+              className="mt-4 text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors"
             >
-              LinkedIn →
+              LinkedIn <span aria-hidden="true">→</span>
             </a>
           </nav>
         </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 import testimonialsData from '@/data/testimonials.json';
 
 type Testimonial = {
@@ -15,21 +15,7 @@ type Testimonial = {
 const testimonials = testimonialsData as Testimonial[];
 
 export default function Testimonials() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting)
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-      },
-      { threshold: 0.1 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section ref={ref} className="grain bg-[#070B14] py-28 px-8 md:px-12">
@@ -38,7 +24,7 @@ export default function Testimonials() {
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 reveal">
           <div className="lg:col-span-3">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] sticky top-24">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] sticky top-24">
               Peer Perspectives
             </p>
           </div>
@@ -61,6 +47,7 @@ export default function Testimonials() {
             >
               {/* Open quote mark */}
               <div
+                aria-hidden="true"
                 className="font-display leading-none text-[#1E293B] mb-6 select-none"
                 style={{ fontSize: '4rem' }}
               >
@@ -76,7 +63,11 @@ export default function Testimonials() {
                 {'image' in t && t.image ? (
                   <img
                     src={t.image}
-                    alt={t.name}
+                    alt=""
+                    width={96}
+                    height={96}
+                    loading="lazy"
+                    decoding="async"
                     className="w-12 h-12 rounded-full object-cover flex-shrink-0 ring-1 ring-white/15"
                   />
                 ) : (
@@ -88,8 +79,8 @@ export default function Testimonials() {
                 )}
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>
-                  <p className="text-[#64748B] text-xs mt-0.5 leading-snug">{t.title}</p>
-                  <p className="text-[#64748B] text-[10px] mt-1 tracking-wide uppercase">{t.context}</p>
+                  <p className="text-[#94A3B8] text-xs mt-0.5 leading-snug">{t.title}</p>
+                  <p className="text-[#94A3B8] text-[10px] mt-1 tracking-wide uppercase">{t.context}</p>
                 </div>
               </div>
             </div>
@@ -102,9 +93,9 @@ export default function Testimonials() {
             href="https://linkedin.com/in/zacharyleifer"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs tracking-[0.2em] uppercase text-[#475569] hover:text-white transition-colors border-b border-[#475569]/40 hover:border-white pb-0.5"
+            className="text-xs tracking-[0.2em] uppercase text-[#94A3B8] hover:text-white transition-colors border-b border-[#475569]/40 hover:border-white pb-0.5"
           >
-            View all recommendations on LinkedIn →
+            View all recommendations on LinkedIn <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>

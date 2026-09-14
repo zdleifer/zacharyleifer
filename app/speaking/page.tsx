@@ -4,6 +4,9 @@ import Footer from '@/components/Footer';
 import speakingFaqs from '@/data/speaking-faqs.json';
 import { OG_IMAGE } from '@/data/og-image';
 
+const SPEAKER_IMAGE_ALT =
+  'Zachary Leifer, speaker on AI strategy, digital transformation and commercial growth, Las Vegas';
+
 export const metadata: Metadata = {
   title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
   description:
@@ -15,21 +18,23 @@ export const metadata: Metadata = {
     description:
       'Zachary Leifer speaks on AI Strategy, AI Investment Governance, customer data and commercial growth. Keynotes, panels and executive sessions from Las Vegas.',
     url: 'https://zacharyleifer.com/speaking/',
-    images: [{ ...OG_IMAGE, alt: 'Zachary Leifer, speaker on AI strategy, digital transformation and commercial growth, Las Vegas' }],
+    images: [{ ...OG_IMAGE, alt: SPEAKER_IMAGE_ALT }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Zachary Leifer | AI & Growth Speaker | Las Vegas',
     description: 'Zachary Leifer speaks on AI Strategy, AI Investment Governance, customer data and commercial growth. Keynotes, panels and executive sessions from Las Vegas.',
-    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
+    images: [{ url: OG_IMAGE.url, alt: SPEAKER_IMAGE_ALT }],
   },
 };
 
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
+  '@id': 'https://zacharyleifer.com/speaking/',
   name: 'Zachary Leifer, Speaker',
   url: 'https://zacharyleifer.com/speaking/',
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
   description:
     'Zachary Leifer speaks on AI strategy, AI investment governance, customer data, commercial growth and digital transformation. Keynotes, executive panels and board sessions from Las Vegas, Nevada.',
   dateModified: '2026-09-13',
@@ -61,7 +66,7 @@ const talks = [
     category: 'AI Strategy & Commercial Value',
     title: 'AI Is Not a Strategy: The Operating Model Leaders Need Before They Scale It',
     abstract:
-      'What must change inside a business before AI can produce measurable value? Zachary examines the leadership decisions behind adoption: a defined commercial outcome, accountable ownership, appropriate resources, aligned incentives and a credible measurement plan. Drawing on commercial and enterprise technology experience and his AMP Leadership Impact Project, he shows how lessons from data and digital transformation apply to AI investment, including where specialist risk oversight belongs. The session gives executive teams a practical set of questions for evaluating readiness before expanding deployment.',
+      'What must change inside a business before AI can produce measurable value? Zachary examines the leadership decisions behind adoption: a defined commercial outcome, accountable ownership, appropriate resources, aligned incentives and a credible measurement plan. Drawing on commercial and enterprise technology experience and his AMP Leadership Impact Project, he shows how lessons from data and digital transformation apply to AI investment, including where specialist risk oversight belongs. The session helps executive teams evaluate readiness before expanding deployment.',
     bestFor: ['CEOs', 'CMOs', 'CIOs', 'Boards', 'Transformation leaders', 'PE portfolio companies'],
   },
   {
@@ -130,15 +135,15 @@ export default function SpeakingPage() {
           />
 
           <div className="max-w-7xl mx-auto">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-10">
               <a href="/" className="hover:text-white/60 transition-colors">Zachary Leifer</a>
-              <span className="mx-2">·</span>
+              <span aria-hidden="true" className="mx-2">·</span>
               Speaking
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-8">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#3B5998] mb-6">Speaking</p>
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#7B96CC] mb-6">Speaking</p>
                 <h1 className="font-display text-[clamp(1.8rem,3.5vw,3rem)] font-bold text-white leading-tight mb-8">
                   Zachary Leifer speaks on AI strategy, customer data, commercial growth and the operating models that connect technology investment to measurable business results.
                 </h1>
@@ -152,16 +157,16 @@ export default function SpeakingPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-8 py-4 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
                   >
-                    Message on LinkedIn →
+                    Message on LinkedIn <span aria-hidden="true">→</span>
                   </a>
                   <a
                     href="#talks"
                     className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
                   >
-                    View Talks →
+                    View Talks <span aria-hidden="true">→</span>
                   </a>
                 </div>
-                <p className="text-white/30 text-xs mt-5">
+                <p className="text-white/60 text-xs mt-5">
                   Or email directly:{' '}
                   <a href={SPEAKING_MAILTO} className="text-white/50 hover:text-white transition-colors">
                     zacharyleifer@gmail.com
@@ -171,11 +176,11 @@ export default function SpeakingPage() {
 
               <div className="hidden lg:block lg:col-span-4">
                 <div className="border border-white/10 p-8 space-y-6">
-                  <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569]">Format</p>
+                  <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8]">Format</p>
                   <ul className="space-y-2 text-white/60 text-sm">
                     {['Keynote', 'Executive Panel', 'Leadership Roundtable', 'Board Session', 'Workshop', 'Virtual Event', 'Podcast'].map((f) => (
                       <li key={f} className="flex items-center gap-3">
-                        <span className="w-1 h-1 rounded-full bg-[#3B5998] flex-shrink-0" />
+                        <span aria-hidden="true" className="w-1 h-1 rounded-full bg-[#3B5998] flex-shrink-0" />
                         {f === 'Board Session' ? (
                           <a href="/board-executive-advisory/" className="hover:text-white transition-colors">
                             {f}
@@ -187,7 +192,7 @@ export default function SpeakingPage() {
                     ))}
                   </ul>
                   <div className="border-t border-white/10 pt-6">
-                    <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-2">Location</p>
+                    <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-2">Location</p>
                     <p className="text-white/60 text-sm">Las Vegas, NV · National · International</p>
                   </div>
                 </div>
@@ -202,7 +207,7 @@ export default function SpeakingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <div className="lg:col-span-3">
                 <div className="lg:sticky top-24">
-                  <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B]">
+                  <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569]">
                     About the Speaker
                   </p>
                   <figure className="mt-8 max-w-[260px]">
@@ -214,10 +219,10 @@ export default function SpeakingPage() {
                       height={800}
                       loading="lazy"
                       decoding="async"
-                      alt="Zachary Leifer at a Harvard Business School lectern, 2026"
+                      alt="Zachary Leifer standing at a Harvard Business School lectern"
                       className="w-full h-auto block"
                     />
-                    <figcaption className="text-[#64748B] text-xs mt-3">
+                    <figcaption className="text-[#475569] text-xs mt-3">
                       Zachary Leifer at Harvard Business School, 2026
                     </figcaption>
                   </figure>
@@ -257,14 +262,14 @@ export default function SpeakingPage() {
                   ].map((item) => (
                     <div key={item.stat}>
                       <p className="font-display text-3xl font-bold text-[#0A0A0A] mb-1">{item.stat}</p>
-                      <p className="text-[#64748B] text-xs leading-snug">{item.label}</p>
+                      <p className="text-[#475569] text-xs leading-snug">{item.label}</p>
                     </div>
                   ))}
                 </div>
 
                 {/* 52-word program bio. Recount if edited. */}
                 <div className="mt-12 border border-[#E2E8F0] bg-white p-8">
-                  <h3 className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">
+                  <h3 className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">
                     Short bio for event programs
                   </h3>
                   <p className="text-[#334155] text-sm leading-[1.8]">
@@ -281,7 +286,7 @@ export default function SpeakingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-16">
               <div className="lg:col-span-3">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] lg:sticky top-24">
                   Signature Talks
                 </p>
               </div>
@@ -300,7 +305,7 @@ export default function SpeakingPage() {
                 <div key={talk.number} className="py-12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-4">
                   <div className="lg:col-span-3">
                     <p className="font-display text-5xl font-bold text-white/10 leading-none">{talk.number}</p>
-                    <p className="text-[9px] tracking-[0.3em] uppercase text-[#3B5998] mt-3">{talk.category}</p>
+                    <p className="text-[9px] tracking-[0.3em] uppercase text-[#7B96CC] mt-3">{talk.category}</p>
                   </div>
                   <div className="lg:col-span-9">
                     <h3 className="font-display text-xl font-semibold text-white leading-snug mb-4">
@@ -308,7 +313,7 @@ export default function SpeakingPage() {
                     </h3>
                     <p className="text-white/55 text-sm leading-relaxed mb-6">{talk.abstract}</p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="text-[9px] tracking-[0.25em] uppercase text-[#475569] mr-1 self-center">Best for:</span>
+                      <span className="text-[9px] tracking-[0.25em] uppercase text-[#94A3B8] mr-1 self-center">Best for:</span>
                       {talk.bestFor.map((a) => (
                         <span
                           key={a}
@@ -324,14 +329,14 @@ export default function SpeakingPage() {
             </div>
 
             <div className="mt-12 pt-10 border-t border-white/10 text-center">
-              <p className="text-white/40 text-sm mb-4">All talks are customizable for your audience, format and duration.</p>
+              <p className="text-white/60 text-sm mb-4">All talks are customizable for your audience, format and duration.</p>
               <a
                 href="https://linkedin.com/in/zacharyleifer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
               >
-                Get in Touch →
+                Get in Touch <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -342,7 +347,7 @@ export default function SpeakingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <div className="lg:col-span-3">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] lg:sticky top-24">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
                   Past Appearances
                 </p>
               </div>
@@ -354,7 +359,7 @@ export default function SpeakingPage() {
                   {appearances.map((a) => (
                     <div key={a.event} className="py-6 grid grid-cols-1 sm:grid-cols-12 gap-x-8 gap-y-1">
                       <div className="sm:col-span-3">
-                        <p className="text-xs text-[#64748B]">{a.year}</p>
+                        <p className="text-xs text-[#475569]">{a.year}</p>
                       </div>
                       <div className="sm:col-span-5">
                         <p className="font-semibold text-[#0A0A0A] text-sm">{a.event}</p>
@@ -375,7 +380,7 @@ export default function SpeakingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
               <div className="lg:col-span-3">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] lg:sticky top-24">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
                   Speaking FAQ
                 </p>
               </div>
@@ -383,7 +388,7 @@ export default function SpeakingPage() {
                 <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-[#0A0A0A]">
                   Common Questions
                 </h2>
-                <p className="text-[#64748B] text-sm mt-3 max-w-lg">
+                <p className="text-[#475569] text-sm mt-3 max-w-lg">
                   Questions event organizers and conference programmers typically ask.
                 </p>
               </div>
@@ -411,7 +416,7 @@ export default function SpeakingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-6">Book Zachary to Speak</p>
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-6">Book Zachary to Speak</p>
                 <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-white mb-6">
                   Bring an operator&rsquo;s perspective to your next event.
                 </h2>
@@ -426,9 +431,9 @@ export default function SpeakingPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-10 py-5 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
                 >
-                  Message on LinkedIn →
+                  Message on LinkedIn <span aria-hidden="true">→</span>
                 </a>
-                <p className="text-white/30 text-xs mt-4">
+                <p className="text-white/60 text-xs mt-4">
                   or email:{' '}
                   <a href={SPEAKING_MAILTO} className="text-white/50 hover:text-white transition-colors">
                     zacharyleifer@gmail.com

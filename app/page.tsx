@@ -20,7 +20,7 @@ import faqsData from '@/data/faqs.json';
 // without their own canonical (such as the 404 page) no longer inherit this one.
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://zacharyleifer.com',
+    canonical: 'https://zacharyleifer.com/',
   },
 };
 

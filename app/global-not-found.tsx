@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   title: 'Page Not Found | Zachary Leifer',
   description:
     'The page you requested could not be found. Return to zacharyleifer.com for Zachary Leifer’s background, speaking and board advisory information.',
-  robots: { index: false, follow: true },
+  // No robots field: Next.js injects <meta name="robots" content="noindex" />
+  // for 404 responses, including global-not-found pages.
 };
 
 const linkClass = 'text-[#3B5998] hover:text-[#0A0A0A] transition-colors';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 
 const items = [
   {
@@ -42,28 +42,14 @@ const items = [
 ];
 
 export default function Insights() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting)
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section id="insights" ref={ref} className="bg-[#F8F7F4] py-28 px-8 md:px-12 border-t border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-16 reveal">
           <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">Insights</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">Insights</p>
             <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-[#0A0A0A]">
               Writing &amp; Perspectives
             </h2>
@@ -72,7 +58,7 @@ export default function Insights() {
             href="/blog/"
             className="hidden md:inline-flex text-xs tracking-widest uppercase text-[#475569] hover:text-[#0A0A0A] transition-colors border-b border-[#475569]/40 hover:border-[#0A0A0A] pb-0.5"
           >
-            All writing →
+            All writing <span aria-hidden="true">→</span>
           </a>
         </div>
 
@@ -94,8 +80,8 @@ export default function Insights() {
                 </h3>
               </div>
               <div className="flex items-center justify-between mt-8">
-                <span className="text-xs text-[#64748B]">{item.meta}</span>
-                <span className="text-[#475569] group-hover:text-[#3B5998] group-hover:translate-x-1 transition-all text-sm">
+                <span className="text-xs text-[#475569]">{item.meta}</span>
+                <span aria-hidden="true" className="text-[#475569] group-hover:text-[#3B5998] group-hover:translate-x-1 transition-all text-sm">
                   →
                 </span>
               </div>

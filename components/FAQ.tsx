@@ -1,26 +1,12 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 import faqsData from '@/data/faqs.json';
 
 const faqs = faqsData;
 
 export default function FAQ() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting)
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-      },
-      { threshold: 0.08 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section id="faq" ref={ref} className="bg-[#F8F7F4] py-28 px-8 md:px-12">
@@ -28,7 +14,7 @@ export default function FAQ() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 reveal">
           <div className="lg:col-span-3">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] lg:sticky top-24">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
               FAQ
             </p>
           </div>
@@ -36,7 +22,7 @@ export default function FAQ() {
             <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-[#0A0A0A]">
               Common Questions
             </h2>
-            <p className="text-[#64748B] text-sm mt-3 max-w-lg">
+            <p className="text-[#475569] text-sm mt-3 max-w-lg">
               Questions executives, boards, and search partners typically ask.
             </p>
           </div>

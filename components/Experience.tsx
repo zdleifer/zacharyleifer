@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 import experience from '@/data/experience.json';
 
 type Role = {
@@ -41,7 +41,32 @@ function spanOf(roles: Role[]) {
   const endParts = roles[0].years.split('-');
   const end = (endParts[1] || endParts[0]).trim();
   const years = Number(end) - Number(start);
-  return { label: `${start} - ${end}`, years: isNaN(years) ? null : years };
+  return { label: `${start}–${end}`, years: isNaN(years) ? null : years };
+}
+
+// "2014 - 2017" in data renders as "2014–2017" (en dash, no spaces).
+function formatYears(years: string) {
+  return years.replace(/\s*-\s*/g, '–');
+}
+
+// "Director → Executive Director" renders the arrow visually but reads as "to".
+function RoleTitle({ title }: { title: string }) {
+  const parts = title.split('→').map((p) => p.trim());
+  return (
+    <>
+      {parts.map((p, i) => (
+        <span key={i}>
+          {i > 0 && (
+            <>
+              <span aria-hidden="true"> → </span>
+              <span className="sr-only"> to </span>
+            </>
+          )}
+          {p}
+        </span>
+      ))}
+    </>
+  );
 }
 
 function Highlights({ items }: { items: string[] }) {
@@ -50,7 +75,7 @@ function Highlights({ items }: { items: string[] }) {
     <ul className="space-y-2 mt-4">
       {items.map((h, j) => (
         <li key={j} className="text-sm text-[#475569] flex items-start gap-3">
-          <span className="text-[#94A3B8] mt-1.5 flex-shrink-0 text-[8px]">●</span>
+          <span aria-hidden="true" className="text-[#94A3B8] mt-1.5 flex-shrink-0 text-[8px]">●</span>
           <span>{h}</span>
         </li>
       ))}
@@ -59,22 +84,7 @@ function Highlights({ items }: { items: string[] }) {
 }
 
 export default function Experience() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-        }
-      },
-      { threshold: 0.1 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   const blocks = buildBlocks(experience as Role[]);
 
@@ -85,7 +95,7 @@ export default function Experience() {
         {/* Section header */}
         <div className="flex items-end justify-between mb-20 reveal">
           <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">Career</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">Career</p>
             <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-[#0A0A0A]">
               Experience
             </h2>
@@ -96,7 +106,7 @@ export default function Experience() {
             rel="noopener noreferrer"
             className="hidden md:inline-flex text-xs tracking-widest uppercase text-[#475569] hover:text-[#0A0A0A] transition-colors border-b border-[#475569]/40 hover:border-[#0A0A0A] pb-0.5"
           >
-            Full Profile →
+            Full Profile <span aria-hidden="true">→</span>
           </a>
         </div>
 
@@ -111,17 +121,17 @@ export default function Experience() {
                   className={`py-12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-4 reveal reveal-delay-${Math.min(i + 1, 4)}`}
                 >
                   <div className="lg:col-span-2">
-                    <div className="text-sm font-medium text-[#475569] tracking-wide">{role.years}</div>
-                    <div className="text-xs text-[#94A3B8] mt-1">{role.location}</div>
+                    <div className="text-sm font-medium text-[#475569] tracking-wide">{formatYears(role.years)}</div>
+                    <div className="text-xs text-[#475569] mt-1">{role.location}</div>
                   </div>
                   <div className="lg:col-span-10">
-                    <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{role.title}</h3>
+                    <h3 className="font-display text-xl font-semibold text-[#0A0A0A]"><RoleTitle title={role.title} /></h3>
                     <div className="flex flex-wrap items-center gap-2 mt-1">
                       <span className="text-[#0A0A0A] font-medium text-sm">{role.company}</span>
-                      <span className="text-[#94A3B8] text-sm">·</span>
-                      <span className="text-[#64748B] text-xs">{role.parent}</span>
+                      <span aria-hidden="true" className="text-[#94A3B8] text-sm">·</span>
+                      <span className="text-[#475569] text-xs">{role.parent}</span>
                     </div>
-                    <p className="text-[#94A3B8] text-xs italic mt-3 leading-relaxed max-w-3xl">
+                    <p className="text-[#475569] text-xs italic mt-3 leading-relaxed max-w-3xl">
                       {role.companyDescription}
                     </p>
                     <Highlights items={role.highlights} />
@@ -142,12 +152,12 @@ export default function Experience() {
               >
                 <div className="lg:col-span-2">
                   <div className="text-sm font-medium text-[#475569] tracking-wide">{span.label}</div>
-                  <div className="text-xs text-[#94A3B8] mt-1">{roles[0].location}</div>
+                  <div className="text-xs text-[#475569] mt-1">{roles[0].location}</div>
                 </div>
                 <div className="lg:col-span-10">
                   {/* Single employer header */}
                   <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{group}</h3>
-                  <p className="text-[#64748B] text-xs mt-1">{scale}</p>
+                  <p className="text-[#475569] text-xs mt-1">{scale}</p>
                   <p className="text-[#475569] text-sm mt-2">
                     Recruited and promoted through {roles.reduce((n, r) => n + r.title.split('→').length, 0)} roles
                     {span.years ? ` over ${span.years} years` : ''}, from digital marketing leadership
@@ -158,20 +168,20 @@ export default function Experience() {
                   <div className="mt-8 border-l border-[#CBD5E1] pl-6 md:pl-8 space-y-9">
                     {roles.map((role, j) => (
                       <div key={j} className="relative">
-                        <span className="absolute -left-[1.95rem] md:-left-[2.45rem] top-1.5 w-2.5 h-2.5 rounded-full bg-[#3B5998] ring-4 ring-[#F8F7F4]" />
+                        <span aria-hidden="true" className="absolute -left-[1.95rem] md:-left-[2.45rem] top-1.5 w-2.5 h-2.5 rounded-full bg-[#3B5998] ring-4 ring-[#F8F7F4]" />
                         <h4 className="font-display text-lg font-semibold text-[#0A0A0A] leading-snug">
-                          {role.title}
+                          <RoleTitle title={role.title} />
                         </h4>
                         <div className="flex flex-wrap items-center gap-2 mt-1">
                           <span className="text-[#475569] text-sm">{role.company}</span>
                           {role.scale && (
                             <>
-                              <span className="text-[#94A3B8] text-sm">·</span>
-                              <span className="text-[#64748B] text-xs">{role.scale}</span>
+                              <span aria-hidden="true" className="text-[#94A3B8] text-sm">·</span>
+                              <span className="text-[#475569] text-xs">{role.scale}</span>
                             </>
                           )}
-                          <span className="text-[#94A3B8] text-sm">·</span>
-                          <span className="text-[#64748B] text-xs">{role.years}</span>
+                          <span aria-hidden="true" className="text-[#94A3B8] text-sm">·</span>
+                          <span className="text-[#475569] text-xs">{formatYears(role.years)}</span>
                         </div>
                         <Highlights items={role.highlights} />
                       </div>

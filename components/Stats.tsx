@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 
 const stats = [
   { number: '67%', label: 'Revenue Growth', context: '4-year run at 1/ST Technology' },
@@ -10,27 +10,12 @@ const stats = [
 ];
 
 export default function Stats() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-        }
-      },
-      { threshold: 0.2 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section ref={ref} className="bg-[#F8F7F4] py-20 px-8 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-12 reveal">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-12 reveal">
           Selected Operator Outcomes
         </p>
 
@@ -46,7 +31,7 @@ export default function Stats() {
               <div className="text-sm font-semibold text-[#1A1A1A] mb-1 tracking-wide">
                 {stat.label}
               </div>
-              <div className="text-xs text-[#64748B] leading-relaxed">
+              <div className="text-xs text-[#475569] leading-relaxed">
                 {stat.context}
               </div>
             </div>

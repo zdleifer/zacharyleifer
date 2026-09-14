@@ -15,7 +15,7 @@ const MODIFIED = '2026-09-13';
 export const metadata: Metadata = {
   title: `${SEO_TITLE} | Zachary Leifer`,
   description: DESC,
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
@@ -43,14 +43,15 @@ const articleSchema = {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
-  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
+  publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' },
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
-  image: 'https://zacharyleifer.com/images/headshot.png',
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   description: DESC,
   about: [
     'Artificial intelligence',
@@ -62,11 +63,21 @@ const articleSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Zachary Leifer', item: 'https://zacharyleifer.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Writing & Perspectives', item: 'https://zacharyleifer.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: TITLE },
+  ],
+};
+
 const findings = [
   {
     stat: '51%',
     label:
-      'report that fewer than half of their data and digital initiatives delivered the commercial outcomes that justified them.',
+      'reported that fewer than half of their data and digital initiatives delivered the commercial outcomes that justified them.',
   },
   {
     stat: '56%',
@@ -76,7 +87,7 @@ const findings = [
   {
     stat: '6x',
     label:
-      'more likely to report full delivery for initiatives with dedicated ownership and dedicated resources than for those added to business as usual (self-reported; directional).',
+      'Respondents were 6x more likely to report full delivery for initiatives with dedicated ownership and dedicated resources than for initiatives added to business as usual (self-reported; directional).',
   },
   {
     stat: 'Zero',
@@ -100,6 +111,10 @@ export default function WhyDataTransformationsFail() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
       <Nav />
       <main className="bg-[#F8F7F4] min-h-screen">
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
@@ -107,7 +122,7 @@ export default function WhyDataTransformationsFail() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
           <header className="mb-16">
@@ -160,7 +175,7 @@ export default function WhyDataTransformationsFail() {
 
             <p>
               That last figure is the most telling. The five conditions behind it are clear
-              ownership, a dedicated team, aligned incentives, defined measurement, and an assessed
+              ownership, a dedicated team, aligned incentives, defined measurement, and assessed
               readiness.
             </p>
 

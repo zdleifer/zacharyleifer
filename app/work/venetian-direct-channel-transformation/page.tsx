@@ -15,7 +15,7 @@ const MODIFIED = '2026-09-13';
 export const metadata: Metadata = {
   title: TITLE_TAG,
   description: DESC,
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
@@ -39,7 +39,7 @@ const PERSON = {
   '@id': 'https://zacharyleifer.com/#zachary-leifer',
   '@type': 'Person',
   name: 'Zachary Leifer',
-  url: 'https://zacharyleifer.com',
+  url: 'https://zacharyleifer.com/',
 };
 
 const articleSchema = {
@@ -54,7 +54,7 @@ const articleSchema = {
   publisher: PERSON,
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
-  image: 'https://zacharyleifer.com/images/headshot.png',
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   about: { '@type': 'Organization', name: 'The Venetian Resort Las Vegas' },
 };
 

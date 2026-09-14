@@ -17,13 +17,13 @@ const PERSON = {
   '@id': 'https://zacharyleifer.com/#zachary-leifer',
   '@type': 'Person',
   name: 'Zachary Leifer',
-  url: 'https://zacharyleifer.com',
+  url: 'https://zacharyleifer.com/',
 };
 
 export const metadata: Metadata = {
   title: TITLE_TAG,
   description: DESC,
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
@@ -54,7 +54,7 @@ const articleSchema = {
   publisher: PERSON,
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
-  image: 'https://zacharyleifer.com/images/headshot.png',
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   about: { '@type': 'Organization', name: '1/ST Technology' },
 };
 

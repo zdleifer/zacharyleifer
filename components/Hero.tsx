@@ -1,5 +1,3 @@
-'use client';
-
 export default function Hero() {
   return (
     <section className="grain relative min-h-screen bg-[#070B14] flex items-center overflow-hidden">
@@ -30,7 +28,7 @@ export default function Hero() {
 
           {/* Left: Text */}
           <div className="order-1 flex flex-col justify-center">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-8">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-8">
               Commercial Growth &amp; Transformation Executive
             </p>
 
@@ -50,7 +48,7 @@ export default function Hero() {
 
             {/* Industries */}
             <div className="mb-12 max-w-md">
-              <p className="text-[9px] tracking-[0.3em] uppercase text-[#475569] mb-3">Industries</p>
+              <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-3">Industries</p>
               <p className="text-xs text-white/50 leading-relaxed">
                 Integrated Resorts &amp; Gaming · Hospitality · Sports Wagering &amp; Racing · iGaming · eCommerce · Luxury Retail · Sports &amp; Digital Media
               </p>
@@ -108,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll cue */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25">
+        <div aria-hidden="true" className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25">
           <div className="w-px h-10 bg-gradient-to-b from-transparent to-white/20" />
           <span className="text-[9px] tracking-[0.35em] uppercase">Scroll</span>
         </div>

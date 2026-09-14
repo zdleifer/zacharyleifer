@@ -14,7 +14,7 @@ const MODIFIED = '2026-09-13';
 export const metadata: Metadata = {
   title: TITLE_TAG,
   description: DESC,
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'website',
@@ -35,7 +35,7 @@ const PERSON_REF = {
   '@id': 'https://zacharyleifer.com/#zachary-leifer',
   '@type': 'Person',
   name: 'Zachary Leifer',
-  url: 'https://zacharyleifer.com',
+  url: 'https://zacharyleifer.com/',
 };
 
 const webPageSchema = {
@@ -151,11 +151,14 @@ export default function BoardExecutiveAdvisoryPage() {
 
             <h3 className={H3}>AI investment governance</h3>
             <p>
-              I bring AI investment governance, organizational readiness and value realization to leadership
-              decisions about AI, applying the{' '}
+              I help leadership teams make AI decisions through AI investment governance, organizational
+              readiness and value realization, using the{' '}
               <a href="#ai-investment-governance" className={LINK}>
-                governance approach outlined below
-              </a>.
+                approach outlined below
+              </a>. I write about the gap between scattered AI use and enterprise value in{' '}
+              <a href="/blog/ai-enterprise-value/" className={LINK}>
+                AI Is Already in Your Company. Is It Creating Enterprise Value?
+              </a>
             </p>
 
             <h3 className={H3}>Customer data and personalization</h3>
@@ -181,6 +184,9 @@ export default function BoardExecutiveAdvisoryPage() {
               the Harvard Business School Advanced Management Program, summarized in{' '}
               <a href="/blog/why-data-transformations-fail/" className={LINK}>
                 Why Data and Digital Transformations Fail
+              </a>. I look at how AI is reshaping organizational structure and leadership pipelines in{' '}
+              <a href="/blog/org-chart-rewritten/" className={LINK}>
+                The Org Chart Is Being Rewritten
               </a>.
             </p>
 

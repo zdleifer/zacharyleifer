@@ -71,14 +71,15 @@ const listSchema = {
   '@id': URL,
   url: URL,
   name: 'Writing & Perspectives',
-  about: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
+  about: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' },
   hasPart: posts.map((p) => ({
     '@type': 'Article',
     headline: p.title,
     url: `https://zacharyleifer.com/blog/${p.slug}/`,
     datePublished: p.date,
     dateModified: p.modified,
-    author: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
+    author: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' },
   })),
 };
 
@@ -96,7 +97,7 @@ export default function BlogIndex() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <span className="text-[#0A0A0A]">Insights</span>
+            <span className="text-[#0A0A0A]">Writing &amp; Perspectives</span>
           </p>
 
           <header className="mb-16">

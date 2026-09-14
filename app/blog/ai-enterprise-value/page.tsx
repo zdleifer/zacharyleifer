@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure? | Zachary Leifer',
   description:
     'Most companies have AI adoption happening organically, in scattered pockets. Here is how to move from experimentation to measurable enterprise value.',
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
@@ -40,21 +40,32 @@ const articleSchema = {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
-  image: 'https://zacharyleifer.com/images/og-card.jpg',
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   description:
     'Most companies have AI adoption happening organically, in scattered pockets, disconnected from the workflows that drive growth. Here is how to move from experimentation to measurable enterprise value.',
   publisher: {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Zachary Leifer', item: 'https://zacharyleifer.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Writing & Perspectives', item: 'https://zacharyleifer.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?' },
+  ],
 };
 
 export default function AIEnterpriseValueArticle() {
@@ -64,6 +75,10 @@ export default function AIEnterpriseValueArticle() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
       <Nav />
       <main className="bg-[#F8F7F4] min-h-screen">
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
@@ -72,7 +87,7 @@ export default function AIEnterpriseValueArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
           {/* Header */}
@@ -85,6 +100,10 @@ export default function AIEnterpriseValueArticle() {
               <span>Zachary Leifer</span>
               <span>·</span>
               <time dateTime="2026-05-05">May 5, 2026</time>
+              <span>·</span>
+              <span>
+                Updated <time dateTime={MODIFIED}>September 13, 2026</time>
+              </span>
               <span>·</span>
               <a
                 href="https://www.linkedin.com/pulse/ai-already-your-company-creating-enterprise-value-secure-leifer-3q0ve"
@@ -101,7 +120,7 @@ export default function AIEnterpriseValueArticle() {
           <div className="prose prose-slate max-w-none text-[#334155] leading-[1.9] text-base space-y-6">
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
-              Your employees are already using AI. The question is not whether AI is in your company, it is whether it is creating enterprise value or creating risk, and whether you are managing either one deliberately.
+              Your employees are already using AI. The question is not whether AI is in your company. It is whether it is creating enterprise value or creating risk, and whether you are managing either one deliberately.
             </p>
 
             <p>
@@ -109,7 +128,7 @@ export default function AIEnterpriseValueArticle() {
             </p>
 
             <p>
-              That gap, between scattered AI use and systematic AI capability, is where most organizations are stuck. And it creates two problems simultaneously: risk exposure on the left, and lost value on the right.
+              That gap, between scattered AI use and systematic AI capability, is where most organizations are stuck. And it creates two problems simultaneously: risk exposure and lost value.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -121,7 +140,7 @@ export default function AIEnterpriseValueArticle() {
             </p>
 
             <p>
-              On the value side, individual productivity gains are real, but they are not enterprise transformation. An employee who drafts emails faster is more productive. An organization that has connected AI to its core commercial workflows, acquisition, retention, pricing, customer value modeling, has built a capability advantage. Those are different things, and confusing one for the other is how companies end up with AI initiatives that look active but do not move the business.
+              On the value side, individual productivity gains are real, but they are not enterprise transformation. An employee who drafts emails faster is more productive. An organization that has connected AI to its core commercial workflows (acquisition, retention, pricing, customer value modeling) has built a capability advantage. Those are different things, and confusing one for the other is how companies end up with AI initiatives that look active but do not move the business.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -153,7 +172,7 @@ export default function AIEnterpriseValueArticle() {
             </p>
 
             <p>
-              AI operates at the organizational periphery, not integrated into the core operations that drive growth. The core operations, customer acquisition, retention, pricing, product development, run on systems, processes, and data that were built before AI existed. Connecting AI to those systems requires cross-functional alignment, data infrastructure investment, and governance decisions that individual teams cannot make on their own.
+              In these companies, AI operates at the organizational periphery, not integrated into the core operations that drive growth. The core operations (customer acquisition, retention, pricing, product development) run on systems, processes, and data that were built before AI existed. Connecting AI to those systems requires cross-functional alignment, data infrastructure investment, and governance decisions that individual teams cannot make on their own.
             </p>
 
             <p>
@@ -171,7 +190,7 @@ export default function AIEnterpriseValueArticle() {
                 <strong>Start with business process mapping, not tool selection.</strong> Before you buy another AI platform, map the processes that drive your most important commercial outcomes. Where are the decisions? Where is the data? Where is the judgment? That map tells you where AI can create real leverage, not where it can create interesting demos.
               </li>
               <li>
-                <strong>Involve legal, security, and compliance at the beginning, not the end.</strong> The fastest path to scaling AI is having governance in place before you need to retrofit it. Risk-based segmentation, determining which use cases require tight controls and which can move freely, is what lets you go fast where it is safe and careful where it matters.
+                <strong>Involve legal, security, and compliance at the beginning, not the end.</strong> The fastest path to scaling AI is having governance in place before you need to retrofit it. Risk-based segmentation (determining which use cases require tight controls and which can move freely) is what lets you go fast where it is safe and careful where it matters.
               </li>
               <li>
                 <strong>Connect AI to your operating model redesign, not just your tool stack.</strong> AI should change how decisions get made, not just how tasks get done. That means redesigning the workflows, the accountability structures, and the measurement systems, not just approving a new vendor.
@@ -186,7 +205,7 @@ export default function AIEnterpriseValueArticle() {
             </h2>
 
             <p>
-              None of this happens without executive alignment. Not just authorization, active, informed alignment on what AI is for, what it is not for, how success will be measured, and how governance will work.
+              None of this happens without executive alignment. Not just authorization, but active, informed alignment on what AI is for, what it is not for, how success will be measured, and how governance will work.
             </p>
 
             <p>
@@ -198,7 +217,7 @@ export default function AIEnterpriseValueArticle() {
             </p>
 
             <p>
-              AI is already in your company. The question is whether it is working for you, or whether it is just working, scattered, ungoverned, and disconnected from the growth agenda.
+              AI is already in your company. The question is whether it is working for you, or whether it is just working: scattered, ungoverned, and disconnected from the growth agenda.
             </p>
 
             <p>
@@ -211,7 +230,7 @@ export default function AIEnterpriseValueArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

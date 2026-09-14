@@ -1,23 +1,9 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 
 export default function About() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting)
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section id="about" ref={ref} className="grain bg-[#070B14] py-28 px-8 md:px-12 relative">
@@ -34,7 +20,7 @@ export default function About() {
 
           {/* Label */}
           <div className="lg:col-span-3 reveal">
-            <h2 className="text-[10px] tracking-[0.35em] uppercase text-[#475569] lg:sticky top-24">
+            <h2 className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] lg:sticky top-24">
               About
             </h2>
           </div>
@@ -65,11 +51,15 @@ export default function About() {
             {/* Education */}
             <div className="mt-16 pt-12 border-t border-white/[0.08] grid grid-cols-1 sm:grid-cols-2 gap-8 reveal reveal-delay-2">
               <div className="group">
-                <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">Education</p>
+                <p className="text-[9px] tracking-[0.35em] uppercase text-[#94A3B8] mb-4">Education</p>
                 <div className="bg-white rounded-md h-24 w-fit px-7 flex items-center mb-4">
                   <img
                     src="/images/logos/harvard.png"
                     alt="Harvard Business School"
+                    width={226}
+                    height={112}
+                    loading="lazy"
+                    decoding="async"
                     className="max-h-14 w-auto object-contain"
                   />
                 </div>
@@ -77,16 +67,20 @@ export default function About() {
                   Harvard Business School
                 </p>
                 <p className="text-white/55 text-sm mt-1">Advanced Management Program · 2026</p>
-                <p className="text-[#64748B] text-xs mt-1 italic">
+                <p className="text-[#94A3B8] text-xs mt-1 italic">
                   Capstone: Enterprise Value from Data, Digital Transformation & AI
                 </p>
               </div>
               <div className="group">
-                <p className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-4">&nbsp;</p>
+                <p className="text-[9px] tracking-[0.35em] uppercase text-[#94A3B8] mb-4">&nbsp;</p>
                 <div className="bg-white rounded-md h-24 w-fit px-7 flex items-center mb-4">
                   <img
                     src="/images/logos/cornell-cropped.png"
                     alt="Cornell University"
+                    width={333}
+                    height={112}
+                    loading="lazy"
+                    decoding="async"
                     className="max-h-14 w-auto object-contain"
                   />
                 </div>

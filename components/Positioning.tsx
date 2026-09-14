@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useReveal } from '@/components/useReveal';
 
 const valueAreas = [
   {
@@ -22,26 +22,12 @@ const valueAreas = [
 ];
 
 export default function Positioning() {
-  const ref = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting)
-          el.querySelectorAll('.reveal').forEach((r) => r.classList.add('visible'));
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const ref = useReveal<HTMLElement>();
 
   return (
     <section id="value" ref={ref} className="bg-[#F8F7F4] py-28 px-8 md:px-12 border-y border-[#E2E8F0]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-8 reveal">
+        <h2 className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-8 reveal">
           Where I Create Value
         </h2>
 
@@ -71,7 +57,7 @@ export default function Positioning() {
 
         {/* Who I Help */}
         <div className="mt-12 pt-10 border-t border-[#E2E8F0] reveal reveal-delay-3">
-          <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-5">Who I Help</h3>
+          <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-5">Who I Help</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               'CEOs needing stronger commercial execution and a measurable marketing operating model',
@@ -82,7 +68,7 @@ export default function Positioning() {
               'Leadership teams building from founder-led growth to repeatable commercial systems',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 text-sm text-[#475569]">
-                <span className="text-[#3B5998] mt-1 flex-shrink-0 text-[8px]">●</span>
+                <span aria-hidden="true" className="text-[#3B5998] mt-1 flex-shrink-0 text-[8px]">●</span>
                 <span>{item}</span>
               </div>
             ))}
@@ -91,20 +77,20 @@ export default function Positioning() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 pt-10 border-t border-[#E2E8F0] reveal reveal-delay-4">
           <div>
-            <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-3">Open To</h3>
+            <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-3">Open To</h3>
             <p className="text-[#1A1A1A] text-sm leading-relaxed">
               <a
                 href="/board-executive-advisory/"
                 className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
               >
-                Corporate board &amp; advisory seats
+                Corporate board and advisory seats
               </a>{' '}
-              · CMO / CCO / GM &amp; operating-partner mandates ·
-              Growth &amp; transformation advisory
+              · Chief Marketing Officer, Chief Commercial Officer, General Manager and operating-partner mandates ·
+              Growth and transformation advisory
             </p>
           </div>
           <div>
-            <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-3">Strengths Boards Value</h3>
+            <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-3">Strengths Boards Value</h3>
             <p className="text-[#1A1A1A] text-sm leading-relaxed">
               Technology &amp; digital risk · Marketing &amp; customer strategy · AI investment governance, organizational readiness and value realization
             </p>

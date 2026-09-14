@@ -1,5 +1,3 @@
-'use client';
-
 export default function Footer() {
   return (
     <footer id="contact" className="bg-[#060606] border-t border-white/10 py-20 px-8 md:px-12">
@@ -19,35 +17,35 @@ export default function Footer() {
           {/* Right */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:pl-12">
             <div>
-              <p className="text-[10px] tracking-[0.3em] uppercase text-[#475569] mb-5">Connect</p>
+              <p className="text-[10px] tracking-[0.3em] uppercase text-[#94A3B8] mb-5">Connect</p>
               <div className="space-y-3">
                 <a
                   href="mailto:zacharyleifer@gmail.com?subject=Executive%20opportunity"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   Executive opportunity
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
                 <a
                   href="/speaking/#book"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   Speaking inquiry
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
                 </a>
                 <a
                   href="/board-executive-advisory/"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   Board and executive advisory
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
                 </a>
                 <a
                   href="mailto:zacharyleifer@gmail.com?subject=Board%20or%20advisory%20inquiry"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   Board or advisory inquiry
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
                 <a
                   href="https://linkedin.com/in/zacharyleifer"
@@ -56,20 +54,20 @@ export default function Footer() {
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   LinkedIn
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
                 <a
                   href="mailto:zacharyleifer@gmail.com"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   zacharyleifer@gmail.com
-                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
               </div>
             </div>
 
             <div>
-              <p className="text-[10px] tracking-[0.3em] uppercase text-[#475569] mb-5">Location</p>
+              <p className="text-[10px] tracking-[0.3em] uppercase text-[#94A3B8] mb-5">Location</p>
               <p className="text-white/60 text-sm">Las Vegas, Nevada</p>
             </div>
           </div>
@@ -78,7 +76,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <span className="font-display text-white/50 text-sm">Zachary Leifer</span>
-          <span className="text-white/20 text-xs">© 2026 · zacharyleifer.com</span>
+          <span className="text-white/60 text-xs">© 2026 · zacharyleifer.com</span>
         </div>
       </div>
     </footer>

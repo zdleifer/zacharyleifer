@@ -20,13 +20,13 @@ export default function PageQuotes({ heading, quotes }: { heading: string; quote
             </blockquote>
             <figcaption className="mt-5">
               <span className="block font-semibold text-[#0A0A0A] text-sm">{q.name}</span>
-              <span className="block text-[#64748B] text-xs mt-0.5">{q.title}</span>
-              <span className="block text-[#64748B] text-[10px] mt-1 tracking-wide uppercase">{q.context}</span>
+              <span className="block text-[#475569] text-xs mt-0.5">{q.title}</span>
+              <span className="block text-[#475569] text-[10px] mt-1 tracking-wide uppercase">{q.context}</span>
             </figcaption>
           </figure>
         ))}
       </div>
-      <p className="text-xs text-[#64748B] mt-4">Excerpts from LinkedIn recommendations.</p>
+      <p className="text-xs text-[#475569] mt-4">Excerpts from LinkedIn recommendations.</p>
     </section>
   );
 }

@@ -10,14 +10,14 @@ const MODIFIED = '2026-09-13';
 export const metadata: Metadata = {
   title: 'The Org Chart Is Being Rewritten. Is Your Company Ready? | Zachary Leifer',
   description:
-    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
-  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
+    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change. It is whether you will redesign it intentionally.',
+  authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com/' }],
   alternates: { canonical: URL },
   openGraph: {
     type: 'article',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
     description:
-      'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
+      'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change. It is whether you will redesign it intentionally.',
     url: URL,
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
-    description: 'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
+    description: 'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change. It is whether you will redesign it intentionally.',
     images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
@@ -40,21 +40,32 @@ const articleSchema = {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
   datePublished: PUBLISHED,
   dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
-  image: 'https://zacharyleifer.com/images/og-card.jpg',
+  isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
+  image: ['https://zacharyleifer.com/images/og-card.jpg'],
   description:
-    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.',
+    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change. It is whether you will redesign it intentionally or let the disruption happen to you.',
   publisher: {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
     name: 'Zachary Leifer',
-    url: 'https://zacharyleifer.com',
+    url: 'https://zacharyleifer.com/',
   },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Zachary Leifer', item: 'https://zacharyleifer.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Writing & Perspectives', item: 'https://zacharyleifer.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'The Org Chart Is Being Rewritten. Is Your Company Ready?' },
+  ],
 };
 
 export default function OrgChartArticle() {
@@ -64,6 +75,10 @@ export default function OrgChartArticle() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
       <Nav />
       <main className="bg-[#F8F7F4] min-h-screen">
         <article className="max-w-3xl mx-auto px-8 md:px-12 py-24">
@@ -72,7 +87,7 @@ export default function OrgChartArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Writing &amp; Perspectives</a>
           </p>
 
           {/* Header */}
@@ -81,10 +96,14 @@ export default function OrgChartArticle() {
             <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-[#0A0A0A] leading-tight mb-6">
               The Org Chart Is Being Rewritten. Is Your Company Ready?
             </h1>
-            <div className="flex items-center gap-4 text-sm text-[#64748B]">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-[#64748B]">
               <span>Zachary Leifer</span>
               <span>·</span>
               <time dateTime="2026-05-07">May 7, 2026</time>
+              <span>·</span>
+              <span>
+                Updated <time dateTime={MODIFIED}>September 13, 2026</time>
+              </span>
               <span>·</span>
               <a
                 href="https://www.linkedin.com/pulse/org-chart-being-rewritten-your-company-ready-zachary-leifer-dxgye"
@@ -101,7 +120,7 @@ export default function OrgChartArticle() {
           <div className="prose prose-slate max-w-none text-[#334155] leading-[1.9] text-base space-y-6">
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
-              The traditional pyramid organizational structure has dominated business for nearly a century. AI is fundamentally challenging that model. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.
+              The traditional pyramid organizational structure has dominated business for nearly a century. AI is fundamentally challenging that model. The question is not whether your org chart will change. It is whether you will redesign it intentionally or let the disruption happen to you.
             </p>
 
             <p>
@@ -117,7 +136,7 @@ export default function OrgChartArticle() {
             </h2>
 
             <p>
-              The traditional management pyramid was not designed around people. It was designed around information. Information was slow, expensive to move, and unevenly distributed. Middle management existed to route it, to gather data from the front lines, synthesize it, and pass decisions back down. The wider the base, the more information nodes you needed.
+              The traditional management pyramid was not designed around people. It was designed around information. Information was slow, expensive to move, and unevenly distributed. Middle management existed to route it: to gather data from the front lines, synthesize it, and pass decisions back down. The wider the base, the more information nodes you needed.
             </p>
 
             <p>
@@ -168,10 +187,10 @@ export default function OrgChartArticle() {
 
             <ol className="list-decimal pl-6 space-y-3">
               <li>
-                <strong>How many of your core processes predate AI and have never been questioned?</strong> Not just automated, genuinely interrogated. Does the process exist because it creates value, or because it was the best way to do something before AI existed?
+                <strong>How many of your core processes predate AI and have never been questioned?</strong> Not just automated, but genuinely interrogated. Does the process exist because it creates value, or because it was the best way to do something before AI existed?
               </li>
               <li>
-                <strong>Does your technology infrastructure allow AI to work across organizational silos?</strong> AI is most powerful when it can see the whole system. Fragmented data, disconnected platforms, and siloed teams limit what AI can do more than any algorithm constraint.
+                <strong>Does your technology infrastructure allow AI to work across organizational silos?</strong> AI is most powerful when it can see the whole system. Fragmented data, disconnected platforms, and siloed teams limit what AI can do more than any algorithmic constraint.
               </li>
               <li>
                 <strong>Does your leadership team have the knowledge to guide this transformation?</strong> Not just to authorize it. To ask the right questions, evaluate the tradeoffs, and make decisions that require business judgment, not technical expertise.
@@ -204,7 +223,7 @@ export default function OrgChartArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
