@@ -86,10 +86,10 @@ const personSchema = {
   ],
   worksFor: {
     "@type": "Organization",
-    "@id": "https://zacharyleifer.com/#som",
+    "@id": "https://www.somstrategies.com/#organization",
     name: "State of Mind Strategies",
     url: "https://www.somstrategies.com/",
-    sameAs: ["https://www.somstrategies.com/"],
+    sameAs: ["https://www.linkedin.com/company/state-of-mind-strategies/"],
     description: "Boutique strategic consulting practice specializing in marketing, digital transformation, AI strategy and AI value realization.",
     address: {
       "@type": "PostalAddress",
@@ -117,6 +117,7 @@ const personSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://zacharyleifer.com/#website",
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com",
   description:
@@ -132,10 +133,10 @@ const websiteSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://zacharyleifer.com/#som",
+  "@id": "https://www.somstrategies.com/#organization",
   name: "State of Mind Strategies",
   url: "https://www.somstrategies.com/",
-  sameAs: ["https://www.somstrategies.com/"],
+  sameAs: ["https://www.linkedin.com/company/state-of-mind-strategies/"],
   founder: {
     "@id": "https://zacharyleifer.com/#zachary-leifer",
     "@type": "Person",
@@ -143,7 +144,7 @@ const organizationSchema = {
     url: "https://zacharyleifer.com",
   },
   description:
-    "Boutique strategic consulting practice specializing in marketing, digital transformation, AI strategy and AI value realization. Founded by Zachary Leifer, who has served as Chief Marketing Officer at 1/ST Technology and VP at Las Vegas Sands.",
+    "Boutique strategic consulting practice specializing in marketing, digital transformation, AI strategy and AI value realization. Founded by Zachary Leifer, who has served as Chief Marketing Officer at 1/ST Technology and Vice President at Las Vegas Sands.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
@@ -184,7 +185,7 @@ export const metadata: Metadata = {
     "Zachary Leifer CMO",
     "Las Vegas Sands Marketing Executive",
     "The Venetian Marketing VP",
-    "1ST Technology CMO",
+    "1/ST Technology CMO",
     "Executive Recruiter Las Vegas",
   ],
   authors: [{ name: "Zachary Leifer", url: "https://zacharyleifer.com" }],
@@ -223,11 +224,10 @@ export const metadata: Metadata = {
       "Zachary Leifer helps companies create more predictable value from data, digital transformation, technology and AI. Speaker and advisor based in Las Vegas.",
     images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
-  alternates: {
-    canonical: "https://zacharyleifer.com",
-  },
+  // alternates.canonical lives in app/page.tsx so non-home routes (including
+  // the 404 page) do not inherit the homepage canonical.
   other: {
-    // GEO meta tags — helps local search engines and directories
+    // GEO meta tags, which help local search engines and directories
     "geo.region": "US-NV",
     "geo.placename": "Las Vegas, Nevada",
     "geo.position": "36.1699;-115.1398",

@@ -1,61 +1,100 @@
-# Zachary Leifer — zacharyleifer.com
+# Zachary Leifer | zacharyleifer.com
 
-> Zachary Leifer is a senior commercial growth executive (CMO, CCO) based in Las Vegas, NV.
-> Chief Marketing Officer at 1/ST Technology (67% revenue growth, 22% EBITDA CAGR over four years), CCO at
-> PokerAtlas, and VP at Las Vegas Sands / The Venetian ($36M incremental direct-channel revenue from $13M investment).
-> Harvard Business School Advanced Management Program graduate. Open to board director, advisory,
-> and senior operating roles in gaming, hospitality, technology, and consumer industries.
+> Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who helps companies
+> create more predictable value from data, digital transformation, technology and AI. He has served as
+> Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas, and Vice President,
+> Corporate Information Technology at Las Vegas Sands, after leading digital marketing and eCommerce at
+> The Venetian Resort Las Vegas. Harvard Business School Advanced Management Program (2026). Speaker,
+> executive advisor and Board Candidate, open to Chief Marketing Officer, Chief Commercial Officer, board
+> and advisory roles.
 
 ## Full Profile
 
-- [Zachary Leifer — Commercial Growth Executive](https://zacharyleifer.com/): Complete profile
-  including career history, case studies, impact metrics, testimonials from C-suite leaders,
-  thought leadership, and awards.
+- [Zachary Leifer | Chief Marketing Officer and Chief Commercial Officer](https://zacharyleifer.com/): Complete
+  profile including career history, case studies, impact metrics, recommendations from executives,
+  technology and data leaders, investors and colleagues, writing, and awards.
+
+## Board & Executive Advisory
+
+- [Board Candidate & Executive Advisor](https://zacharyleifer.com/board-executive-advisory/): His board-facing
+  experience with commercial, data, digital transformation and technology investment decisions, his approach
+  to AI investment governance and value realization, and his executive advisory work.
+
+## Case Studies
+
+- [1/ST Technology Commercial Growth Case Study](https://zacharyleifer.com/work/1st-technology-commercial-growth/):
+  How he connected marketing investment, customer data and commercial execution as Chief Marketing Officer
+  at 1/ST Technology, 2020–2024.
+- [The Venetian Las Vegas Direct-Channel Case Study](https://zacharyleifer.com/work/venetian-direct-channel-transformation/):
+  How the digital transformation he led at The Venetian Resort Las Vegas reversed a five-year decline in
+  direct-channel bookings and generated $36M in incremental direct-channel revenue.
 
 ## Speaking
 
-- [Zachary Leifer — Speaker](https://zacharyleifer.com/speaking/): Available for keynotes, executive
-  panels, leadership roundtables, board sessions, workshops, and podcasts on AI strategy, customer
-  data, commercial growth, and digital transformation. Based in Las Vegas, NV. Available nationally
-  and internationally.
+- [Zachary Leifer | Speaker](https://zacharyleifer.com/speaking/): Available for keynotes, executive panels,
+  leadership roundtables, board sessions, workshops, and podcasts on AI strategy, customer data, commercial
+  growth, and digital transformation. Based in Las Vegas and available nationally and internationally.
+- Speaking inquiries: https://zacharyleifer.com/speaking/
 
 ## Writing
 
 - [Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives](https://zacharyleifer.com/blog/why-data-transformations-fail/):
-  Original survey research from his Harvard Business School AMP capstone on why data and digital
-  initiatives fail to deliver, why AI is repeating the pattern, and the readiness architecture
-  that changes the odds.
+  Original survey research from his Harvard Business School Advanced Management Program capstone (Leadership
+  Impact Project) on why data and digital initiatives fail to deliver, how the pattern carries into AI, and
+  the readiness conditions associated with stronger delivery.
 - [What Running Corporate IT Taught Me About Running Marketing](https://zacharyleifer.com/blog/marketing-to-corporate-it/):
-  Four lessons from being recruited out of VP Digital Marketing into VP Corporate IT at a Fortune 500.
+  Four lessons from moving out of Vice President, Digital Marketing & eCommerce into Vice President, Corporate
+  Information Technology at Las Vegas Sands, a Fortune 500 company.
+- [The Org Chart Is Being Rewritten. Is Your Company Ready?](https://zacharyleifer.com/blog/org-chart-rewritten/):
+  How AI is reshaping the traditional management pyramid, and why companies should redesign their structure
+  intentionally.
+- [AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?](https://zacharyleifer.com/blog/ai-enterprise-value/):
+  Why AI adoption is running ahead of AI governance in many organizations, and the questions boards and CEOs
+  should be asking.
 - [All articles](https://zacharyleifer.com/blog/)
 
 ## Key Facts
 
 - Name: Zachary Leifer
 - Location: Las Vegas, Nevada, USA
+- Focus: Helping companies create more predictable value from data, digital transformation, technology and AI
 - Current Role: Strategic Marketing Advisor, State of Mind Strategies (2024–present)
-- Executive Roles: CMO at 1/ST Technology (2020–2024), CCO at PokerAtlas (2025), VP Digital
-  Marketing & eCommerce + VP Corporate IT at Las Vegas Sands / The Venetian (2014–2020)
+- Executive Roles:
+  - Chief Commercial Officer, PokerAtlas (2025)
+  - Chief Marketing Officer, 1/ST Technology (2020–2024)
+  - Vice President, Corporate Information Technology, Las Vegas Sands (2019–2020)
+  - Director to Executive Director to Vice President, Digital Marketing & eCommerce, The Venetian Resort Las Vegas, then part of Las Vegas Sands (2014–2019)
 - Education: Harvard Business School Advanced Management Program (2026); B.S. Applied Economics
   & Management, Cornell University
-- Awards: HSMAI Adrian Awards — Gold, Silver, Bronze (2015)
-- Open to: Board director roles, advisory board positions, C-suite operating roles
+- Awards: HSMAI Adrian Awards: Gold, Silver, Bronze (2015)
+- Recommendations: 17 LinkedIn recommendations from executives, technology and data leaders, investors and colleagues
+- Open to: Chief Marketing Officer and Chief Commercial Officer roles, board roles as a Board Candidate,
+  advisory roles, and speaking engagements
 
 ## Impact Metrics
 
-- 67% revenue growth and 22% EBITDA CAGR at 1/ST Technology (2020–2024)
-- $36M incremental direct-channel revenue from $13M investment at Las Vegas Sands / The Venetian
-- 56% reduction in customer acquisition cost via CDP at 1/ST Technology
-- 73% improvement in LTV/CAC at 1/ST Technology
-- $60M in wagering handle within 10 months of new app launch
+- 1/ST Technology (Chief Marketing Officer, 2020–2024): 67% revenue growth and 22% EBITDA CAGR over four years
+- 1/ST Technology: 56% reduction in customer acquisition cost and 73% improvement in LTV/CAC
+- 1/ST Technology: board-approved marketing budget increased from $8M to $15M through direct board-level
+  briefings and ROI forecasting
+- 1/ST Technology: new wagering app generated $60M in handle (total amount wagered) and $4M in net gaming
+  revenue within 10 months of launch
+- Las Vegas Sands / The Venetian: $13M capital investment in digital transformation initiatives that generated
+  $36M in incremental direct-channel revenue
+- The Venetian: 24 consecutive months of year-over-year growth, 50% increase in return on advertising spend,
+  and 18% lift in CRM conversion
+- PokerAtlas: 14% increase in registered players and 18% increase in B2B customers in nine months
+- Launched a DTC healthcare venture in eight weeks and scaled it from $0 to $200K in gross revenue in five months
 
 ## Expertise
 
-Revenue Strategy · P&L Management · Customer Data Platform (CDP) · CRM · AI Strategy ·
-Digital Transformation · Marketing Technology · Go-to-Market Strategy · Board Governance ·
-Gaming & Hospitality · Integrated Resorts · Sports Wagering · eCommerce
+Revenue Strategy · P&L Management · Customer Data Platform (CDP) · CRM · AI Strategy · AI Investment Governance ·
+AI Readiness · AI Value Realization · Digital Transformation · Marketing Technology · Go-to-Market Strategy ·
+Board-Facing Investment Governance · Gaming & Hospitality · Integrated Resorts · Sports Wagering · eCommerce
 
 ## Contact
 
+- Speaking inquiries: https://zacharyleifer.com/speaking/
+- Consulting and commercial advisory: State of Mind Strategies, https://www.somstrategies.com/
 - LinkedIn: https://linkedin.com/in/zacharyleifer
 - Email: zacharyleifer@gmail.com

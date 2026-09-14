@@ -12,7 +12,7 @@ export default function Footer() {
               Let's Connect.
             </p>
             <p className="text-white/60 text-base leading-relaxed max-w-xs">
-              Open to CMO, CCO, GM, President, board director, advisory, operating partner, and commercial transformation roles.
+              Based in Las Vegas and available nationally and internationally for executive, speaking, board and advisory opportunities.
             </p>
           </div>
 
@@ -21,6 +21,34 @@ export default function Footer() {
             <div>
               <p className="text-[10px] tracking-[0.3em] uppercase text-[#475569] mb-5">Connect</p>
               <div className="space-y-3">
+                <a
+                  href="mailto:zacharyleifer@gmail.com?subject=Executive%20opportunity"
+                  className="block text-white/70 hover:text-white transition-colors text-sm group"
+                >
+                  Executive opportunity
+                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                </a>
+                <a
+                  href="/speaking/#book"
+                  className="block text-white/70 hover:text-white transition-colors text-sm group"
+                >
+                  Speaking inquiry
+                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
+                </a>
+                <a
+                  href="/board-executive-advisory/"
+                  className="block text-white/70 hover:text-white transition-colors text-sm group"
+                >
+                  Board and executive advisory
+                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
+                </a>
+                <a
+                  href="mailto:zacharyleifer@gmail.com?subject=Board%20or%20advisory%20inquiry"
+                  className="block text-white/70 hover:text-white transition-colors text-sm group"
+                >
+                  Board or advisory inquiry
+                  <span className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
+                </a>
                 <a
                   href="https://linkedin.com/in/zacharyleifer"
                   target="_blank"

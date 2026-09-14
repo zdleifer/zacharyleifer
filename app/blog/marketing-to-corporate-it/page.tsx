@@ -5,9 +5,10 @@ import { OG_IMAGE } from '@/data/og-image';
 
 const TITLE = 'What Running Corporate IT Taught Me About Running Marketing';
 const DESC =
-  'A Fortune 500 recruited me out of VP Digital Marketing to run Corporate IT. Four lessons from the other side of the CMO/CIO divide, and what they changed about how I ran marketing afterward.';
+  'A Fortune 500 company recruited me from VP of Digital Marketing to VP of Corporate IT. Four lessons from the other side of the CMO/CIO divide.';
 const URL = 'https://zacharyleifer.com/blog/marketing-to-corporate-it/';
 const PUBLISHED = '2026-09-12';
+const MODIFIED = '2026-09-13';
 
 export const metadata: Metadata = {
   title: `${TITLE} | Zachary Leifer`,
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     url: URL,
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [OG_IMAGE],
   },
   twitter: {
@@ -43,7 +45,7 @@ const articleSchema = {
   },
   publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   datePublished: PUBLISHED,
-  dateModified: PUBLISHED,
+  dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
   image: 'https://zacharyleifer.com/images/headshot.png',
@@ -65,7 +67,7 @@ export default function MarketingToCorporateITArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/#insights" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
           </p>
 
           {/* Header */}
@@ -85,11 +87,15 @@ export default function MarketingToCorporateITArticle() {
           <div className="prose prose-slate max-w-none text-[#334155] leading-[1.9] text-base space-y-6">
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
-              In 2019 a Fortune 500 company recruited me out of a marketing job to run part of its technology organization. I had been VP of Digital Marketing and eCommerce at The Venetian Resort. I became VP of Corporate Information Technology at Las Vegas Sands. Nobody moves in that direction, and the year I spent on the other side changed how I have run marketing ever since.
+              In 2019, a Fortune 500 company recruited me out of a marketing job to run part of its technology organization. I had been Vice President of Digital Marketing and eCommerce at The Venetian Resort, and I became Vice President of Corporate Information Technology at Las Vegas Sands. The year I spent on the other side changed how I have run marketing ever since.
             </p>
 
             <p>
-              The reason for the move was not that I was secretly an engineer. It was that marketing had started behaving like a capital-project organization. We had put roughly $13M into a new website and booking engine, run it like an infrastructure program rather than a campaign, and it returned $36M in incremental direct-channel revenue with 24 consecutive months of growth. What got me recruited was not creative work. It was delivering a large technology investment on a schedule with a number attached to it.
+              The move made sense because marketing had started operating like a capital-project organization. We secured $13M in capital investment for{' '}
+              <a href="/work/venetian-direct-channel-transformation/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                digital transformation initiatives at The Venetian
+              </a>
+              , including a new website and booking engine, and managed the work with the planning and governance of an infrastructure program. The initiatives generated $36M in incremental direct-channel revenue, with 24 consecutive months of year-over-year growth. What got me recruited was delivering a large capital technology investment with a measured return attached to it.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -101,7 +107,7 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              The practical consequence is that the marketing leaders who get their technology approved are the ones who arrive having already answered those questions. Not because IT demands deference, but because a request that accounts for its own total cost is a request someone can say yes to.
+              The practical consequence is that the marketing leaders who get their technology approved are the ones who arrive having already answered those questions. A request that accounts for its own total cost is a request someone can say yes to.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -125,11 +131,11 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              When I later became CMO at 1/ST Technology, I imported that discipline directly. Every significant investment carried a forecast return before it was approved, and the forecast was checked afterward. Over four years the board-approved marketing budget grew from $8M to $15M. It grew because the forecasts were shown to be reliable, not because marketing argued more persuasively.
+              When I later became Chief Marketing Officer at 1/ST Technology, I imported that discipline directly. Every significant investment carried a forecast return before it was approved. The board-approved marketing budget grew from $8M to $15M, an increase secured through direct board-level briefings built on that ROI forecasting.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
-              4. Unit economics travel across the divide, campaign metrics do not
+              4. Unit economics travel across the divide; campaign metrics do not
             </h2>
 
             <p>
@@ -137,7 +143,11 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              Rebuilding the go-to-market model at 1/ST around unit economics rather than channel metrics produced a 56% reduction in customer acquisition cost and a 73% improvement in LTV to CAC. The underlying work was ordinary: better segmentation, a predictive customer-valuation model, and reinvestment rules with actual governance. What made it fundable was that it was expressed in numbers the rest of the executive team already used.
+              Rebuilding{' '}
+              <a href="/work/1st-technology-commercial-growth/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                the go-to-market model at 1/ST Technology
+              </a>{' '}
+              around unit economics rather than channel metrics contributed to a 56% reduction in customer acquisition cost and a 73% improvement in LTV to CAC. The underlying work was ordinary: better segmentation, a predictive customer-valuation model, and reinvestment rules with actual governance. What made it fundable was that it was expressed in numbers the rest of the executive team already used.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -153,7 +163,7 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              The crossover is rarer than it should be. It is also, in my experience, the single most useful thing I have to offer a company trying to turn customer data and AI into results a board will recognize.
+              More marketing and technology leaders should make this crossover. Having led teams on both sides of it is the experience I draw on most when helping a company turn customer data and AI into results a board will recognize.
             </p>
 
           </div>
@@ -161,7 +171,7 @@ export default function MarketingToCorporateITArticle() {
           {/* Footer nav */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#64748B]">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has led both marketing and corporate IT at the same Fortune 500 company. He served as CMO at 1/ST Technology and CCO at PokerAtlas.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth executive who has held vice president roles in both digital marketing and corporate information technology at Las Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas.{' '}
               <a href="/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                 Read the full profile
               </a>

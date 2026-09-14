@@ -47,7 +47,7 @@ export default function Positioning() {
 
         <p className="font-display text-[clamp(1.5rem,3vw,2.25rem)] font-normal text-[#0A0A0A] leading-snug reveal">
           I am open to select board, advisory and senior operating roles where commercial growth,
-          customer data, AI strategy and AI transformation drive the agenda.
+          customer data, AI strategy and AI value realization drive the agenda.
         </p>
 
         <p className="text-[#475569] text-base md:text-lg leading-relaxed mt-6 max-w-3xl reveal reveal-delay-1">
@@ -93,7 +93,13 @@ export default function Positioning() {
           <div>
             <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#64748B] mb-3">Open To</h3>
             <p className="text-[#1A1A1A] text-sm leading-relaxed">
-              Corporate board &amp; advisory seats · CMO / CCO / GM &amp; operating-partner mandates ·
+              <a
+                href="/board-executive-advisory/"
+                className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
+              >
+                Corporate board &amp; advisory seats
+              </a>{' '}
+              · CMO / CCO / GM &amp; operating-partner mandates ·
               Growth &amp; transformation advisory
             </p>
           </div>

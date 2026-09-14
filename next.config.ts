@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   },
   // Emit each route as a folder with index.html for clean static hosting.
   trailingSlash: true,
+  // Dedicated 404 that skips the root layout, so no homepage metadata is merged in.
+  experimental: {
+    globalNotFound: true,
+  },
 };
 
 export default nextConfig;

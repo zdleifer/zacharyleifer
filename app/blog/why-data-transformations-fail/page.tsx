@@ -10,6 +10,7 @@ const DESC =
 const SEO_TITLE = 'Why Data and Digital Transformations Fail';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';
 const PUBLISHED = '2026-09-12';
+const MODIFIED = '2026-09-13';
 
 export const metadata: Metadata = {
   title: `${SEO_TITLE} | Zachary Leifer`,
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     url: URL,
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [OG_IMAGE],
   },
   twitter: {
@@ -45,7 +47,7 @@ const articleSchema = {
   },
   publisher: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   datePublished: PUBLISHED,
-  dateModified: PUBLISHED,
+  dateModified: MODIFIED,
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
   image: 'https://zacharyleifer.com/images/headshot.png',
@@ -72,19 +74,14 @@ const findings = [
       'said their organization selected the technology before the business outcome had been defined.',
   },
   {
-    stat: '2.6x',
-    label:
-      'higher scores on ability to demonstrate ROI among organizations that redesigned incentives before launch. Only six respondents had done so.',
-  },
-  {
     stat: '6x',
     label:
-      'more likely to fully deliver when the initiative had dedicated ownership and dedicated resources rather than being added to business as usual.',
+      'more likely to report full delivery for initiatives with dedicated ownership and dedicated resources than for those added to business as usual (self-reported; directional).',
   },
   {
     stat: 'Zero',
     label:
-      'of the respondents whose organizations did none of the five conditions reported an initiative that fully delivered. That group was a minority of the 82, so read it as a pattern rather than a precise rate.',
+      'of the respondents whose organizations met none of the five conditions reported an initiative that fully delivered.',
   },
 ];
 
@@ -137,11 +134,10 @@ export default function WhyDataTransformationsFail() {
             </p>
 
             <p>
-              This is the research behind my capstone project for the Advanced Management Program
-              at Harvard Business School, formally the Leadership Impact Project. The capstone
-              focused on driving enterprise value from data, digital transformation, and AI.
-              Respondents were senior leaders across general management, technology, finance, and
-              commercial functions, surveyed in 2026. Responses are reported in aggregate.
+              This is the research behind my Leadership Impact Project, the capstone of the Advanced
+              Management Program at Harvard Business School, which focused on driving enterprise value
+              from data, digital transformation, and AI. Responses are reported in aggregate. I designed and conducted the survey as part of the
+              program; it is not an official Harvard Business School study.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-6">
@@ -149,13 +145,8 @@ export default function WhyDataTransformationsFail() {
             </h2>
 
             <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#0A0A0A]/10 my-10">
-              {findings.map((f, i) => (
-                <div
-                  key={f.stat}
-                  className={`bg-[#F8F7F4] p-6${
-                    i === findings.length - 1 ? ' sm:col-span-2' : ''
-                  }`}
-                >
+              {findings.map((f) => (
+                <div key={f.stat} className="bg-[#F8F7F4] p-6">
                   <p className="font-display text-3xl font-bold text-[#0A0A0A] mb-2">{f.stat}</p>
                   <p className="text-sm text-[#334155] leading-relaxed">{f.label}</p>
                 </div>
@@ -163,15 +154,14 @@ export default function WhyDataTransformationsFail() {
             </div>
 
             <p className="text-sm text-[#64748B]">
-              Survey of 82 senior executives, 2026. Figures are self-reported and describe the
-              respondents&rsquo; own organizations.
+              Survey of 82 senior executives, 2026. All figures are self-reported by respondents
+              about their own organizations.
             </p>
 
             <p>
-              The last finding is the one worth sitting with. Among respondents whose organizations
-              did none of the five things, clear ownership, a dedicated team, aligned incentives,
-              defined measurement, and an assessed readiness, not one reported an initiative that
-              fully delivered. Not a reduced return. None.
+              That last figure is the most telling. The five conditions behind it are clear
+              ownership, a dedicated team, aligned incentives, defined measurement, and an assessed
+              readiness.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -182,18 +172,18 @@ export default function WhyDataTransformationsFail() {
               That reading is consistent with the wider literature. Bain &amp; Company found that 88%
               of business transformations fall short of their original ambitions, with only about 12%
               achieving what they set out to deliver. Boston Consulting Group&rsquo;s 2025 study of
-              more than 1,250 companies across 68 countries found 60% achieving no material value
-              from AI at all, and just 5% generating value at scale. My survey adds a
-              practitioner-level observation to both: 56% of these organizations chose the
-              technology before the commercial outcome had been defined, which is the point at
-              which the rest becomes hard.
+              more than 1,250 companies found 60% reporting hardly any material value from AI, with
+              minimal revenue and cost gains, and just 5% generating value at scale. My survey adds a
+              practitioner-level observation to both: 56% of respondents said their organizations
+              chose the technology before the commercial outcome had been defined, which is the point
+              at which the rest becomes hard.
             </p>
 
             <p>
               The failure is rarely dramatic. Resources get quietly withdrawn to cover business as
               usual. Two initiatives draw on the same finite talent pool with no stated first
               priority. The people who stand to lose control, budget, or status do not object in
-              the meeting, they simply do not move. None of that shows up on a milestone dashboard
+              the meeting; they simply do not move. None of that shows up on a milestone dashboard
               until the return is already gone.
             </p>
 
@@ -203,16 +193,16 @@ export default function WhyDataTransformationsFail() {
 
             <p>
               This survey asked about data and digital initiatives, because that is the wave most
-              of these organizations have already been through. What is striking is how exactly
+              of these organizations have already been through. What is striking is how closely
               the AI conversation is now reproducing it. The technology is being selected before
               the commercial outcome is defined. Pilots are being added to teams who already have
-              day jobs. Nobody is being paid differently if it works. Those are the same three
-              conditions that predicted failure in the data era, and there is no reason to expect
-              a different result from a different acronym.
+              day jobs. Nobody will be paid differently if it works. Those are the same patterns
+              that respondents associated with weaker delivery in the data era, and there is little
+              reason to expect a different result from a different acronym.
             </p>
 
             <p>
-              If anything AI compresses the timeline. The technology is easier to acquire than a
+              If anything, AI compresses the timeline. The technology is easier to acquire than a
               data platform was, which removes the procurement friction that used to force at
               least some organizational conversation. It is now entirely possible to have AI
               running in a dozen places in the business without anyone having defined what
@@ -227,8 +217,8 @@ export default function WhyDataTransformationsFail() {
             <p>
               Readiness means diagnosing where today&rsquo;s norms, power, and incentives will
               resist tomorrow&rsquo;s strategy, and adjusting them before capital is committed. It
-              is not a checklist run at kickoff. Four structural conditions need to be true before
-              launch rather than after it:
+              is not a checklist run at kickoff. Alongside the conditions the survey measured, four
+              structural requirements need to be in place before launch rather than after it:
             </p>
 
             <ol className="list-decimal pl-6 space-y-3">
@@ -248,8 +238,8 @@ export default function WhyDataTransformationsFail() {
                 reclaim both.
               </li>
               <li>
-                <strong>Sustained support.</strong> Not for a year. Short-cycle support is how
-                initiatives die before they can deliver.
+                <strong>Sustained support.</strong> Commitment has to outlast a single budget
+                cycle; short-cycle support is how initiatives stall before they can deliver.
               </li>
             </ol>
 
@@ -260,8 +250,8 @@ export default function WhyDataTransformationsFail() {
             <p>
               Where the diagnostic finds gaps, five levers close them. The framework I apply here
               is the LEASH model, developed by Charles O&rsquo;Reilly of Stanford and taught in the
-              Harvard Business School change and renewal curriculum. It is not mine, and I use it
-              because in practice it is the most complete account of what actually has to move:
+              Harvard Business School change and renewal curriculum. I use it because it covers the
+              full set of levers that have to move:
             </p>
 
             <div className="not-prose my-10 divide-y divide-[#0A0A0A]/10 border-y border-[#0A0A0A]/10">
@@ -283,10 +273,10 @@ export default function WhyDataTransformationsFail() {
             </h2>
 
             <p>
-              The two openings look different and are worth naming separately. Michael Tushman and
-              Charles O&rsquo;Reilly draw the distinction in Winning Through Innovation: a
-              performance gap is something broken or inefficient in the business you already run, an
-              opportunity gap is new value you could create. They argue the two need structurally
+              Transformations that work start from one of two kinds of gap, and the two are worth
+              naming separately. Michael Tushman and Charles O&rsquo;Reilly draw the distinction in
+              Winning Through Innovation: a performance gap is something broken or inefficient in the
+              business you already run; an opportunity gap is new value you could create. They argue the two need structurally
               separate teams, because the second will always lose to the first if they compete for
               the same people.
             </p>
@@ -299,7 +289,7 @@ export default function WhyDataTransformationsFail() {
             </p>
 
             <p>
-              The opportunity gap was priced differently. Combining guest willingness to pay with
+              The opportunity gap was in pricing. Combining guest willingness to pay with
               competitive pricing data by date and segment let the right offer reach the right
               guest at the right price before a competitor could make one. A single use case paid
               for the entire program.
@@ -307,10 +297,8 @@ export default function WhyDataTransformationsFail() {
 
             <p>
               Neither depended on novel technology. Both depended on defining the commercial
-              outcome first, funding a discovery phase rather than a platform, embedding the
-              project team inside the business rather than beside it, and having an independent
-              finance validator confirm the result rather than the project team reporting on
-              itself.
+              outcome first, funding a discovery phase before a platform, embedding the project team
+              inside the business, and having an independent finance validator confirm the result.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -321,14 +309,19 @@ export default function WhyDataTransformationsFail() {
               Most governance tracks milestones and spend. That catches problems after they have
               cost something. Governance that works surfaces resource withdrawal, misaligned
               incentives, and passive resistance early, which means it has to be looking at the
-              organization and not only at the plan. A monthly steering review comparing capital
-              approved against independently verified result will find drift sooner than any status
+              organization and not only at the plan. A monthly steering review comparing approved
+              capital against independently verified results will find drift sooner than any status
               report.
             </p>
 
             <p>
               Governance is not a stop mechanism. It is a navigation instrument, and its real job
-              is to protect the new behaviors long enough for them to take hold.
+              is to protect the new behaviors long enough for them to take hold. The same
+              principles that shaped data and digital transformation investments now apply to{' '}
+              <a href="/board-executive-advisory/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                AI investment governance and value realization
+              </a>{' '}
+              at the board level.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -351,10 +344,11 @@ export default function WhyDataTransformationsFail() {
 
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#64748B]">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has led both
-              marketing and corporate IT at the same Fortune 500 company. This research formed the
-              basis of his capstone project for the Advanced Management Program at Harvard Business
-              School.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth executive who has held vice
+              president roles in both digital marketing and corporate information technology at Las
+              Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST
+              Technology and Chief Commercial Officer at PokerAtlas. This research formed the basis of his capstone project for
+              the Advanced Management Program at Harvard Business School.{' '}
               <a href="/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                 Read the full profile
               </a>

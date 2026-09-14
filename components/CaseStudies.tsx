@@ -10,20 +10,24 @@ const cases = [
     challenge:
       'A racing, wagering, and entertainment business needed to modernize its commercial engine and prove the return on marketing to the board.',
     action:
-      'Built a cloud customer data platform, rebuilt go-to-market around unit economics, launched a new wagering app, and instituted ROI forecasting to earn investment.',
+      'Led a cloud customer data platform and a predictive customer-valuation model, rebuilt go-to-market around unit economics, and launched a new wagering app. Secured an increase in the board-approved marketing budget from $8M to $15M through direct board-level briefings and ROI forecasting.',
     result:
-      'Drove 67% revenue growth while cutting costs 2.7%, a 22% EBITDA CAGR over four years. Reduced customer acquisition cost 56% and lifted LTV/CAC 73%. The new wagering app delivered $60M in handle and $4M in net gaming revenue within 10 months, and board-approved budget grew from $8M to $15M on forecasted ROI.',
+      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60M in handle, the total amount wagered, and $4M in net gaming revenue within 10 months.',
+    href: '/work/1st-technology-commercial-growth/',
+    linkLabel: 'Read the 1/ST Technology case study',
   },
   {
     org: 'Las Vegas Sands / The Venetian',
-    role: 'Director to VP Digital Marketing & eCommerce, then VP Corporate IT · 2014-2020',
-    headline: '$36M incremental direct-channel revenue from a $13M investment · 24 consecutive months of growth · 50% ROAS lift',
+    role: 'Director to Executive Director to Vice President, Digital Marketing & eCommerce, then Vice President, Corporate Information Technology · 2014-2020',
+    headline: '$13M capital investment · $36M incremental direct-channel revenue · 24 consecutive months of growth · 50% ROAS lift',
     challenge:
-      'The flagship Las Vegas property of a Fortune 500 resort operator faced a five-year decline in direct-channel bookings.',
+      'The Venetian, then the flagship Las Vegas property of a Fortune 500 resort operator, faced a five-year decline in direct-channel bookings.',
     action:
-      'Led a $13M investment in a new website and booking engine, built a 360-degree customer data platform, and was then recruited internally to run global cloud governance.',
+      'Secured $13M in capital investment for digital transformation initiatives, directed a new website and booking engine, led a 360-degree customer data platform for personalization across hotel and casino, and led the design of a price-elasticity model for pricing and offers.',
     result:
-      'Generated $36M in incremental direct-channel revenue from the $13M investment, reversed the trend with 24 consecutive months of growth and a 50% lift in ROAS, and improved CRM conversion 18%. Earned the rare crossover from marketing into enterprise technology leadership across the U.S., Singapore, and China.',
+      'Those initiatives generated $36M in incremental direct-channel revenue and reversed the decline, with 24 consecutive months of year-over-year growth, a 50% increase in return on advertising spend and an 18% lift in CRM conversion. On the strength of those results, Las Vegas Sands recruited me from Digital Marketing into Corporate Information Technology to lead a global cloud governance program across the U.S., Singapore and China.',
+    href: '/work/venetian-direct-channel-transformation/',
+    linkLabel: 'Read The Venetian direct-channel case study',
   },
 ];
 
@@ -89,6 +93,13 @@ export default function CaseStudies() {
                   <p className="text-[9px] tracking-[0.3em] uppercase text-[#3B5998] mb-1.5">The Result</p>
                   <p className="text-white/85 text-sm leading-relaxed">{c.result}</p>
                 </div>
+                <a
+                  href={c.href}
+                  className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/70 hover:text-white transition-colors border-b border-white/30 hover:border-white pb-0.5"
+                >
+                  {c.linkLabel}
+                  <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
           ))}

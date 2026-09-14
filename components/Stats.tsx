@@ -4,9 +4,9 @@ import { useEffect, useRef } from 'react';
 
 const stats = [
   { number: '67%', label: 'Revenue Growth', context: '4-year run at 1/ST Technology' },
-  { number: '$36M', label: 'Direct Revenue', context: 'Incremental channel revenue, The Venetian' },
-  { number: '56%', label: 'CAC Reduction', context: 'Customer data platform, 1/ST Technology' },
-  { number: '73%', label: 'LTV/CAC Improvement', context: 'Hyper-segmentation & CRM discipline' },
+  { number: '$36M', label: 'Direct-Channel Revenue', context: 'Incremental revenue, The Venetian' },
+  { number: '56%', label: 'CAC Reduction', context: '1/ST Technology' },
+  { number: '73%', label: 'LTV/CAC Improvement', context: '1/ST Technology' },
 ];
 
 export default function Stats() {

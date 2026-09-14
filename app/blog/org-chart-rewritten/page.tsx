@@ -3,20 +3,25 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { OG_IMAGE } from '@/data/og-image';
 
+const URL = 'https://zacharyleifer.com/blog/org-chart-rewritten/';
+const PUBLISHED = '2026-05-07';
+const MODIFIED = '2026-09-13';
+
 export const metadata: Metadata = {
   title: 'The Org Chart Is Being Rewritten. Is Your Company Ready? | Zachary Leifer',
   description:
-    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.',
+    'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
   authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
-  alternates: { canonical: 'https://zacharyleifer.com/blog/org-chart-rewritten/' },
+  alternates: { canonical: URL },
   openGraph: {
     type: 'article',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
     description:
       'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally.',
-    url: 'https://zacharyleifer.com/blog/org-chart-rewritten/',
+    url: URL,
     authors: ['Zachary Leifer'],
-    publishedTime: '2026-05-07',
+    publishedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [OG_IMAGE],
   },
   twitter: {
@@ -37,8 +42,11 @@ const articleSchema = {
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
   },
-  datePublished: '2026-05-07',
-  url: 'https://zacharyleifer.com/blog/org-chart-rewritten/',
+  datePublished: PUBLISHED,
+  dateModified: MODIFIED,
+  url: URL,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
+  image: 'https://zacharyleifer.com/images/og-card.jpg',
   description:
     'AI is dismantling the traditional management pyramid. The question is not whether your org chart will change, it is whether you will redesign it intentionally or let the disruption happen to you.',
   publisher: {
@@ -64,7 +72,7 @@ export default function OrgChartArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/#insights" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
           </p>
 
           {/* Header */}
@@ -97,7 +105,11 @@ export default function OrgChartArticle() {
             </p>
 
             <p>
-              Most organizations are still approaching AI the way they approached every prior technology wave: as a tool to bolt onto existing structures. Add an AI layer here. Automate a process there. Keep the hierarchy intact and see what sticks. That approach will not be enough.
+              Most organizations are still approaching AI the way they approached every prior technology wave: as a tool to bolt onto existing structures. Add an AI layer here. Automate a process there. Keep the hierarchy intact and see what sticks. That approach will not be enough. It is the same pattern behind{' '}
+              <a href="/blog/why-data-transformations-fail/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                why data and digital transformations fail
+              </a>
+              : the technology changes and the organization around it does not.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -192,7 +204,7 @@ export default function OrgChartArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is open to board, advisory, and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

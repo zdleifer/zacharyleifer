@@ -47,7 +47,7 @@ export default function Testimonials() {
               What Leaders Say
             </h2>
             <p className="text-white/60 text-sm mt-3 max-w-lg">
-              Selected from LinkedIn recommendations by C-suite executives, technology and data leaders, investors, and direct colleagues.
+              Verbatim excerpts from recommendations Zachary has received on LinkedIn, written by executives, technology and data leaders, and colleagues.
             </p>
           </div>
         </div>

@@ -3,20 +3,25 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { OG_IMAGE } from '@/data/og-image';
 
+const URL = 'https://zacharyleifer.com/blog/ai-enterprise-value/';
+const PUBLISHED = '2026-05-05';
+const MODIFIED = '2026-09-13';
+
 export const metadata: Metadata = {
   title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure? | Zachary Leifer',
   description:
-    'Most companies have AI adoption happening organically, in scattered pockets, disconnected from the workflows that drive growth. Here is how to move from experimentation to measurable enterprise value.',
+    'Most companies have AI adoption happening organically, in scattered pockets. Here is how to move from experimentation to measurable enterprise value.',
   authors: [{ name: 'Zachary Leifer', url: 'https://zacharyleifer.com' }],
-  alternates: { canonical: 'https://zacharyleifer.com/blog/ai-enterprise-value/' },
+  alternates: { canonical: URL },
   openGraph: {
     type: 'article',
     title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
     description:
       'Most companies have AI adoption happening organically, in scattered pockets. Here is how to move from experimentation to measurable enterprise value.',
-    url: 'https://zacharyleifer.com/blog/ai-enterprise-value/',
+    url: URL,
     authors: ['Zachary Leifer'],
-    publishedTime: '2026-05-05',
+    publishedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [OG_IMAGE],
   },
   twitter: {
@@ -37,8 +42,11 @@ const articleSchema = {
     name: 'Zachary Leifer',
     url: 'https://zacharyleifer.com',
   },
-  datePublished: '2026-05-05',
-  url: 'https://zacharyleifer.com/blog/ai-enterprise-value/',
+  datePublished: PUBLISHED,
+  dateModified: MODIFIED,
+  url: URL,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
+  image: 'https://zacharyleifer.com/images/og-card.jpg',
   description:
     'Most companies have AI adoption happening organically, in scattered pockets, disconnected from the workflows that drive growth. Here is how to move from experimentation to measurable enterprise value.',
   publisher: {
@@ -64,7 +72,7 @@ export default function AIEnterpriseValueArticle() {
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-10">
             <a href="/" className="hover:text-[#0A0A0A] transition-colors">Zachary Leifer</a>
             <span className="mx-2">·</span>
-            <a href="/#insights" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
+            <a href="/blog/" className="hover:text-[#0A0A0A] transition-colors">Insights</a>
           </p>
 
           {/* Header */}
@@ -182,7 +190,11 @@ export default function AIEnterpriseValueArticle() {
             </p>
 
             <p>
-              The companies that are building real AI capability in 2026 are not the ones with the most tools or the most experiments. They are the ones where leadership has made the strategic decisions: which processes to transform first, how to govern data and security, what outcomes to drive, and how to manage the organizational change that comes with it.
+              The companies that are building real AI capability in 2026 are not the ones with the most tools or the most experiments. They are the ones where leadership has made the strategic decisions: which processes to transform first, how to govern data and security, what outcomes to drive, and how to manage the organizational change that comes with it. At the board level, that is the work of{' '}
+              <a href="/board-executive-advisory/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                AI investment governance and value realization
+              </a>
+              : evaluating where AI can create value and establishing the ownership, resources, governance and measurement required to realize it.
             </p>
 
             <p>
@@ -199,7 +211,7 @@ export default function AIEnterpriseValueArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, AI, and digital transformation. He is open to board, advisory, and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth executive, Chief Marketing Officer and Chief Commercial Officer with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is open to board, advisory, and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

@@ -8,7 +8,7 @@ const URL = 'https://zacharyleifer.com/blog/';
 export const metadata: Metadata = {
   title: 'Writing & Perspectives | Zachary Leifer',
   description:
-    'Articles by Zachary Leifer on marketing and technology leadership, customer data, AI, and the operating models that connect technology investment to commercial results.',
+    'Articles and original research by Zachary Leifer on marketing and technology leadership, customer data, AI strategy and commercial operating models.',
   alternates: { canonical: URL },
   openGraph: {
     type: 'website',
@@ -31,22 +31,25 @@ const posts = [
     slug: 'why-data-transformations-fail',
     title: 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives',
     date: '2026-09-12',
+    modified: '2026-09-13',
     display: 'September 12, 2026',
     blurb:
-      'The capstone research from my Harvard Business School AMP: a survey of 82 senior executives on why initiatives fail to deliver, and the readiness architecture that changes the odds.',
+      'The capstone research from my Harvard Business School AMP: a survey of 82 senior executives on why initiatives fail to deliver, and the readiness conditions associated with stronger delivery.',
   },
   {
     slug: 'marketing-to-corporate-it',
     title: 'What Running Corporate IT Taught Me About Running Marketing',
     date: '2026-09-12',
+    modified: '2026-09-13',
     display: 'September 12, 2026',
     blurb:
-      'A Fortune 500 recruited me out of VP Digital Marketing to run Corporate IT. Four lessons from the other side of the CMO/CIO divide.',
+      'A Fortune 500 company recruited me from VP of Digital Marketing to VP of Corporate IT. Four lessons from the other side of the CMO/CIO divide.',
   },
   {
     slug: 'org-chart-rewritten',
     title: 'The Org Chart Is Being Rewritten. Is Your Company Ready?',
     date: '2026-05-07',
+    modified: '2026-09-13',
     display: 'May 7, 2026',
     blurb:
       'AI is dismantling the traditional management pyramid. The question is whether you redesign it intentionally or let the disruption happen to you.',
@@ -55,6 +58,7 @@ const posts = [
     slug: 'ai-enterprise-value',
     title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure?',
     date: '2026-05-05',
+    modified: '2026-09-13',
     display: 'May 5, 2026',
     blurb:
       'AI adoption is running ahead of AI governance in most organizations. What boards and CEOs should be asking.',
@@ -65,6 +69,7 @@ const listSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': URL,
+  url: URL,
   name: 'Writing & Perspectives',
   about: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   hasPart: posts.map((p) => ({
@@ -72,6 +77,7 @@ const listSchema = {
     headline: p.title,
     url: `https://zacharyleifer.com/blog/${p.slug}/`,
     datePublished: p.date,
+    dateModified: p.modified,
     author: { '@id': 'https://zacharyleifer.com/#zachary-leifer', '@type': 'Person', name: 'Zachary Leifer', url: 'https://zacharyleifer.com' },
   })),
 };

@@ -36,26 +36,8 @@ const items = [
   {
     type: 'Presentation',
     title: 'Digital Transformation in the Age of the Customer',
-    meta: 'World Tote Association',
+    meta: 'World Tote Association · 2020',
     href: '/decks/digital-transformation-age-of-the-customer.pdf',
-  },
-  {
-    type: 'Deck',
-    title: 'The GEO Frontier',
-    meta: 'Generative Engine Optimization',
-    href: '/decks/the-geo-frontier.pdf',
-  },
-  {
-    type: 'Deck',
-    title: 'Rewiring the C-Suite',
-    meta: 'AI and the modern operating model',
-    href: '/decks/rewiring-the-c-suite.pdf',
-  },
-  {
-    type: 'Deck',
-    title: 'The 2026 AI Marketing Playbook',
-    meta: 'Practical AI for marketing teams',
-    href: '/decks/2026-ai-marketing-playbook.pdf',
   },
 ];
 

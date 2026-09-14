@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
@@ -12,6 +13,16 @@ import Recognition from '@/components/Recognition';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import faqsData from '@/data/faqs.json';
+
+// Homepage-only metadata. Segment metadata merges shallowly by top-level key,
+// so exporting only `alternates` here keeps the title, description, openGraph
+// and twitter values inherited from app/layout.tsx unchanged, while routes
+// without their own canonical (such as the 404 page) no longer inherit this one.
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://zacharyleifer.com',
+  },
+};
 
 // Generated from data/faqs.json, the same source the visible FAQ renders from,
 // so the markup can never assert a question this page does not display.

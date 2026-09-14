@@ -149,7 +149,7 @@ export default function Experience() {
                   <h3 className="font-display text-xl font-semibold text-[#0A0A0A]">{group}</h3>
                   <p className="text-[#64748B] text-xs mt-1">{scale}</p>
                   <p className="text-[#475569] text-sm mt-2">
-                    Recruited and promoted through {roles.length} roles
+                    Recruited and promoted through {roles.reduce((n, r) => n + r.title.split('→').length, 0)} roles
                     {span.years ? ` over ${span.years} years` : ''}, from digital marketing leadership
                     into the executive ranks.
                   </p>

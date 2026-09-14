@@ -31,7 +31,8 @@ const webPageSchema = {
   name: 'Zachary Leifer, Speaker',
   url: 'https://zacharyleifer.com/speaking/',
   description:
-    'Zachary Leifer speaks on AI strategy, customer data, commercial growth, and digital transformation. Based in Las Vegas, NV.',
+    'Zachary Leifer speaks on AI strategy, AI investment governance, customer data, commercial growth and digital transformation. Keynotes, executive panels and board sessions from Las Vegas, Nevada.',
+  dateModified: '2026-09-13',
   mainEntity: {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
@@ -52,6 +53,7 @@ const faqSchema = {
   })),
 };
 
+const SPEAKING_MAILTO = 'mailto:zacharyleifer@gmail.com?subject=Speaking%20inquiry';
 
 const talks = [
   {
@@ -59,49 +61,50 @@ const talks = [
     category: 'AI Strategy & Commercial Value',
     title: 'AI Is Not a Strategy: The Operating Model Leaders Need Before They Scale It',
     abstract:
-      'Most organizations are investing in AI faster than they are building the governance, workflows, customer-data foundations, and accountability required to create value. This session gives executives a practical framework for deciding where AI belongs, how to prevent disconnected experimentation, and how to connect investments to customer experience, productivity, revenue, and measurable risk reduction.',
+      'What must change inside a business before AI can produce measurable value? Zachary examines the leadership decisions behind adoption: a defined commercial outcome, accountable ownership, appropriate resources, aligned incentives and a credible measurement plan. Drawing on commercial and enterprise technology experience and his AMP Leadership Impact Project, he shows how lessons from data and digital transformation apply to AI investment, including where specialist risk oversight belongs. The session gives executive teams a practical set of questions for evaluating readiness before expanding deployment.',
     bestFor: ['CEOs', 'CMOs', 'CIOs', 'Boards', 'Transformation leaders', 'PE portfolio companies'],
   },
   {
     number: '02',
     category: 'Customer Data & Growth',
-    title: 'From Customer Data to Commercial Value: Why Most Personalization Programs Fail to Deliver',
+    title: 'From Customer Data to Commercial Value: Making Personalization Change Customer Economics',
     abstract:
-      'Companies invest heavily in CDPs, CRM, loyalty, analytics, and personalization, but many fail to change actual customer economics. Drawing on CDP deployments in hospitality, wagering, and eCommerce, this session explains how to move from data collection to actionable insight, better acquisition and retention decisions, stronger LTV, and revenue growth you can prove to a board.',
+      'Customer data creates value when it changes a decision, an experience or an economic outcome. This session connects customer data platforms, predictive analytics and personalization to acquisition, retention and reinvestment discipline. Zachary draws on his work at 1/ST Technology and The Venetian to explain how leaders can connect technical capabilities to customer economics. Audiences leave with a way to distinguish a platform implementation from a commercial improvement and to frame the measurements needed to evaluate the difference.',
     bestFor: ['Marketers', 'Hospitality leaders', 'Gaming executives', 'Loyalty professionals', 'Customer experience leaders'],
   },
   {
     number: '03',
-    category: 'The CMO–CIO–CFO Triangle',
-    title: 'The Growth Operating System: How Marketing, Technology, and Finance Must Work Together',
+    category: 'The CMO/CIO/CFO Triangle',
+    title: 'The Growth Operating System: How Marketing, Technology and Finance Must Work Together',
     abstract:
-      'The biggest growth constraint is rarely the marketing plan or technology stack. It is the disconnect between commercial strategy, technology investment, financial discipline, and execution. This session offers a practical model for aligning marketing, IT, finance, data, and operations around shared outcomes, built from six years spanning VP Marketing and VP Corporate IT at the same Fortune 500 company.',
+      'Growth initiatives cross functional boundaries even when budgets and accountability do not. Zachary explores how marketing, technology and finance can establish a shared investment case, clear decision rights and a common definition of success. His experience moving from digital marketing into Corporate Information Technology at Las Vegas Sands grounds the discussion in operating practice. The session focuses on aligning the customer opportunity, delivery requirements and financial measurement so that no function declares success while the business outcome remains unresolved.',
     bestFor: ['Executive teams', 'Leadership offsites', 'Boards', 'Transformation programs', 'Technology and marketing conferences'],
   },
   {
     number: '04',
     category: 'Gaming & Hospitality',
-    title: 'What Hospitality and Gaming Can Teach Every Business About Loyalty, Data, and Customer Experience',
+    title: 'What Hospitality and Gaming Can Teach Businesses About Loyalty, Data and Customer Experience',
     abstract:
-      'The hospitality and gaming industries pioneered customer data strategy, loyalty architecture, and personalization at scale. This session translates those hard-won lessons, including real examples from Las Vegas Sands, 1/ST Technology, and PokerAtlas, into a framework any industry can apply to improve customer acquisition, retention, and lifetime value.',
+      'Hospitality and gaming make the connection between customer relationships and business economics unusually tangible. Zachary examines lessons from integrated resorts and wagering, including customer segmentation, personalization, direct-channel performance and reinvestment. He distinguishes practices that transfer to other industries from those that depend on the operating context. The session helps leaders evaluate loyalty through customer value and experience rather than enrollment or promotional activity alone, with attention to the organizational coordination needed to deliver a consistent customer experience.',
     bestFor: ['Hospitality and gaming events', 'Loyalty conferences', 'Marketing technology summits', 'Cross-industry executive forums'],
   },
   {
     number: '05',
     category: 'Marketing Operating Model',
-    title: 'Why the MarTech Stack Is Not the Answer: Building a Marketing Operating System That Produces Results',
+    title: 'Beyond the MarTech Stack: Building a Marketing Operating System That Produces Results',
     abstract:
-      'Most marketing organizations invest in tools without building the operating model, the data architecture, accountability framework, measurement system, and team structure, required to use them. This session explains what a marketing operating system looks like, how to build one, and how to prove the return to finance and the board.',
+      'A technology portfolio is not an operating model. This session explores how leaders connect marketing capabilities to priorities, workflows, accountability and measurement. Zachary draws on executive experience spanning customer data, digital commerce, agency management and enterprise technology to explain why buying tools does not settle the underlying management decisions. Audiences leave with a clearer way to identify what the organization needs to do differently, which capabilities support that change and how to evaluate whether the investment is improving commercial performance.',
     bestFor: ['CMOs', 'Marketing leaders', 'MarTech conferences', 'CIO/CMO joint sessions', 'CFO-facing marketing discussions'],
   },
 ];
 
 const faqs = speakingFaqs;
 
+// Newest first. The HBS row is a participant presentation, not an invited engagement.
 const appearances = [
-  { event: 'World Tote Association', topic: 'Digital Transformation in the Age of the Customer', year: '2024' },
+  { event: 'Harvard Business School Advanced Management Program', topic: 'Leadership Impact Project presentation to the AMP cohort', year: '2026' },
   { event: 'NC Labs Podcast', topic: 'Awesome in Action', year: '2021' },
-  { event: 'Harvard Business School', topic: 'Advanced Management Program, AI & Enterprise Value Capstone presentation', year: '2026' },
+  { event: 'World Tote Association', topic: 'Digital Transformation in the Age of the Customer', year: '2020' },
 ];
 
 export default function SpeakingPage() {
@@ -137,10 +140,10 @@ export default function SpeakingPage() {
               <div className="lg:col-span-8">
                 <p className="text-[10px] tracking-[0.35em] uppercase text-[#3B5998] mb-6">Speaking</p>
                 <h1 className="font-display text-[clamp(1.8rem,3.5vw,3rem)] font-bold text-white leading-tight mb-8">
-                  Zachary Leifer speaks on AI strategy, customer data, commercial growth, and the operating models that connect technology investment to measurable business results.
+                  Zachary Leifer speaks on AI strategy, customer data, commercial growth and the operating models that connect technology investment to measurable business results.
                 </h1>
                 <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-10">
-                  Available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events, and podcasts. Based in Las Vegas, Nevada. Available for travel nationally and internationally.
+                  A commercial growth and transformation executive, he has served as Chief Marketing Officer of 1/ST Technology and Chief Commercial Officer of PokerAtlas. He is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events and podcasts. Based in Las Vegas, Nevada, he travels nationally and internationally.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a
@@ -159,7 +162,10 @@ export default function SpeakingPage() {
                   </a>
                 </div>
                 <p className="text-white/30 text-xs mt-5">
-                  Or email directly: <span className="text-white/50 select-all">zacharyleifer@gmail.com</span>
+                  Or email directly:{' '}
+                  <a href={SPEAKING_MAILTO} className="text-white/50 hover:text-white transition-colors">
+                    zacharyleifer@gmail.com
+                  </a>
                 </p>
               </div>
 
@@ -170,7 +176,13 @@ export default function SpeakingPage() {
                     {['Keynote', 'Executive Panel', 'Leadership Roundtable', 'Board Session', 'Workshop', 'Virtual Event', 'Podcast'].map((f) => (
                       <li key={f} className="flex items-center gap-3">
                         <span className="w-1 h-1 rounded-full bg-[#3B5998] flex-shrink-0" />
-                        {f}
+                        {f === 'Board Session' ? (
+                          <a href="/board-executive-advisory/" className="hover:text-white transition-colors">
+                            {f}
+                          </a>
+                        ) : (
+                          f
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -189,26 +201,58 @@ export default function SpeakingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <div className="lg:col-span-3">
-                <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] lg:sticky top-24">
-                  About the Speaker
-                </p>
+                <div className="lg:sticky top-24">
+                  <p className="text-[10px] tracking-[0.35em] uppercase text-[#64748B]">
+                    About the Speaker
+                  </p>
+                  <figure className="mt-8 max-w-[260px]">
+                    <img
+                      src="/images/zachary-leifer-harvard-business-school-600.webp"
+                      srcSet="/images/zachary-leifer-harvard-business-school-600.webp 600w, /images/zachary-leifer-harvard-business-school-900.webp 900w"
+                      sizes="260px"
+                      width={600}
+                      height={800}
+                      loading="lazy"
+                      decoding="async"
+                      alt="Zachary Leifer at a Harvard Business School lectern, 2026"
+                      className="w-full h-auto block"
+                    />
+                    <figcaption className="text-[#64748B] text-xs mt-3">
+                      Zachary Leifer at Harvard Business School, 2026
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
               <div className="lg:col-span-9">
                 <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-[#0A0A0A] mb-8">
-                  A practitioner, not a presenter.
+                  Executive experience behind every talk.
                 </h2>
+                {/* 150-word speaker bio. Recount if edited. */}
                 <p className="text-[#334155] text-base leading-[1.9] mb-6">
-                  Zachary Leifer is one of the few executives who has led both commercial and enterprise technology functions at the same organizations, a crossover that shapes how he thinks about AI, data, and growth. At Las Vegas Sands and The Venetian, he led digital marketing and eCommerce before being recruited into VP of Corporate IT, generating $36M in incremental direct-channel revenue from a $13M investment.
+                  Zachary Leifer is a commercial growth and transformation executive who helps companies create more predictable value from data, digital transformation, technology and AI. He has served as Vice President, Corporate Information Technology at Las Vegas Sands, Chief Marketing Officer of 1/ST Technology and Chief Commercial Officer of PokerAtlas.
+                </p>
+                <p className="text-[#334155] text-base leading-[1.9] mb-6">
+                  At The Venetian, then part of Las Vegas Sands, he led a{' '}
+                  <a href="/work/venetian-direct-channel-transformation/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                    direct-channel digital transformation
+                  </a>{' '}
+                  before being recruited from Digital Marketing and eCommerce leadership into Corporate Information Technology at the same Fortune 500 company. At 1/ST Technology, he{' '}
+                  <a href="/work/1st-technology-commercial-growth/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                    connected marketing investment to commercial growth
+                  </a>.
                 </p>
                 <p className="text-[#334155] text-base leading-[1.9] mb-10">
-                  As CMO at 1/ST Technology, he drove 67% revenue growth, reduced customer acquisition cost by 56%, and improved LTV/CAC by 73% by building a cloud CDP and predictive customer-valuation model. He recently completed the Advanced Management Program at Harvard Business School. His sessions give executives a practical, P&amp;L-grounded framework for connecting AI, customer data, marketing, and technology to commercial outcomes, without disconnected pilots or activity for its own sake.
+                  His Harvard Business School AMP capstone research (the Leadership Impact Project), completed in 2026, examined the organizational conditions supporting value creation from data and transformation. He advises and speaks on commercial growth, digital transformation, AI strategy and AI value realization, connecting investment to accountable ownership and measurable outcomes. Based in Las Vegas, he welcomes{' '}
+                  <a href="/board-executive-advisory/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                    board and advisory opportunities
+                  </a>.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-[#E2E8F0]">
                   {[
                     { stat: '67%', label: 'Revenue growth, 1/ST Technology' },
-                    { stat: '$36M', label: 'Direct revenue, The Venetian' },
-                    { stat: '56%', label: 'CAC reduction via CDP' },
+                    { stat: '$36M', label: 'Incremental direct-channel revenue, The Venetian' },
+                    { stat: '56%', label: 'CAC reduction, 1/ST Technology' },
                     { stat: 'HBS', label: 'Advanced Management Program · 2026' },
                   ].map((item) => (
                     <div key={item.stat}>
@@ -216,6 +260,16 @@ export default function SpeakingPage() {
                       <p className="text-[#64748B] text-xs leading-snug">{item.label}</p>
                     </div>
                   ))}
+                </div>
+
+                {/* 52-word program bio. Recount if edited. */}
+                <div className="mt-12 border border-[#E2E8F0] bg-white p-8">
+                  <h3 className="text-[10px] tracking-[0.35em] uppercase text-[#64748B] mb-4">
+                    Short bio for event programs
+                  </h3>
+                  <p className="text-[#334155] text-sm leading-[1.8]">
+                    Zachary Leifer is a Las Vegas-based commercial growth and transformation executive with Chief Marketing Officer, Chief Commercial Officer and enterprise technology roles at 1/ST Technology, PokerAtlas and Las Vegas Sands. Drawing on that experience and Harvard Business School capstone research, he speaks on AI strategy, investment governance, organizational readiness and value realization.
+                  </p>
                 </div>
               </div>
             </div>
@@ -236,7 +290,7 @@ export default function SpeakingPage() {
                   Five talks built from operating experience.
                 </h2>
                 <p className="text-white/50 text-sm mt-3 max-w-xl">
-                  Every session draws on real results, real trade-offs, and real organizational challenges. No frameworks invented for the stage.
+                  Each session draws on results, trade-offs and organizational challenges from his Chief Marketing Officer, Chief Commercial Officer and enterprise technology roles.
                 </p>
               </div>
             </div>
@@ -270,7 +324,7 @@ export default function SpeakingPage() {
             </div>
 
             <div className="mt-12 pt-10 border-t border-white/10 text-center">
-              <p className="text-white/40 text-sm mb-4">All talks are customizable for your audience, format, and duration.</p>
+              <p className="text-white/40 text-sm mb-4">All talks are customizable for your audience, format and duration.</p>
               <a
                 href="https://linkedin.com/in/zacharyleifer"
                 target="_blank"
@@ -294,7 +348,7 @@ export default function SpeakingPage() {
               </div>
               <div className="lg:col-span-9">
                 <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-[#0A0A0A] mb-10">
-                  Selected engagements.
+                  Selected appearances and presentations.
                 </h2>
                 <div className="divide-y divide-[#E2E8F0]">
                   {appearances.map((a) => (
@@ -311,9 +365,6 @@ export default function SpeakingPage() {
                     </div>
                   ))}
                 </div>
-                <p className="text-[#64748B] text-xs mt-8 italic">
-                  Additional gaming, hospitality, and marketing technology conference appearances added as scheduled.
-                </p>
               </div>
             </div>
           </div>
@@ -356,16 +407,16 @@ export default function SpeakingPage() {
         </section>
 
         {/* ── BOOKING CTA ── */}
-        <section className="bg-[#060606] border-t border-white/10 py-24 px-8 md:px-12">
+        <section id="book" className="bg-[#060606] border-t border-white/10 py-24 px-8 md:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7">
                 <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-6">Book Zachary to Speak</p>
                 <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-bold text-white mb-6">
-                  Bring a real operating perspective to your next event.
+                  Bring an operator&rsquo;s perspective to your next event.
                 </h2>
                 <p className="text-white/55 text-sm leading-relaxed max-w-xl">
-                  To inquire about speaking availability, share your event date, format, expected audience, and the session topic or challenge you want addressed. Custom abstracts and speaker materials available on request.
+                  To inquire about speaking availability, share your event date, format, expected audience, and the session topic or challenge you want addressed. Session topics can be tailored to your audience, format and duration.
                 </p>
               </div>
               <div className="lg:col-span-5 lg:text-right">
@@ -378,7 +429,10 @@ export default function SpeakingPage() {
                   Message on LinkedIn →
                 </a>
                 <p className="text-white/30 text-xs mt-4">
-                  or email: <span className="text-white/50 select-all">zacharyleifer@gmail.com</span>
+                  or email:{' '}
+                  <a href={SPEAKING_MAILTO} className="text-white/50 hover:text-white transition-colors">
+                    zacharyleifer@gmail.com
+                  </a>
                 </p>
               </div>
             </div>

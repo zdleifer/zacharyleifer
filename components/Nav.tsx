@@ -23,7 +23,7 @@ export default function Nav() {
     { label: 'About', href: `${base}#about` },
     { label: 'Work', href: `${base}#work` },
     { label: 'Experience', href: `${base}#experience` },
-    { label: 'Insights', href: `${base}#insights` },
+    { label: 'Board & Advisory', href: '/board-executive-advisory/' },
     { label: 'Writing', href: '/blog/' },
     { label: 'Speaking', href: '/speaking/' },
     { label: 'Connect', href: `${base}#contact` },
@@ -43,12 +43,12 @@ export default function Nav() {
           </a>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors duration-200"
+                className="whitespace-nowrap text-xs tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -60,7 +60,7 @@ export default function Nav() {
             href="https://linkedin.com/in/zacharyleifer"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border border-white/20 hover:border-white/50 px-4 py-2 rounded"
+            className="hidden lg:inline-flex shrink-0 whitespace-nowrap items-center gap-2 text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border border-white/20 hover:border-white/50 px-4 py-2 rounded"
           >
             LinkedIn →
           </a>
@@ -68,7 +68,7 @@ export default function Nav() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
+            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
             <span className={`block w-5 h-px bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
