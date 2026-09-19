@@ -105,6 +105,23 @@ const talks = [
 
 const faqs = speakingFaqs;
 
+// Linkifies a bare domain/path substring in FAQ answer text for display only.
+// The underlying faq.a string (used for the FAQPage JSON-LD) stays plain text,
+// so the schema answer and visible text remain word-for-word identical.
+function linkifyDomain(text: string, domainPath: string, href: string) {
+  const i = text.indexOf(domainPath);
+  if (i === -1) return text;
+  return (
+    <>
+      {text.slice(0, i)}
+      <a href={href} target="_blank" rel="noopener noreferrer" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+        {domainPath}
+      </a>
+      {text.slice(i + domainPath.length)}
+    </>
+  );
+}
+
 // Newest first. The HBS row is a participant presentation, not an invited engagement.
 const appearances = [
   { event: 'Harvard Business School Advanced Management Program', topic: 'Leadership Impact Project presentation to the AMP cohort', year: '2026' },
@@ -403,7 +420,9 @@ export default function SpeakingPage() {
                     </h3>
                   </div>
                   <div className="lg:col-span-7">
-                    <p className="text-[#475569] text-sm leading-relaxed">{faq.a}</p>
+                    <p className="text-[#475569] text-sm leading-relaxed">
+                      {linkifyDomain(faq.a, 'somstrategies.com/executive-speaking-workshops/', 'https://www.somstrategies.com/executive-speaking-workshops/')}
+                    </p>
                   </div>
                 </div>
               ))}
