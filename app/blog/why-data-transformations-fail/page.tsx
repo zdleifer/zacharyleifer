@@ -5,7 +5,7 @@ import { OG_IMAGE } from '@/data/og-image';
 
 const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives';
 const DESC =
-  'HBS AMP capstone research by Zachary Leifer: 82 senior executives on why data and digital transformations fail to deliver value, and why AI repeats the pattern.';
+  'HBS AMP capstone research by Zachary Leifer: 82 executives on why data and digital transformations fail to deliver value, and why AI repeats the pattern.';
 // Shorter title tag. The full headline stays as the H1, og:title and schema headline.
 const SEO_TITLE = 'Why Data and Digital Transformations Fail';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';

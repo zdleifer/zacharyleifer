@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Writing & Perspectives | Zachary Leifer',
     description:
-      'Articles on marketing and technology leadership, customer data, AI, and commercial operating models.',
+      'Articles and original research by Zachary Leifer on marketing and technology leadership, customer data, AI strategy and commercial operating models.',
     url: URL,
     images: [OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Writing & Perspectives | Zachary Leifer',
-    description: 'Articles on marketing and technology leadership, customer data, AI, and commercial operating models.',
+    description: 'Articles and original research by Zachary Leifer on marketing and technology leadership, customer data, AI strategy and commercial operating models.',
     images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
