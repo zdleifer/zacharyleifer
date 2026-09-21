@@ -70,7 +70,7 @@ const page2 = [
   'Who owns continuous optimization after implementation',
 ];
 
-const H2 = 'font-display text-2xl font-bold text-[#0A0A0A] mt-10 mb-3 print:break-inside-avoid';
+const H2 = 'font-display text-2xl font-bold text-[#0A0A0A] mt-10 mb-3 print:break-inside-avoid print:break-after-avoid-page';
 
 function Table({ head, rows }: { head: string[]; rows: string[][] }) {
   return (
@@ -190,7 +190,7 @@ export default function ReportPage() {
             executive interviews were conducted by video, each lasting approximately 30 to 60 minutes
             in a semi-structured format tailored to the participant&rsquo;s responses.
           </p>
-          <ul>
+          <ul className="list-disc pl-6 space-y-2">
             <li>The sample was not randomly selected and is not nationally or globally representative.</li>
             <li>Responses were self-reported and may reflect recall, perception and role-based bias.</li>
             <li>The survey was cross-sectional and cannot establish causality.</li>
@@ -209,11 +209,15 @@ export default function ReportPage() {
             name anywhere in this report.
           </p>
 
-          <h2 className={H2}>Key findings</h2>
-          <Table head={['Measure', 'Count', 'Percent or score']} rows={descriptiveTable.map((r) => [r.measure, r.count, r.pct])} />
+          <div className="print:break-inside-avoid">
+            <h2 className={H2}>Key findings</h2>
+            <Table head={['Measure', 'Count', 'Percent or score']} rows={descriptiveTable.map((r) => [r.measure, r.count, r.pct])} />
+          </div>
 
-          <h2 className={H2}>Detailed results and observed relationships</h2>
-          <Table head={['Comparison', 'Observed result', 'Statistical note']} rows={relationshipsTable.map((r) => [r.comparison, r.result, r.note])} />
+          <div className="print:break-inside-avoid">
+            <h2 className={H2}>Detailed results and observed relationships</h2>
+            <Table head={['Comparison', 'Observed result', 'Statistical note']} rows={relationshipsTable.map((r) => [r.comparison, r.result, r.note])} />
+          </div>
           <p>
             All statistical comparisons are two-sided Fisher exact tests or a Spearman rank
             correlation, run against the final 82-response dataset. These describe observed
@@ -259,7 +263,7 @@ export default function ReportPage() {
             One missing condition does not guarantee failure, but every unresolved condition
             increases execution risk.
           </p>
-          <ul>
+          <ul className="list-disc pl-6 space-y-2">
             {riskChecklist.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -267,11 +271,11 @@ export default function ReportPage() {
 
           <h2 className={H2}>CEO and Board Technology Investment Review</h2>
           <p className="font-semibold text-[#0A0A0A] mb-1">Approval and readiness</p>
-          <ul>
+          <ul className="list-disc pl-6 space-y-2">
             {page1.map((item) => <li key={item}>{item}</li>)}
           </ul>
           <p className="font-semibold text-[#0A0A0A] mb-1 mt-4">Governance and value verification</p>
-          <ul>
+          <ul className="list-disc pl-6 space-y-2">
             {page2.map((item) => <li key={item}>{item}</li>)}
           </ul>
           <p>
@@ -307,7 +311,7 @@ export default function ReportPage() {
 
           <h2 className={H2}>References and suggested citation</h2>
           <p>Leifer, Zachary. {TITLE}. State of Mind Strategies, 2026.</p>
-          <ul className="text-sm">
+          <ul className="list-disc pl-6 space-y-1.5 text-sm">
             <li>McKinsey and Company, The state of AI: How organizations are rewiring to capture value, March 12, 2025.</li>
             <li>Deloitte, The Path to Sustainable Generative AI Value Balances Passion, Pragmatism and Patience, January 21, 2025.</li>
             <li>PwC, 29th Global CEO Survey: Leading through uncertainty in the age of AI, 2026.</li>

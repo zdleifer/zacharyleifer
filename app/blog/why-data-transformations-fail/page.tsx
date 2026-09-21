@@ -1,16 +1,22 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { OG_IMAGE } from '@/data/og-image';
 
 const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives';
 const DESC =
-  'Research from 82 senior executives on why data and digital initiatives fail to deliver commercial value, with corrected final findings, a risk checklist and board questions.';
+  'Original research from 82 senior executives on why data, digital transformation and AI investments fail, with a risk checklist and board questions.';
 const SEO_TITLE = 'Why Data and Digital Transformations Fail';
 const ALT_TITLE = 'Architecting More Predictable Enterprise Value from Data, Technology and AI Investment';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';
 const PUBLISHED = '2026-09-12';
 const MODIFIED = '2026-09-20';
+const RESEARCH_IMAGE = {
+  url: 'https://zacharyleifer.com/images/og-why-data-transformations-fail.jpg',
+  width: 1200,
+  height: 630,
+  type: 'image/jpeg',
+  alt: 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives, original research by Zachary Leifer.',
+};
 
 export const metadata: Metadata = {
   title: `${SEO_TITLE} | Zachary Leifer`,
@@ -25,13 +31,13 @@ export const metadata: Metadata = {
     authors: ['Zachary Leifer'],
     publishedTime: PUBLISHED,
     modifiedTime: MODIFIED,
-    images: [OG_IMAGE],
+    images: [RESEARCH_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: DESC,
-    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
+    images: [{ url: RESEARCH_IMAGE.url, alt: RESEARCH_IMAGE.alt }],
   },
 };
 
@@ -52,7 +58,7 @@ const articleSchema = {
   url: URL,
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
   isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
-  image: ['https://zacharyleifer.com/images/og-card.jpg'],
+  image: [RESEARCH_IMAGE.url],
   description: DESC,
   about: [
     'Artificial intelligence',
@@ -311,7 +317,7 @@ export default function WhyDataTransformationsFail() {
               <a href="#checklist" className={link} data-ga-event="research_toc_click" data-ga-label="Risk checklist">Risk checklist</a>
               <a href="#board-questions" className={link} data-ga-event="research_toc_click" data-ga-label="Board questions">Board questions</a>
               <a href="#report" className={link} data-ga-event="research_toc_click" data-ga-label="Full report">Full report</a>
-              <a href="#contact" className={link} data-ga-event="research_toc_click" data-ga-label="Contact">Contact</a>
+              <a href="#research-contact" className={link} data-ga-event="research_toc_click" data-ga-label="Contact">Contact</a>
             </nav>
 
             <h2 id="findings" className={h2}>
@@ -820,7 +826,7 @@ export default function WhyDataTransformationsFail() {
               </a>
             </p>
 
-            <h2 id="contact" className={h2}>
+            <h2 id="research-contact" className={h2}>
               Is a major technology investment underperforming?
             </h2>
 
