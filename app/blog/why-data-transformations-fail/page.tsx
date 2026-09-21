@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import ReportDownloadForm from '@/components/ReportDownloadForm';
 
 const TITLE = 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives';
 const DESC =
@@ -805,26 +806,16 @@ export default function WhyDataTransformationsFail() {
             </p>
 
             <h2 id="report" className={h2}>
-              Full executive research report
+              Download the Executive Research Report
             </h2>
 
             <p>
-              The findings above are the complete public research. A longer executive report,{' '}
-              <em>{ALT_TITLE}</em>, adds the full methodology, detailed results, the anonymous
-              interview themes, the external research comparison and a two-page executive tool for
-              approval and governance decisions.
+              Get the complete executive report, including detailed findings, anonymous interview
+              themes, external research comparison, the Technology Investment Risk Checklist and
+              the CEO and Board Technology Investment Review.
             </p>
 
-            <p>
-              <a
-                href="/blog/why-data-transformations-fail/report/"
-                className={link}
-                data-ga-event="research_internal_link_click"
-                data-ga-label="Read the full research report"
-              >
-                Read the full research report
-              </a>
-            </p>
+            <ReportDownloadForm />
 
             <h2 id="research-contact" className={h2}>
               Is a major technology investment underperforming?
@@ -873,6 +864,21 @@ export default function WhyDataTransformationsFail() {
         </article>
       </main>
       <Footer />
+
+      <div
+        id="sticky-report-cta"
+        aria-hidden="true"
+        className="fixed bottom-5 inset-x-5 sm:inset-x-auto sm:right-6 sm:bottom-6 z-40 opacity-0 pointer-events-none translate-y-3 transition-all duration-300 [&.is-visible]:opacity-100 [&.is-visible]:pointer-events-auto [&.is-visible]:translate-y-0"
+      >
+        <a
+          href="#report"
+          data-ga-event="research_toc_click"
+          data-ga-label="Sticky report CTA"
+          className="flex items-center justify-center gap-2 bg-[#0A0A0A] text-white px-6 py-4 text-xs tracking-[0.15em] uppercase font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:bg-[#0A0A0A]/90 transition-colors"
+        >
+          Download the Full Report
+        </a>
+      </div>
       <script
         dangerouslySetInnerHTML={{
           __html: `(function () {
@@ -903,6 +909,31 @@ export default function WhyDataTransformationsFail() {
                 });
               }, { threshold: 0.5 });
               targets.forEach(function (el) { io.observe(el); });
+            }
+
+            // Sticky "Download the Full Report" CTA: show after the reader has scrolled
+            // past the intro, hide while the actual report section is on screen so it
+            // never covers the download form.
+            var sticky = document.getElementById('sticky-report-cta');
+            var reportSection = document.getElementById('report');
+            if (sticky && reportSection) {
+              var reportVisible = false;
+              var setVisible = function (visible) {
+                sticky.classList.toggle('is-visible', visible);
+                if (visible) sticky.removeAttribute('aria-hidden');
+                else sticky.setAttribute('aria-hidden', 'true');
+              };
+              var update = function () {
+                setVisible(window.scrollY > 700 && !reportVisible);
+              };
+              if ('IntersectionObserver' in window) {
+                new IntersectionObserver(function (entries) {
+                  reportVisible = entries[0].isIntersecting;
+                  update();
+                }, { threshold: 0.15 }).observe(reportSection);
+              }
+              window.addEventListener('scroll', update, { passive: true });
+              update();
             }
           })();`,
         }}
