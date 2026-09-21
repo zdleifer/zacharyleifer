@@ -37,15 +37,8 @@ export default function Footer() {
                   href="/board-executive-advisory/"
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
-                  Board and executive advisory
+                  Board &amp; Executive Advisory
                   <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">→</span>
-                </a>
-                <a
-                  href="mailto:zacharyleifer@gmail.com?subject=Board%20or%20advisory%20inquiry"
-                  className="block text-white/70 hover:text-white transition-colors text-sm group"
-                >
-                  Board or advisory inquiry
-                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/zacharyleifer/"
@@ -54,13 +47,6 @@ export default function Footer() {
                   className="block text-white/70 hover:text-white transition-colors text-sm group"
                 >
                   LinkedIn
-                  <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
-                </a>
-                <a
-                  href="mailto:zacharyleifer@gmail.com"
-                  className="block text-white/70 hover:text-white transition-colors text-sm group"
-                >
-                  zacharyleifer@gmail.com
                   <span aria-hidden="true" className="text-[#475569] group-hover:text-white/50 ml-2 transition-colors">↗</span>
                 </a>
               </div>
