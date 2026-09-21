@@ -6,7 +6,7 @@ const items = [
   {
     type: 'Research',
     title: 'Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives',
-    meta: 'HBS AMP Capstone · September 2026',
+    meta: 'HBS AMP Leadership Impact Project · September 2026',
     href: '/blog/why-data-transformations-fail/',
   },
   {
