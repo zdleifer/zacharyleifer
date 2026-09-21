@@ -50,9 +50,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://zacharyleifer.com/blog/why-data-transformations-fail/',
-      lastModified: new Date('2026-09-13'),
+      lastModified: new Date('2026-09-20'),
       changeFrequency: 'yearly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: 'https://zacharyleifer.com/blog/org-chart-rewritten/',

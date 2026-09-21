@@ -264,7 +264,10 @@ export default function SpeakingPage() {
                   </a>.
                 </p>
                 <p className="text-[#334155] text-base leading-[1.9] mb-10">
-                  His Harvard Business School AMP capstone research (the Leadership Impact Project), completed in 2026, examined the organizational conditions supporting value creation from data and transformation. He advises and speaks on commercial growth, digital transformation, AI strategy and AI value realization, connecting investment to accountable ownership and measurable outcomes. Based in Las Vegas, he welcomes{' '}
+                  His Harvard Business School AMP capstone research (the{' '}
+                  <a href="/blog/why-data-transformations-fail/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                    Leadership Impact Project
+                  </a>), completed in 2026, examined the organizational conditions supporting value creation from data and transformation. He advises and speaks on commercial growth, digital transformation, AI strategy and AI value realization, connecting investment to accountable ownership and measurable outcomes. Based in Las Vegas, he welcomes{' '}
                   <a href="/board-executive-advisory/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                     board and advisory opportunities
                   </a>.

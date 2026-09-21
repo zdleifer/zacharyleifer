@@ -39,9 +39,11 @@
 ## Writing
 
 - [Why Data and Digital Transformations Fail: Evidence from 82 Senior Executives](https://zacharyleifer.com/blog/why-data-transformations-fail/):
-  Original survey research from his Harvard Business School Advanced Management Program capstone (Leadership
-  Impact Project) on why data and digital initiatives fail to deliver, how the pattern carries into AI, and
-  the readiness conditions associated with stronger delivery.
+  Original executive research by Zachary Leifer based on a survey of 82 senior executives and two
+  anonymous follow-up interviews. Examines how business-outcome definition, organizational readiness,
+  dedicated ownership, executive sponsorship, incentives, governance and value measurement relate to
+  commercial results from data, digital transformation, technology and AI investments. Includes
+  methodology, limitations, a technology-investment risk checklist and questions for CEOs and boards.
 - [What Running Corporate IT Taught Me About Running Marketing](https://zacharyleifer.com/blog/marketing-to-corporate-it/):
   Four lessons from moving out of Vice President, Digital Marketing & eCommerce into Vice President, Corporate
   Information Technology at Las Vegas Sands, a Fortune 500 company.
