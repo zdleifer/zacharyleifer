@@ -1,10 +1,13 @@
 {
-  // Cloudflare Workers static-assets config for the exported Next.js site.
-  // No Worker script — this is a static-only deployment serving ./out.
+  // Cloudflare Workers config for the exported Next.js site: worker/index.ts
+  // only intercepts /api/report-download; every other request falls through
+  // to the static export in ./out via the ASSETS binding.
   "name": "zacharyleifer",
   "compatibility_date": "2026-06-03",
+  "main": "worker/index.ts",
   "assets": {
     "directory": "./out",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
   "routes": [
