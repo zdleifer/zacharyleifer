@@ -35,7 +35,7 @@ const personSchema = {
     addressCountry: "US",
     postalCode: "89101",
   },
-  sameAs: ["https://www.linkedin.com/in/zacharyleifer/"],
+  sameAs: ["https://www.linkedin.com/in/zacharyleifer/", "https://www.youtube.com/@zacharyleifer"],
   subjectOf: {
     "@type": "PodcastEpisode",
     url: "https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7",
