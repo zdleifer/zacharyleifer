@@ -199,7 +199,7 @@ export default function FirstTechnologyCaseStudy() {
             </p>
 
             <p>
-              The new wagering product generated $60 million in handle (total amount wagered) and $4 million in net gaming revenue within 10 months.
+              The new wagering product generated $60 million in handle and $4 million in net gaming revenue within 10 months.
             </p>
 
             <p>

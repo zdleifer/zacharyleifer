@@ -12,7 +12,7 @@ const cases = [
     action:
       'Led a cloud customer data platform and a predictive customer-valuation model, rebuilt go-to-market around unit economics, and launched a new wagering app. Secured an increase in the board-approved marketing budget from $8 million to $15 million through direct board-level briefings and ROI forecasting.',
     result:
-      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60 million in handle (total amount wagered) and $4 million in net gaming revenue within 10 months.',
+      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60 million in handle and $4 million in net gaming revenue within 10 months.',
     href: '/work/1st-technology-commercial-growth/',
     linkLabel: 'Read the 1/ST Technology case study',
   },
