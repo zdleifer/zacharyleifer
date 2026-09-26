@@ -7,12 +7,8 @@ const cases = [
     org: '1/ST Technology',
     role: 'Chief Marketing Officer · 2020–2024',
     headline: '67% revenue growth · 22% EBITDA CAGR · 56% lower CAC · 73% LTV/CAC improvement',
-    challenge:
-      'A racing, wagering, and entertainment business needed to modernize its commercial engine and prove the return on marketing to the board.',
-    action:
-      'Led a cloud customer data platform and a predictive customer-valuation model, rebuilt go-to-market around unit economics, and launched a new wagering app. Secured an increase in the board-approved marketing budget from $8 million to $15 million through direct board-level briefings and ROI forecasting.',
-    result:
-      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60 million in handle and $4 million in net gaming revenue within 10 months.',
+    summary:
+      'As Chief Marketing Officer at 1/ST Technology, Zachary led commercial transformation during a period in which the business delivered 67% revenue growth and a 22% EBITDA CAGR, with 56% lower customer acquisition cost and a 73% improvement in LTV/CAC. These results reflect the work of the broader organization and are not promises, guarantees, or results from State of Mind Strategies client engagements.',
     href: '/work/1st-technology-commercial-growth/',
     linkLabel: 'Read the 1/ST Technology case study',
   },
@@ -20,12 +16,8 @@ const cases = [
     org: 'Las Vegas Sands / The Venetian',
     role: 'Director to Executive Director to Vice President, Digital Marketing & eCommerce, then Vice President, Corporate Information Technology · 2014–2020',
     headline: '$13M capital investment · $36M incremental direct-channel revenue · 24 consecutive months of growth · 50% ROAS lift',
-    challenge:
-      'The Venetian, then the flagship Las Vegas property of a Fortune 500 resort operator, faced a five-year decline in direct-channel bookings.',
-    action:
-      'Secured $13 million in capital investment for digital transformation initiatives, directed a new website and booking engine, led a 360-degree customer data platform for personalization across hotel and casino, and led the design of a price-elasticity model for pricing and offers.',
-    result:
-      'Those initiatives generated $36 million in incremental direct-channel revenue and reversed the decline, with 24 consecutive months of year-over-year growth, a 50% increase in return on advertising spend and an 18% lift in CRM conversion. On the strength of those results, Las Vegas Sands recruited me from Digital Marketing into Corporate Information Technology to lead a global cloud governance program across the U.S., Singapore and China.',
+    summary:
+      'At The Venetian and Las Vegas Sands, Zachary secured $13 million in capital investment for digital and customer-data initiatives that generated $36 million in incremental direct-channel revenue.',
     href: '/work/venetian-direct-channel-transformation/',
     linkLabel: 'Read The Venetian direct-channel case study',
   },
@@ -67,18 +59,7 @@ export default function CaseStudies() {
                 <p className="text-white/50 text-xs tracking-wide border-l-2 border-[#3B5998] pl-4 py-1 font-mono">
                   {c.headline}
                 </p>
-                <div>
-                  <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-1.5">The Challenge</p>
-                  <p className="text-white/70 text-sm leading-relaxed">{c.challenge}</p>
-                </div>
-                <div>
-                  <p className="text-[9px] tracking-[0.3em] uppercase text-[#94A3B8] mb-1.5">What I Did</p>
-                  <p className="text-white/70 text-sm leading-relaxed">{c.action}</p>
-                </div>
-                <div>
-                  <p className="text-[9px] tracking-[0.3em] uppercase text-[#7B96CC] mb-1.5">The Result</p>
-                  <p className="text-white/85 text-sm leading-relaxed">{c.result}</p>
-                </div>
+                <p className="text-white/80 text-sm leading-relaxed max-w-2xl">{c.summary}</p>
                 <a
                   href={c.href}
                   className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/70 hover:text-white transition-colors border-b border-white/30 hover:border-white pb-0.5"

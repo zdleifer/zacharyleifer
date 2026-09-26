@@ -90,14 +90,21 @@ export default function Positioning() {
               or value-creation opportunities.
             </p>
             <p className="text-[#1A1A1A] text-sm leading-relaxed mt-3">
-              For organizational advisory engagements, visit{' '}
+              For{' '}
+              <a
+                href="https://www.somstrategies.com/fractional-cmo/"
+                className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
+              >
+                fractional CMO
+              </a>{' '}
+              and{' '}
               <a
                 href="https://www.somstrategies.com/executive-enterprise-advisory/"
                 className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
               >
-                State of Mind Strategies
-              </a>
-              .
+                organizational advisory
+              </a>{' '}
+              engagements, visit State of Mind Strategies.
             </p>
           </div>
           <div>
