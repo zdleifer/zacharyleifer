@@ -27,7 +27,7 @@ const personSchema = {
   image: "https://zacharyleifer.com/images/headshot.png",
   jobTitle: "Commercial Growth & Transformation Executive",
   description:
-    "Zachary Leifer is a commercial growth and transformation executive based in Las Vegas who has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He leads business, data, digital, and technology initiatives that connect customer insight to commercial performance. He completed the Harvard Business School Advanced Management Program in 2026.",
+    "Zachary Leifer is a commercial growth and transformation executive based in Las Vegas who has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He leads marketing, commercial, digital, data, and technology initiatives that connect customer insight and operating capabilities to measurable business outcomes. He completed the Harvard Business School Advanced Management Program in 2026.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
