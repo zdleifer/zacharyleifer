@@ -4,14 +4,14 @@
     "name": "Michael Jordan",
     "title": "CIO | CTO | Digital COO",
     "context": "Worked together at 1/ST Technology",
-    "image": "/images/logos/michael-jordan.jpg"
+    "initials": "MJ"
   },
   {
     "quote": "He is respected and well-regarded by his peers given that he is so dedicated and continuously looking for solutions to improve the business. … I enjoyed collaborating with Zach, and I would welcome the chance to work with him again.",
     "name": "Kevin U, Ph.D.",
     "title": "SVP & CIO, Enterprise Data & AI · Fidelity",
     "context": "Collaborated on digital projects at Las Vegas Sands",
-    "image": "/images/logos/ku.jpg"
+    "initials": "KU"
   },
   {
     "quote": "Zach and I collaborated on a number of ecommerce initiatives for Sands, where he brought enthusiasm, passion and committed vision. … I would not hesitate to work with Zach again and would recommend him for any senior marketing leadership position.",
@@ -25,7 +25,7 @@
     "name": "Tony Orelli",
     "title": "Investor & Advisor",
     "context": "Worked together for nearly 5 years",
-    "image": "/images/logos/tony-orelli.jpg"
+    "initials": "TO"
   },
   {
     "quote": "His approach to marketing and strategy is both disciplined and at the same time creative. … Zack also has a great product sense and keen awareness of how a consumer thinks.",

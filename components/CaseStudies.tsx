@@ -10,9 +10,9 @@ const cases = [
     challenge:
       'A racing, wagering, and entertainment business needed to modernize its commercial engine and prove the return on marketing to the board.',
     action:
-      'Led a cloud customer data platform and a predictive customer-valuation model, rebuilt go-to-market around unit economics, and launched a new wagering app. Secured an increase in the board-approved marketing budget from $8M to $15M through direct board-level briefings and ROI forecasting.',
+      'Led a cloud customer data platform and a predictive customer-valuation model, rebuilt go-to-market around unit economics, and launched a new wagering app. Secured an increase in the board-approved marketing budget from $8 million to $15 million through direct board-level briefings and ROI forecasting.',
     result:
-      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60M in handle (total amount wagered) and $4M in net gaming revenue within 10 months.',
+      'Over four years, the business delivered 67% revenue growth and a 22% EBITDA CAGR while marketing costs declined 2.7% through a restructured promotional strategy. Customer acquisition cost fell 56% and LTV/CAC improved 73%. The new wagering app generated $60 million in handle (total amount wagered) and $4 million in net gaming revenue within 10 months.',
     href: '/work/1st-technology-commercial-growth/',
     linkLabel: 'Read the 1/ST Technology case study',
   },
@@ -23,9 +23,9 @@ const cases = [
     challenge:
       'The Venetian, then the flagship Las Vegas property of a Fortune 500 resort operator, faced a five-year decline in direct-channel bookings.',
     action:
-      'Secured $13M in capital investment for digital transformation initiatives, directed a new website and booking engine, led a 360-degree customer data platform for personalization across hotel and casino, and led the design of a price-elasticity model for pricing and offers.',
+      'Secured $13 million in capital investment for digital transformation initiatives, directed a new website and booking engine, led a 360-degree customer data platform for personalization across hotel and casino, and led the design of a price-elasticity model for pricing and offers.',
     result:
-      'Those initiatives generated $36M in incremental direct-channel revenue and reversed the decline, with 24 consecutive months of year-over-year growth, a 50% increase in return on advertising spend and an 18% lift in CRM conversion. On the strength of those results, Las Vegas Sands recruited me from Digital Marketing into Corporate Information Technology to lead a global cloud governance program across the U.S., Singapore and China.',
+      'Those initiatives generated $36 million in incremental direct-channel revenue and reversed the decline, with 24 consecutive months of year-over-year growth, a 50% increase in return on advertising spend and an 18% lift in CRM conversion. On the strength of those results, Las Vegas Sands recruited me from Digital Marketing into Corporate Information Technology to lead a global cloud governance program across the U.S., Singapore and China.',
     href: '/work/venetian-direct-channel-transformation/',
     linkLabel: 'Read The Venetian direct-channel case study',
   },

@@ -40,10 +40,14 @@ export default function Hero() {
 
             <div className="w-12 h-px bg-[#3B5998] mb-8" />
 
-            <p className="text-white font-medium tracking-wide mb-3"><span className="whitespace-nowrap">Chief Marketing Officer ·</span> <span className="whitespace-nowrap">Chief Commercial Officer ·</span> <span className="whitespace-nowrap">Fortune 500 Enterprise</span> <span className="whitespace-nowrap">Technology Leadership ·</span> <span className="whitespace-nowrap">Speaker</span></p>
+            <p className="text-white font-medium tracking-wide mb-3"><span className="whitespace-nowrap">Chief Marketing Officer ·</span> <span className="whitespace-nowrap">Chief Commercial Officer ·</span> <span className="whitespace-nowrap">Vice President of</span> <span className="whitespace-nowrap">Corporate Information Technology ·</span> <span className="whitespace-nowrap">Speaker</span></p>
 
-            <p className="text-base md:text-lg text-white/75 leading-relaxed max-w-md mb-8">
-              I help companies create more predictable value from data, digital transformation, technology and AI. Based in Las Vegas, I have held vice president roles in both digital marketing and corporate information technology at Las Vegas Sands, a Fortune 500 company.
+            <p className="text-lg md:text-xl text-white leading-snug max-w-md mb-4">
+              Connecting AI, digital, data, and technology to revenue, EBITDA, and enterprise value.
+            </p>
+
+            <p className="text-base text-white/75 leading-relaxed max-w-md mb-8">
+              Based in Las Vegas, I have held vice president roles in both digital marketing and corporate information technology at Las Vegas Sands, a Fortune 500 company.
             </p>
 
             {/* Industries */}
@@ -85,7 +89,7 @@ export default function Hero() {
                   src="/images/headshot.webp"
                   width={677}
                   height={819}
-                  alt="Zachary Leifer, Commercial Growth and Transformation Executive, Las Vegas"
+                  alt="Zachary Leifer, Commercial Growth & Transformation Executive, Las Vegas"
                   className="w-full object-cover object-top block"
                   style={{ maxHeight: '560px' }}
                 />

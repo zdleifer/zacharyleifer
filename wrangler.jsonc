@@ -10,6 +10,9 @@
     "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
+  "kv_namespaces": [
+    { "binding": "REPORT_LEADS", "id": "aab4332c282d43a2a9e14168a0a2d51a" }
+  ],
   "routes": [
     { "pattern": "zacharyleifer.com", "custom_domain": true },
     { "pattern": "www.zacharyleifer.com", "custom_domain": true }

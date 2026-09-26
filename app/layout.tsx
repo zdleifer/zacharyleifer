@@ -25,9 +25,9 @@ const personSchema = {
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com/",
   image: "https://zacharyleifer.com/images/headshot.png",
-  jobTitle: ["Commercial Growth and Transformation Executive", "Strategic Marketing Advisor"],
+  jobTitle: "Commercial Growth & Transformation Executive",
   description:
-    "Senior commercial growth and transformation executive based in Las Vegas, NV, who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas. He builds the marketing and commercial operating system, including data architecture, CRM and CDP infrastructure, and measurement, that turns strategy into measurable growth. Completed the Harvard Business School Advanced Management Program in 2026. Open to Chief Marketing Officer, Chief Commercial Officer, General Manager and operating-partner roles, board roles as a Board Candidate, advisory roles and speaking engagements.",
+    "Zachary Leifer is a commercial growth and transformation executive based in Las Vegas who has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He leads business, data, digital, and technology initiatives that connect customer insight to commercial performance. He completed the Harvard Business School Advanced Management Program in 2026.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
@@ -80,18 +80,7 @@ const personSchema = {
     "Gaming and Hospitality",
   ],
   worksFor: {
-    "@type": "ProfessionalService",
     "@id": "https://www.somstrategies.com/#organization",
-    name: "State of Mind Strategies",
-    url: "https://www.somstrategies.com/",
-    sameAs: ["https://www.linkedin.com/company/state-of-mind-strategies/"],
-    description: "Boutique consulting practice specializing in strategy, marketing, digital transformation, AI Strategy and AI Value Realization.",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Las Vegas",
-      addressRegion: "NV",
-      addressCountry: "US",
-    },
   },
   // schema.org: hasOccupation expects Occupation; past professions are expressed
   // by wrapping the Occupation in a Role with startDate/endDate, so the executive
@@ -99,7 +88,7 @@ const personSchema = {
   hasOccupation: [
     {
       "@type": "Occupation",
-      name: "Commercial Growth and Transformation Executive",
+      name: "Commercial Growth & Transformation Executive",
       occupationLocation: {
         "@type": "City",
         name: "Las Vegas",
@@ -110,6 +99,16 @@ const personSchema = {
       },
       skills:
         "Commercial Growth, P&L Management, Revenue Strategy, Digital Transformation, AI Strategy, Customer Data, Marketing Technology, Executive Leadership",
+    },
+    {
+      "@type": "Role",
+      roleName: "Founder & Executive Advisor, Commercial & Technology Transformation",
+      description: "Founder & Executive Advisor, Commercial & Technology Transformation at State of Mind Strategies",
+      startDate: "2024",
+      hasOccupation: {
+        "@type": "Occupation",
+        name: "Founder & Executive Advisor",
+      },
     },
     {
       "@type": "Role",
@@ -133,6 +132,17 @@ const personSchema = {
         name: "Chief Commercial Officer",
       },
     },
+    {
+      "@type": "Role",
+      roleName: "Vice President of Corporate Information Technology",
+      description: "Vice President of Corporate Information Technology at Las Vegas Sands",
+      startDate: "2019",
+      endDate: "2020",
+      hasOccupation: {
+        "@type": "Occupation",
+        name: "Vice President of Corporate Information Technology",
+      },
+    },
   ],
 };
 
@@ -143,7 +153,7 @@ const websiteSchema = {
   name: "Zachary Leifer",
   url: "https://zacharyleifer.com/",
   description:
-    "Official site of Zachary Leifer, a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer and Chief Commercial Officer, with experience in gaming, hospitality, customer data, AI strategy and revenue growth.",
+    "Official site of Zachary Leifer, a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer, Chief Commercial Officer, and Vice President of Corporate Information Technology.",
   author: {
     "@id": "https://zacharyleifer.com/#zachary-leifer",
     "@type": "Person",
@@ -154,7 +164,7 @@ const websiteSchema = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
   "@id": "https://www.somstrategies.com/#organization",
   name: "State of Mind Strategies",
   url: "https://www.somstrategies.com/",
@@ -166,7 +176,7 @@ const organizationSchema = {
     url: "https://zacharyleifer.com/",
   },
   description:
-    "Boutique consulting practice specializing in strategy, marketing, digital transformation, AI Strategy and AI Value Realization. Founded by Zachary Leifer, who has served as Chief Marketing Officer at 1/ST Technology and Vice President at Las Vegas Sands.",
+    "State of Mind Strategies is a commercial growth and transformation advisory founded by Zachary Leifer. It helps leadership teams find what is holding growth back and connect AI, digital, data, and technology investments to revenue, EBITDA, and enterprise value.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
@@ -178,38 +188,13 @@ const organizationSchema = {
 
 
 
+const HOME_TITLE = "Zachary Leifer | Commercial Growth & Transformation Executive";
+const HOME_DESC =
+  "Zachary Leifer has served as CMO, CCO and VP of Corporate IT. Based in Las Vegas, he connects AI, data and technology to revenue, EBITDA and enterprise value.";
+
 export const metadata: Metadata = {
-  title: "Zachary Leifer | Chief Marketing Officer, Chief Commercial Officer",
-  description:
-    "Zachary Leifer helps companies create more predictable value from data, digital transformation, technology and AI. Speaker and advisor based in Las Vegas.",
-  keywords: [
-    "Chief Marketing Officer Las Vegas",
-    "CMO Las Vegas",
-    "CCO Las Vegas Nevada",
-    "Chief Commercial Officer Las Vegas",
-    "Commercial Growth Executive Las Vegas",
-    "President Las Vegas Nevada",
-    "CEO Las Vegas",
-    "GM Las Vegas",
-    "Executive Leadership Las Vegas",
-    "VP Marketing Las Vegas",
-    "Digital Transformation Executive Las Vegas",
-    "AI Investment Governance Executive Las Vegas",
-    "Marketing Executive Las Vegas Nevada",
-    "Revenue Growth Executive",
-    "Fractional CMO Las Vegas",
-    "Board Governance Las Vegas",
-    "Harvard Business School Executive",
-    "Gaming Industry Marketing Executive",
-    "Hospitality Marketing Executive Las Vegas",
-    "Zachary Leifer",
-    "Zachary Leifer Las Vegas",
-    "Zachary Leifer CMO",
-    "Las Vegas Sands Marketing Executive",
-    "The Venetian Marketing VP",
-    "1/ST Technology CMO",
-    "Executive Recruiter Las Vegas",
-  ],
+  title: HOME_TITLE,
+  description: HOME_DESC,
   authors: [{ name: "Zachary Leifer", url: "https://zacharyleifer.com/" }],
   creator: "Zachary Leifer",
   publisher: "Zachary Leifer",
@@ -229,9 +214,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "profile",
-    title: "Zachary Leifer | Chief Marketing Officer, Chief Commercial Officer",
-    description:
-      "Zachary Leifer helps companies create more predictable value from data, digital transformation, technology and AI. Speaker and advisor based in Las Vegas.",
+    title: HOME_TITLE,
+    description: HOME_DESC,
     url: "https://zacharyleifer.com/",
     siteName: "Zachary Leifer",
     images: [OG_IMAGE],
@@ -241,31 +225,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zachary Leifer | Chief Marketing Officer, Chief Commercial Officer",
-    description:
-      "Zachary Leifer helps companies create more predictable value from data, digital transformation, technology and AI. Speaker and advisor based in Las Vegas.",
+    title: HOME_TITLE,
+    description: HOME_DESC,
     images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
   // alternates.canonical lives in app/page.tsx so non-home routes (including
   // the 404 page) do not inherit the homepage canonical.
-  other: {
-    // GEO meta tags, which help local search engines and directories
-    "geo.region": "US-NV",
-    "geo.placename": "Las Vegas, Nevada",
-    "geo.position": "36.1699;-115.1398",
-    ICBM: "36.1699, -115.1398",
-    // Dublin Core
-    "DC.title": "Zachary Leifer, Commercial Growth Executive",
-    "DC.creator": "Zachary Leifer",
-    "DC.subject": "Executive Leadership, CMO, Las Vegas",
-    "DC.description":
-      "Zachary Leifer helps companies create more predictable value from data, digital transformation, technology and AI. Speaker and advisor based in Las Vegas.",
-    "DC.language": "en",
-    // Additional discovery
-    "og:locality": "Las Vegas",
-    "og:region": "NV",
-    "og:country-name": "United States",
-  },
 };
 
 export default function RootLayout({

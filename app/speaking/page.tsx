@@ -3,6 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import speakingFaqs from '@/data/speaking-faqs.json';
 import { OG_IMAGE } from '@/data/og-image';
+import SpeakingInquiryForm from '@/components/SpeakingInquiryForm';
 
 const SPEAKER_IMAGE_ALT =
   'Zachary Leifer, speaker on AI strategy, digital transformation and commercial growth, Las Vegas';
@@ -37,7 +38,7 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://zacharyleifer.com/#website' },
   description:
     'Zachary Leifer speaks on AI strategy, AI investment governance, customer data, commercial growth and digital transformation. Keynotes, executive panels and board sessions from Las Vegas, Nevada.',
-  dateModified: '2026-09-13',
+  dateModified: '2026-09-26',
   mainEntity: {
     '@id': 'https://zacharyleifer.com/#zachary-leifer',
     '@type': 'Person',
@@ -65,8 +66,17 @@ const talks = [
     number: '01',
     category: 'AI Strategy & Commercial Value',
     title: 'AI Is Not a Strategy: The Operating Model Leaders Need Before They Scale It',
-    abstract:
-      'What must change inside a business before AI can produce measurable value? Zachary examines the leadership decisions behind adoption: a defined commercial outcome, accountable ownership, appropriate resources, aligned incentives and a credible measurement plan. Drawing on commercial and enterprise technology experience and his AMP Leadership Impact Project, he shows how lessons from data and digital transformation apply to AI investment, including where specialist risk oversight belongs. The session helps executive teams evaluate readiness before expanding deployment.',
+    subtitle: 'Creating More Predictable Value from Data, Technology and AI Investment',
+    abstractParagraphs: [
+      'Most organizations do not struggle to find technology ideas. They struggle to turn investment into measurable commercial value.',
+      'In this practical executive session, Zachary Leifer explains why AI, data, digital and technology initiatives often stall after approval, and what leaders can do differently before committing significant capital. Drawing on research with senior executives and experience leading commercial growth and corporate technology functions, he provides a disciplined approach to defining the business objective, diagnosing organizational readiness, funding discovery, establishing accountable ownership and measuring proof of value.',
+      'Attendees leave with a practical framework for identifying where technology can create value, recognizing the organizational conditions that put initiatives at risk, and holding transformation investments accountable to revenue, EBITDA, customer economics and enterprise value.',
+    ],
+    outcomes: [
+      'Define the commercial or enterprise outcome before selecting a technology solution.',
+      'Identify the ownership, incentives, operating-model and readiness conditions that determine whether an initiative can be adopted.',
+      'Distinguish a proof of concept from a proof of value and establish the measures that will verify the result.',
+    ],
     bestFor: ['CEOs', 'CMOs', 'CIOs', 'Boards', 'Transformation leaders', 'PE portfolio companies'],
   },
   {
@@ -125,7 +135,7 @@ function linkifyDomain(text: string, domainPath: string, href: string) {
 // Newest first. The HBS row is a participant presentation, not an invited engagement.
 const appearances = [
   { event: 'Harvard Business School Advanced Management Program', topic: 'Leadership Impact Project presentation to the AMP cohort', year: '2026' },
-  { event: 'NC Labs Podcast', topic: 'Awesome in Action', year: '2021' },
+  { event: 'NC Labs Podcast', topic: 'Awesome in Action', year: '2021', href: 'https://open.spotify.com/episode/4xHYHVFm9V7GcMO1Si4sl7' },
   { event: 'World Tote Association', topic: 'Digital Transformation in the Age of the Customer', year: '2020' },
 ];
 
@@ -162,10 +172,10 @@ export default function SpeakingPage() {
               <div className="lg:col-span-8">
                 <p className="text-[10px] tracking-[0.35em] uppercase text-[#7B96CC] mb-6">Speaking</p>
                 <h1 className="font-display text-[clamp(1.8rem,3.5vw,3rem)] font-bold text-white leading-tight mb-8">
-                  Zachary Leifer speaks on AI strategy, customer data, commercial growth and the operating models that connect technology investment to measurable business results.
+                  Zachary Leifer speaks on AI strategy, customer data, commercial growth, enterprise transformation, organizational readiness, and the operating models that connect technology investment to measurable business results.
                 </h1>
                 <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-10">
-                  A commercial growth and transformation executive, he has served as Chief Marketing Officer of 1/ST Technology and Chief Commercial Officer of PokerAtlas. He is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events and podcasts. Based in Las Vegas, Nevada, he travels nationally and internationally.
+                  A commercial growth and transformation executive, he has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events and podcasts. Based in Las Vegas, Nevada, he travels nationally and internationally.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a
@@ -180,7 +190,15 @@ export default function SpeakingPage() {
                     href="#talks"
                     className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
                   >
-                    View Talks <span aria-hidden="true">→</span>
+                    Topics <span aria-hidden="true">→</span>
+                  </a>
+                  <a
+                    href="/downloads/zachary-leifer-speaker-sheet.pdf"
+                    className="inline-flex items-center gap-3 border border-white/20 text-white/60 hover:text-white hover:border-white/50 px-8 py-4 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
+                    data-ga-event="speaker_sheet_download"
+                    data-ga-label="Speaking page hero"
+                  >
+                    Download Speaker Sheet <span aria-hidden="true">↓</span>
                   </a>
                 </div>
                 <p className="text-white/60 text-xs mt-5">
@@ -251,7 +269,7 @@ export default function SpeakingPage() {
                 </h2>
                 {/* 150-word speaker bio. Recount if edited. */}
                 <p className="text-[#334155] text-base leading-[1.9] mb-6">
-                  Zachary Leifer is a commercial growth and transformation executive who helps companies create more predictable value from data, digital transformation, technology and AI. He has served as Vice President, Corporate Information Technology at Las Vegas Sands, Chief Marketing Officer of 1/ST Technology and Chief Commercial Officer of PokerAtlas.
+                  Zachary Leifer is a commercial growth and transformation executive who connects AI, digital, data, and technology investments to revenue, EBITDA, and enterprise value. He has served as Vice President, Corporate Information Technology at Las Vegas Sands, Chief Marketing Officer of 1/ST Technology and Chief Commercial Officer of PokerAtlas.
                 </p>
                 <p className="text-[#334155] text-base leading-[1.9] mb-6">
                   At The Venetian, then part of Las Vegas Sands, he led a{' '}
@@ -328,10 +346,34 @@ export default function SpeakingPage() {
                     <p className="text-[9px] tracking-[0.3em] uppercase text-[#7B96CC] mt-3">{talk.category}</p>
                   </div>
                   <div className="lg:col-span-9">
-                    <h3 className="font-display text-xl font-semibold text-white leading-snug mb-4">
+                    <h3 className="font-display text-xl font-semibold text-white leading-snug mb-2">
                       {talk.title}
                     </h3>
-                    <p className="text-white/55 text-sm leading-relaxed mb-6">{talk.abstract}</p>
+                    {talk.subtitle && (
+                      <p className="text-[#7B96CC] text-sm font-medium mb-4">{talk.subtitle}</p>
+                    )}
+                    {talk.abstractParagraphs ? (
+                      <div className="space-y-4 mb-6">
+                        {talk.abstractParagraphs.map((p, i) => (
+                          <p key={i} className="text-white/55 text-sm leading-relaxed">{p}</p>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-white/55 text-sm leading-relaxed mb-6">{talk.abstract}</p>
+                    )}
+                    {talk.outcomes && (
+                      <div className="mb-6">
+                        <p className="text-[9px] tracking-[0.25em] uppercase text-[#94A3B8] mb-3">Attendees will be able to:</p>
+                        <ul className="space-y-2">
+                          {talk.outcomes.map((o) => (
+                            <li key={o} className="flex gap-3 text-white/55 text-sm leading-relaxed">
+                              <span aria-hidden="true" className="text-[#7B96CC] mt-1 flex-shrink-0">&bull;</span>
+                              <span>{o}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       <span className="text-[9px] tracking-[0.25em] uppercase text-[#94A3B8] mr-1 self-center">Best for:</span>
                       {talk.bestFor.map((a) => (
@@ -358,6 +400,14 @@ export default function SpeakingPage() {
               >
                 Get in Touch <span aria-hidden="true">→</span>
               </a>
+              <p className="mt-6 text-sm">
+                <a
+                  href="https://www.somstrategies.com/executive-speaking-workshops/"
+                  className="text-white/60 underline underline-offset-4 decoration-white/25 hover:text-white transition-colors"
+                >
+                  Explore executive speaking and leadership workshops for organizations.
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -385,7 +435,20 @@ export default function SpeakingPage() {
                         <p className="font-semibold text-[#0A0A0A] text-sm">{a.event}</p>
                       </div>
                       <div className="sm:col-span-4">
-                        <p className="text-[#475569] text-sm">{a.topic}</p>
+                        <p className="text-[#475569] text-sm">
+                          {a.href ? (
+                            <a
+                              href={a.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors"
+                            >
+                              {a.topic}
+                            </a>
+                          ) : (
+                            a.topic
+                          )}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -433,6 +496,76 @@ export default function SpeakingPage() {
           </div>
         </section>
 
+        {/* ── PODCASTS & MEDIA ── */}
+        <section id="podcasts-media" className="bg-[#0B0F1A] border-t border-white/10 py-24 px-8 md:px-12">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-16">
+              <div className="lg:col-span-3">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] lg:sticky top-24">
+                  Podcasts &amp; Media
+                </p>
+              </div>
+              <div className="lg:col-span-9">
+                <h2 className="font-display text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-white mb-6">
+                  Podcasts &amp; Media
+                </h2>
+                <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-10">
+                  Zachary Leifer is available for podcast interviews, executive roundtables, and
+                  media conversations on commercial growth, technology investment, AI value
+                  creation, digital transformation, customer economics, and the organizational
+                  conditions required to turn investment into measurable business value.
+                </p>
+
+                <p className="text-[10px] tracking-[0.3em] uppercase text-[#7B96CC] mb-4">
+                  Suggested Conversations
+                </p>
+                <ul className="space-y-2 mb-12">
+                  {[
+                    'Why AI is not a strategy',
+                    'How CEOs and boards should evaluate AI and technology investment',
+                    'Proof of concept versus proof of value',
+                    'Building the operating model required for transformation',
+                    'Turning customer data, technology, and AI into commercial growth',
+                  ].map((topic) => (
+                    <li key={topic} className="flex gap-3 text-white/70 text-sm leading-relaxed">
+                      <span aria-hidden="true" className="text-[#7B96CC] mt-1 flex-shrink-0">&bull;</span>
+                      <span>{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="border border-white/10 bg-white/5 p-8">
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#94A3B8] mb-3">
+                    For Podcast Hosts and Media Inquiries
+                  </p>
+                  <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xl">
+                    Looking for an executive perspective on how to turn AI, data, technology, and
+                    digital transformation into measurable business value?
+                  </p>
+                  <a
+                    href="/speaking/?inquiry=podcast#book"
+                    className="inline-flex items-center gap-3 bg-white text-[#0A0A0A] px-8 py-4 text-xs tracking-[0.18em] uppercase font-semibold hover:bg-white/90 transition-all duration-200"
+                    data-ga-event="podcast_media_cta_click"
+                    data-ga-label="Book Zachary for a Podcast or Media Conversation"
+                  >
+                    Book Zachary for a Podcast or Media Conversation
+                  </a>
+                  <p className="mt-4">
+                    <a
+                      href="/downloads/zachary-leifer-speaker-sheet.pdf"
+                      className="text-white/50 hover:text-white text-xs underline underline-offset-2 transition-colors"
+                      data-ga-event="speaker_sheet_download"
+                      data-ga-label="Podcasts and media section"
+                    >
+                      Download Speaker Sheet
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── BOOKING CTA ── */}
         <section id="book" className="bg-[#060606] border-t border-white/10 py-24 px-8 md:px-12">
           <div className="max-w-7xl mx-auto">
@@ -463,11 +596,84 @@ export default function SpeakingPage() {
                 </p>
               </div>
             </div>
+
+            <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-4">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-[#94A3B8] mb-4">Request Availability</p>
+                <p className="text-white/55 text-sm leading-relaxed mb-4">
+                  Share your event details and Zachary will follow up directly. Prefer email? Use
+                  the address above instead.
+                </p>
+                <a
+                  href="/downloads/zachary-leifer-speaker-sheet.pdf"
+                  className="inline-flex items-center gap-3 border border-white/20 text-white/70 hover:text-white hover:border-white/50 px-6 py-3 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-200"
+                  data-ga-event="speaker_sheet_download"
+                  data-ga-label="Speaking page"
+                >
+                  Download Speaker Sheet <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+              <div className="lg:col-span-8">
+                <SpeakingInquiryForm />
+              </div>
+            </div>
           </div>
         </section>
 
       </main>
       <Footer />
+
+      <div
+        id="sticky-book-cta"
+        aria-hidden="true"
+        className="fixed bottom-5 inset-x-5 sm:inset-x-auto sm:right-6 sm:bottom-6 z-40 opacity-0 pointer-events-none translate-y-3 transition-all duration-300 [&.is-visible]:opacity-100 [&.is-visible]:pointer-events-auto [&.is-visible]:translate-y-0"
+      >
+        <a
+          href="#book"
+          data-ga-event="speaking_sticky_cta_click"
+          data-ga-label="Sticky get in touch CTA"
+          className="flex items-center justify-center gap-2 bg-white text-[#0A0A0A] px-6 py-4 text-xs tracking-[0.15em] uppercase font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.35)] hover:bg-white/90 transition-colors"
+        >
+          Get in Touch <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.addEventListener('click', function (e) {
+            var t = e.target.closest('[data-ga-event]');
+            if (!t) return;
+            if (typeof window.gtag !== 'function') return;
+            window.gtag('event', t.getAttribute('data-ga-event'), { link_label: t.getAttribute('data-ga-label') || t.textContent.trim() });
+          });
+
+          // Sticky "Get in Touch" CTA: show once the reader has scrolled past the
+          // hero, hide while the actual booking section is on screen so it never
+          // covers the form.
+          (function () {
+            var sticky = document.getElementById('sticky-book-cta');
+            var bookSection = document.getElementById('book');
+            if (!sticky || !bookSection) return;
+            var bookVisible = false;
+            var setVisible = function (visible) {
+              sticky.classList.toggle('is-visible', visible);
+              if (visible) sticky.removeAttribute('aria-hidden');
+              else sticky.setAttribute('aria-hidden', 'true');
+            };
+            var update = function () {
+              setVisible(window.scrollY > 700 && !bookVisible);
+            };
+            if ('IntersectionObserver' in window) {
+              new IntersectionObserver(function (entries) {
+                bookVisible = entries[0].isIntersecting;
+                update();
+              }, { threshold: 0.15 }).observe(bookSection);
+            }
+            window.addEventListener('scroll', update, { passive: true });
+            update();
+          })();`,
+        }}
+      />
     </>
   );
 }

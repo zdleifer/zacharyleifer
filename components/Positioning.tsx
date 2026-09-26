@@ -37,9 +37,8 @@ export default function Positioning() {
         </p>
 
         <p className="text-[#475569] text-base md:text-lg leading-relaxed mt-6 max-w-3xl reveal reveal-delay-1">
-          My signature is building the marketing and commercial operating system: the data
-          architecture, CRM and CDP infrastructure, operating model, and measurement framework that
-          turn strategy into measurable, repeatable growth. I bring the governance discipline used
+          My signature is connecting business strategy, customer insight, digital capabilities, and
+          technology initiatives to measurable commercial outcomes. I bring the governance discipline used
           for data, digital transformation and enterprise technology investments to AI, helping
           leaders connect strategy, organizational readiness, execution and measurement to financial
           value.
@@ -79,14 +78,26 @@ export default function Positioning() {
           <div>
             <h3 className="text-[9px] tracking-[0.35em] uppercase text-[#475569] mb-3">Open To</h3>
             <p className="text-[#1A1A1A] text-sm leading-relaxed">
+              Available for selected Chief Marketing Officer, Chief Commercial Officer, President,
+              General Manager, commercial transformation,{' '}
               <a
                 href="/board-executive-advisory/"
                 className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
               >
-                Corporate board and advisory seats
-              </a>{' '}
-              · Chief Marketing Officer, Chief Commercial Officer, General Manager and operating-partner mandates ·
-              Growth and transformation advisory
+                board advisory
+              </a>
+              , executive advisory, and speaking opportunities, as well as selected portfolio-company advisory
+              or value-creation opportunities.
+            </p>
+            <p className="text-[#1A1A1A] text-sm leading-relaxed mt-3">
+              For organizational advisory engagements, visit{' '}
+              <a
+                href="https://www.somstrategies.com/executive-enterprise-advisory/"
+                className="underline decoration-[#1A1A1A]/25 underline-offset-4 hover:text-[#3B5998] hover:decoration-[#3B5998]/50 transition-colors"
+              >
+                State of Mind Strategies
+              </a>
+              .
             </p>
           </div>
           <div>

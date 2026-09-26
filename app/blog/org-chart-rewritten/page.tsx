@@ -223,7 +223,7 @@ export default function OrgChartArticle() {
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

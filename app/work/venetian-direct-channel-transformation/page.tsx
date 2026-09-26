@@ -10,7 +10,7 @@ const DESC =
   'Zachary Leifer led the digital transformation that reversed a five-year direct-channel decline at The Venetian Resort Las Vegas. An executive case study.';
 const URL = 'https://zacharyleifer.com/work/venetian-direct-channel-transformation/';
 const PUBLISHED = '2026-09-13';
-const MODIFIED = '2026-09-13';
+const MODIFIED = '2026-09-26';
 
 export const metadata: Metadata = {
   title: TITLE_TAG,
@@ -201,6 +201,14 @@ export default function VenetianCaseStudy() {
               </a>.
             </p>
 
+            <p>
+              Organizations applying the same discipline to data, technology and AI can explore State of Mind
+              Strategies&apos;{' '}
+              <a href="https://www.somstrategies.com/ai-strategy-value-realization/" className={link}>
+                AI strategy and value realization advisory
+              </a>.
+            </p>
+
           </div>
 
           <PageQuotes
@@ -253,7 +261,7 @@ export default function VenetianCaseStudy() {
           {/* Author bio */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#475569]">
-              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands. He helps companies create more predictable value from data, digital transformation, technology and AI.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands. He connects AI, digital, data, and technology investments to revenue, EBITDA, and enterprise value.{' '}
               <a href="/" className={link}>
                 Read the full profile
               </a>

@@ -11,7 +11,7 @@ const DESC =
   'How Zachary Leifer connected marketing investment, customer data and commercial execution at 1/ST Technology as Chief Marketing Officer, 2020–2024.';
 const URL = 'https://zacharyleifer.com/work/1st-technology-commercial-growth/';
 const PUBLISHED = '2026-09-13';
-const MODIFIED = '2026-09-13';
+const MODIFIED = '2026-09-26';
 
 const PERSON = {
   '@id': 'https://zacharyleifer.com/#zachary-leifer',
@@ -230,6 +230,14 @@ export default function FirstTechnologyCaseStudy() {
               on AI Strategy, AI Investment Governance and AI Value Realization.
             </p>
 
+            <p>
+              For organizations working through a similar commercial transformation, State of Mind Strategies
+              offers{' '}
+              <a href="https://www.somstrategies.com/executive-enterprise-advisory/" className={linkClass}>
+                executive and enterprise transformation advisory
+              </a>.
+            </p>
+
           </div>
 
           <PageQuotes
@@ -269,7 +277,7 @@ export default function FirstTechnologyCaseStudy() {
           <div className="mt-16 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">About the Author</p>
             <p className="text-sm text-[#475569] leading-relaxed">
-              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who helps companies create more predictable value from data, digital transformation, technology and AI. He has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who connects AI, digital, data, and technology investments to revenue, EBITDA, and enterprise value. He has served as Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas and Vice President, Corporate Information Technology at Las Vegas Sands.{' '}
               <a href="/" className={linkClass}>
                 Read the full profile
               </a>

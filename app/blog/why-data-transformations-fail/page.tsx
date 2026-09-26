@@ -10,7 +10,7 @@ const SEO_TITLE = 'Why Data and Digital Transformations Fail';
 const ALT_TITLE = 'Architecting More Predictable Enterprise Value from Data, Technology and AI Investment';
 const URL = 'https://zacharyleifer.com/blog/why-data-transformations-fail/';
 const PUBLISHED = '2026-09-12';
-const MODIFIED = '2026-09-20';
+const MODIFIED = '2026-09-26';
 const RESEARCH_IMAGE = {
   url: 'https://zacharyleifer.com/images/og-why-data-transformations-fail.jpg',
   width: 1200,
@@ -213,12 +213,11 @@ const approvalChecklist = [
   'Set the conditions that would trigger continuation, correction, redesign, scaling or termination.',
 ];
 
-const leash = [
-  { k: 'L', t: 'Leader actions', d: 'What leadership visibly does, funds, and protects, which is read as the real priority regardless of what is announced.' },
-  { k: 'E', t: 'Employee involvement', d: 'Bringing the people who will live with the change into the design of it, early enough that their input still changes something.' },
-  { k: 'A', t: 'Aligned rewards', d: 'Compensation and recognition that pay out on the new outcome rather than the old one.' },
-  { k: 'S', t: 'Stories, symbols and signals', d: 'The narrative and the small visible decisions that tell the organization which way is now up.' },
-  { k: 'H', t: 'HR systems', d: 'Hiring, promotion, and performance management adjusted so the structure sustains the change after attention moves on.' },
+const congruence = [
+  { t: 'Work and Interdependencies', d: 'Workflows, customer journeys, handoffs, data, systems, dependencies and required decisions.' },
+  { t: 'People and Capabilities', d: 'Skills, dedicated capacity, accountable leadership and frontline knowledge.' },
+  { t: 'Formal Organization', d: 'Ownership, decision rights, governance, funding and operating model.' },
+  { t: 'Informal Organization, Culture and Incentives', d: 'Leadership behavior, informal power structures, cultural norms and incentives.' },
 ];
 
 const h2 = 'font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4 scroll-mt-24';
@@ -533,29 +532,48 @@ export default function WhyDataTransformationsFail() {
             </ol>
 
             <h2 className={h2}>
-              The LEASH model
+              From Research Finding to Organizational Diagnosis
             </h2>
 
             <p>
-              Where the diagnostic finds gaps, five levers close them. The framework I apply here
-              is the LEASH model, developed by Charles O&rsquo;Reilly of Stanford and taught in the
-              Harvard Business School change and renewal curriculum. I use it because it covers the
-              full set of levers that have to move:
+              The research identifies conditions associated with stronger delivery. The Congruence
+              Model, developed by David A. Nadler and Michael L. Tushman, provides a practical way
+              to investigate those conditions before additional capital is committed. It is not a
+              survey-derived scoring method. It is a structured way to determine whether the
+              organization is configured to deliver the intended business outcome.
             </p>
 
-            <div className="not-prose my-10 divide-y divide-[#0A0A0A]/10 border-y border-[#0A0A0A]/10">
-              {leash.map((l) => (
-                <div key={l.k} className="py-5 flex gap-5">
-                  <span className="font-display text-2xl font-bold text-[#3B5998] w-7 shrink-0">
-                    {l.k}
-                  </span>
-                  <div>
-                    <p className="font-semibold text-[#0A0A0A] mb-1">{l.t}</p>
-                    <p className="text-sm text-[#334155] leading-relaxed">{l.d}</p>
+            <div className="not-prose my-10">
+              <div className="border border-[#0A0A0A]/15 bg-white p-6 text-center mb-px">
+                <p className="text-[10px] tracking-[0.3em] uppercase text-[#3B5998] mb-2">Center</p>
+                <p className="font-display text-lg font-bold text-[#0A0A0A]">
+                  Enterprise Objective and Measurable Value Outcome
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#0A0A0A]/10">
+                {congruence.map((c) => (
+                  <div key={c.t} className="bg-[#F8F7F4] p-6">
+                    <p className="font-semibold text-[#0A0A0A] mb-1">{c.t}</p>
+                    <p className="text-sm text-[#334155] leading-relaxed">{c.d}</p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
+            <p className="text-sm text-[#475569] italic">
+              Technology investment is more likely to create value when the work, people, formal
+              organization and informal organization are aligned with the objective being funded.
+            </p>
+
+            <p className="text-sm text-[#475569]">
+              The checklist and diagnostic guidance translate the research findings into practical
+              executive questions. They are not a validated numerical scoring model.
+            </p>
+
+            <p className="text-xs text-[#94A3B8]">
+              Nadler, David A., and Michael L. Tushman. &ldquo;A Model for Diagnosing Organizational
+              Behavior.&rdquo; <em>Organizational Dynamics</em>, 1980.
+            </p>
 
             <h2 className={h2}>
               What it looks like when it works
@@ -571,23 +589,18 @@ export default function WhyDataTransformationsFail() {
             </p>
 
             <p>
-              At The Venetian, the performance gap was channel mix. Too much revenue was flowing
-              through online travel agencies at high commission cost. Shifting those bookings to
-              direct meant the same guest at a lower acquisition cost and a higher margin, which
-              improved EBITDA without changing the product at all.
+              In one transformation I led, the performance gap was channel mix. Too much revenue
+              was flowing through high-cost third-party channels. Shifting demand to direct
+              channels meant the same customer could be acquired at lower cost and higher margin,
+              improving the economics without changing the underlying product.
             </p>
 
             <p>
-              The opportunity gap was in pricing. Combining guest willingness to pay with
-              competitive pricing data by date and segment let the right offer reach the right
-              guest at the right price before a competitor could make one. A single use case paid
-              for the entire program.
-            </p>
-
-            <p>
-              Neither depended on novel technology. Both depended on defining the commercial
-              outcome first, funding a discovery phase before a platform, embedding the project team
-              inside the business, and having an independent finance validator confirm the result.
+              A related opportunity involved pricing. Combining customer willingness to pay with
+              competitive market data by date and segment made it possible to present a more
+              relevant offer at the right time. The work began with a clearly defined commercial
+              outcome, a discovery phase before major technology commitments, and independent
+              validation of the result.
             </p>
 
             <h2 className={h2}>
@@ -841,11 +854,19 @@ export default function WhyDataTransformationsFail() {
               </a>
             </p>
 
+            <p>
+              For organization-wide engagements,{' '}
+              <a href="https://www.somstrategies.com/executive-enterprise-advisory/" className={link}>
+                explore executive and enterprise transformation advisory
+              </a>{' '}
+              through State of Mind Strategies.
+            </p>
+
           </div>
 
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#475569]">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has held vice
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has held vice
               president roles in both digital marketing and corporate information technology at Las
               Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST
               Technology and Chief Commercial Officer at PokerAtlas, a B2B SaaS and B2C gaming

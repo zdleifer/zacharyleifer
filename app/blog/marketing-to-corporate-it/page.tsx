@@ -8,7 +8,7 @@ const DESC =
   'A Fortune 500 company recruited me from VP of Digital Marketing to VP of Corporate IT. Four lessons from the other side of the CMO/CIO divide.';
 const URL = 'https://zacharyleifer.com/blog/marketing-to-corporate-it/';
 const PUBLISHED = '2026-09-12';
-const MODIFIED = '2026-09-13';
+const MODIFIED = '2026-09-26';
 
 export const metadata: Metadata = {
   title: `${TITLE} | Zachary Leifer`,
@@ -106,11 +106,11 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              The move made sense because marketing had started operating like a capital-project organization. We secured $13M in capital investment for{' '}
+              The move made sense because marketing had started operating like a capital-project organization. We secured $13 million in capital investment for{' '}
               <a href="/work/venetian-direct-channel-transformation/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                 digital transformation initiatives at The Venetian
               </a>
-              , including a new website and booking engine, and managed the work with the planning and governance of an infrastructure program. The initiatives generated $36M in incremental direct-channel revenue, with 24 consecutive months of year-over-year growth. What got me recruited was delivering a large capital technology investment with a measured return attached to it.
+              , including a new website and booking engine, and managed the work with the planning and governance of an infrastructure program. The initiatives generated $36 million in incremental direct-channel revenue, with 24 consecutive months of year-over-year growth. What got me recruited was delivering a large capital technology investment with a measured return attached to it.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -134,7 +134,7 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              I ran a global cloud governance program across the United States, Singapore, and China, and led product and engineering teams building casino technology, including digitizing the global comp process and location-based offers. What that year made unavoidable is that a customer data platform is not a marketing purchase. It is an architecture commitment with a marketing use case on top. Teams that treat it as the former spend two years discovering the latter.
+              I ran a global cloud governance program across the United States, Singapore, and China, and led global product and engineering teams delivering mobile digitalization of the casino comp process. What that year made unavoidable is that a customer data platform is not a marketing purchase. It is an architecture commitment with a marketing use case on top. Teams that treat it as the former spend two years discovering the latter.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -146,7 +146,7 @@ export default function MarketingToCorporateITArticle() {
             </p>
 
             <p>
-              When I later became Chief Marketing Officer at 1/ST Technology, I imported that discipline directly. Every significant investment carried a forecast return before it was approved. The board-approved marketing budget grew from $8M to $15M, an increase secured through direct board-level briefings built on that ROI forecasting.
+              When I later became Chief Marketing Officer at 1/ST Technology, I imported that discipline directly. Every significant investment carried a forecast return before it was approved. The board-approved marketing budget grew from $8 million to $15 million, an increase secured through direct board-level briefings built on that ROI forecasting.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-[#0A0A0A] mt-12 mb-4">
@@ -181,12 +181,20 @@ export default function MarketingToCorporateITArticle() {
               More marketing and technology leaders should make this crossover. Having led teams on both sides of it is the experience I draw on most when helping a company turn customer data and AI into results a board will recognize.
             </p>
 
+            <p>
+              For organizations bringing marketing, technology and finance together,{' '}
+              <a href="https://www.somstrategies.com/executive-enterprise-advisory/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                explore advisory support for technology, data, and commercial transformation
+              </a>{' '}
+              from State of Mind Strategies.
+            </p>
+
           </div>
 
           {/* Footer nav */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#475569]">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has held vice president roles in both digital marketing and corporate information technology at Las Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has held vice president roles in both digital marketing and corporate information technology at Las Vegas Sands, a Fortune 500 company. He served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas.{' '}
               <a href="/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                 Read the full profile
               </a>

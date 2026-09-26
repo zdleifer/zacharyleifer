@@ -6,10 +6,10 @@ import PageQuotes from '@/components/PageQuotes';
 
 const TITLE_TAG = 'Zachary Leifer | Board Candidate & Executive Advisor';
 const DESC =
-  "Commercial growth, technology investment and AI value realization. Explore Zachary Leifer's board-facing experience and executive advisory approach.";
+  'Board-facing experience in commercial growth, technology investment, AI governance, customer data, capital allocation, and enterprise transformation.';
 const URL = 'https://zacharyleifer.com/board-executive-advisory/';
 const PUBLISHED = '2026-09-13';
-const MODIFIED = '2026-09-13';
+const MODIFIED = '2026-09-26';
 
 export const metadata: Metadata = {
   title: TITLE_TAG,
@@ -109,18 +109,19 @@ export default function BoardExecutiveAdvisoryPage() {
           <div className="prose prose-slate max-w-none text-[#334155] leading-[1.9] text-base space-y-6">
 
             <p className="text-xl text-[#1A1A1A] leading-relaxed font-light">
-              Zachary Leifer is a Board Candidate and Executive Advisor based in Las Vegas. He has served as
-              Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas and Vice
-              President of Corporate Information Technology at Las Vegas Sands, and he is open to corporate,
-              private-company and nonprofit board roles and executive advisory engagements.
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive and Board
+              Candidate. He brings board-relevant experience across commercial growth, technology investment,
+              customer data, AI governance, capital allocation, and enterprise transformation. His experience
+              includes serving as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of
+              PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands.
             </p>
 
             <h2 className={H2}>Commercial leadership and enterprise technology</h2>
 
             <p>
-              As a commercial growth and transformation executive, I help companies create more predictable
-              value from data, digital transformation, technology and AI, measured in revenue growth, EBITDA
-              improvement, stronger customer economics and enterprise value.
+              As a commercial growth and transformation executive, I help companies connect data, digital
+              transformation, technology and AI to measurable results: revenue growth, EBITDA improvement,
+              stronger customer economics and enterprise value.
             </p>
 
             <p>
@@ -282,7 +283,7 @@ export default function BoardExecutiveAdvisoryPage() {
             <p>
               Through{' '}
               <a href="https://www.somstrategies.com/" className={LINK}>
-                State of Mind Strategies, my commercial advisory practice
+                State of Mind Strategies, my commercial growth and transformation advisory
               </a>
               , I work with leadership teams on commercial growth, customer economics, digital transformation
               and the business application of technology and AI, with ownership of the work remaining inside
@@ -306,6 +307,14 @@ export default function BoardExecutiveAdvisoryPage() {
               also speak to executive and board audiences; see{' '}
               <a href="/speaking/" className={LINK}>
                 keynote, panel and board-session topics
+              </a>.
+            </p>
+
+            <p>
+              For organizational board and executive advisory delivered through State of Mind
+              Strategies, visit{' '}
+              <a href="https://www.somstrategies.com/board-executive-advisory/" className={LINK}>
+                State of Mind Strategies&rsquo; Board &amp; Executive Advisory page
               </a>.
             </p>
 
@@ -334,9 +343,9 @@ export default function BoardExecutiveAdvisoryPage() {
           {/* Footer nav */}
           <div className="mt-20 pt-10 border-t border-[#0A0A0A]/10">
             <p className="text-sm text-[#475569]">
-              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive with Chief
-              Marketing Officer, Chief Commercial Officer and Fortune 500 enterprise technology leadership
-              experience. He completed the Harvard Business School Advanced Management Program in 2026.{' '}
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has
+              served as Chief Marketing Officer, Chief Commercial Officer, and Vice President of Corporate
+              Information Technology. He completed the Harvard Business School Advanced Management Program in 2026.{' '}
               <a href="/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
                 Read the full profile
               </a>.

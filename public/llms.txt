@@ -1,7 +1,7 @@
 # Zachary Leifer | zacharyleifer.com
 
-> Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who helps companies
-> create more predictable value from data, digital transformation, technology and AI. He has served as
+> Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who connects AI,
+> digital, data, and technology investments to revenue, EBITDA, and enterprise value. He has served as
 > Chief Marketing Officer at 1/ST Technology, Chief Commercial Officer at PokerAtlas, and Vice President,
 > Corporate Information Technology at Las Vegas Sands, after leading digital marketing and eCommerce at
 > The Venetian Resort Las Vegas. Harvard Business School Advanced Management Program (2026). Speaker,
@@ -10,7 +10,7 @@
 
 ## Full Profile
 
-- [Zachary Leifer | Chief Marketing Officer and Chief Commercial Officer](https://zacharyleifer.com/): Complete
+- [Zachary Leifer | Commercial Growth & Transformation Executive](https://zacharyleifer.com/): Complete
   profile including career history, case studies, impact metrics, recommendations from executives,
   technology and data leaders, investors and colleagues, writing, and awards.
 
@@ -27,7 +27,7 @@
   at 1/ST Technology, 2020–2024.
 - [The Venetian Las Vegas Direct-Channel Case Study](https://zacharyleifer.com/work/venetian-direct-channel-transformation/):
   How the digital transformation he led at The Venetian Resort Las Vegas reversed a five-year decline in
-  direct-channel bookings and generated $36M in incremental direct-channel revenue.
+  direct-channel bookings and generated $36 million in incremental direct-channel revenue.
 
 ## Speaking
 
@@ -59,8 +59,9 @@
 
 - Name: Zachary Leifer
 - Location: Las Vegas, Nevada, USA
-- Focus: Helping companies create more predictable value from data, digital transformation, technology and AI
-- Current Role: Strategic Marketing Advisor, State of Mind Strategies (2024–present)
+- Professional identity: Commercial Growth & Transformation Executive
+- Focus: Connecting AI, digital, data, and technology investments to revenue, EBITDA, and enterprise value
+- Current Role: Founder & Executive Advisor, Commercial & Technology Transformation, State of Mind Strategies (2024–present)
 - Executive Roles:
   - Chief Commercial Officer, PokerAtlas (2025)
   - Chief Marketing Officer, 1/ST Technology (2020–2024)
@@ -70,23 +71,23 @@
   & Management, Cornell University
 - Awards: HSMAI Adrian Awards: Gold, Silver, Bronze (2015)
 - Recommendations: 17 LinkedIn recommendations from executives, technology and data leaders, investors and colleagues
-- Open to: Chief Marketing Officer, Chief Commercial Officer, General Manager and operating-partner roles,
-  board roles as a Board Candidate, advisory roles and speaking engagements
+- Open to: selected Chief Marketing Officer, Chief Commercial Officer, President, General Manager, commercial
+  transformation, board advisory, executive advisory and speaking opportunities, as well as selected
+  portfolio-company advisory or value-creation opportunities
 
 ## Impact Metrics
 
 - 1/ST Technology (Chief Marketing Officer, 2020–2024): 67% revenue growth and 22% EBITDA CAGR over four years
 - 1/ST Technology: 56% reduction in customer acquisition cost and 73% improvement in LTV/CAC
-- 1/ST Technology: board-approved marketing budget increased from $8M to $15M through direct board-level
+- 1/ST Technology: board-approved marketing budget increased from $8 million to $15 million through direct board-level
   briefings and ROI forecasting
-- 1/ST Technology: new wagering app generated $60M in handle (total amount wagered) and $4M in net gaming
+- 1/ST Technology: new wagering app generated $60 million in handle (total amount wagered) and $4 million in net gaming
   revenue within 10 months of launch
-- Las Vegas Sands / The Venetian: $13M capital investment in digital transformation initiatives that generated
-  $36M in incremental direct-channel revenue
+- Las Vegas Sands / The Venetian: $13 million capital investment in digital transformation initiatives that generated
+  $36 million in incremental direct-channel revenue
 - The Venetian: 24 consecutive months of year-over-year growth, 50% increase in return on advertising spend,
   and 18% lift in CRM conversion
 - PokerAtlas: 14% increase in registered players and 18% increase in B2B customers in nine months
-- Launched a DTC healthcare venture in eight weeks and scaled it from $0 to $200K in gross revenue in five months
 
 ## Expertise
 
@@ -99,5 +100,8 @@ Board-Facing Investment Governance · Gaming & Hospitality · Integrated Resorts
 - Speaking inquiries: https://zacharyleifer.com/speaking/
 - Speaking, executive workshops and organizational engagements: State of Mind Strategies, https://www.somstrategies.com/executive-speaking-workshops/
 - Consulting and commercial advisory: State of Mind Strategies, https://www.somstrategies.com/
+- Executive and enterprise transformation advisory: https://www.somstrategies.com/executive-enterprise-advisory/
+- Board and executive advisory for organizations: https://www.somstrategies.com/board-executive-advisory/
+- AI strategy and value realization advisory: https://www.somstrategies.com/ai-strategy-value-realization/
 - LinkedIn: https://www.linkedin.com/in/zacharyleifer/
 - Email: zacharyleifer@gmail.com

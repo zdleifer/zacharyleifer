@@ -105,7 +105,7 @@ export default function ReportDownloadForm() {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-3 bg-[#0A0A0A] text-white px-6 py-3 text-xs tracking-[0.15em] uppercase font-semibold hover:bg-[#0A0A0A]/85 transition-colors whitespace-nowrap"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#0A0A0A] text-white px-6 py-3 text-xs tracking-[0.15em] uppercase font-semibold hover:bg-[#0A0A0A]/85 transition-colors text-center sm:whitespace-nowrap"
         >
           Download the Executive Research Report
         </button>

@@ -5,7 +5,7 @@ import { OG_IMAGE } from '@/data/og-image';
 
 const URL = 'https://zacharyleifer.com/blog/ai-enterprise-value/';
 const PUBLISHED = '2026-05-05';
-const MODIFIED = '2026-09-13';
+const MODIFIED = '2026-09-26';
 
 export const metadata: Metadata = {
   title: 'AI Is Already in Your Company. Is It Creating Enterprise Value? Is It Secure? | Zachary Leifer',
@@ -224,13 +224,21 @@ export default function AIEnterpriseValueArticle() {
               That is a leadership decision. And the window to make it deliberately is shorter than most organizations think.
             </p>
 
+            <p>
+              For organizations ready to act on these questions,{' '}
+              <a href="https://www.somstrategies.com/ai-strategy-value-realization/" className="text-[#3B5998] hover:text-[#0A0A0A] transition-colors">
+                explore AI strategy and value realization advisory
+              </a>{' '}
+              from State of Mind Strategies.
+            </p>
+
           </div>
 
           {/* Footer CTA */}
           <div className="mt-20 pt-12 border-t border-[#E2E8F0]">
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#475569] mb-4">About the Author</p>
             <p className="text-[#475569] text-sm leading-relaxed max-w-xl mb-6">
-              Zachary Leifer is a Las Vegas-based commercial growth executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
+              Zachary Leifer is a Las Vegas-based commercial growth and transformation executive who has served as Chief Marketing Officer at 1/ST Technology and Chief Commercial Officer at PokerAtlas, with experience across gaming, hospitality, data and digital transformation, and AI strategy. He is a Board Candidate open to board, advisory and senior operating roles.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
