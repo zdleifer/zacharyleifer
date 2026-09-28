@@ -54,14 +54,6 @@ export default function Recognition() {
                 </li>
               ))}
             </ul>
-
-            {/* Certifications */}
-            <div className="mt-12 pt-8 border-t border-white/[0.08] reveal reveal-delay-2">
-              <p className="text-[9px] tracking-[0.35em] uppercase text-[#94A3B8] mb-3">Certifications</p>
-              <p className="text-white/60 text-sm">
-                Google Analytics Individual Qualification · Google Analytics Platform Principles
-              </p>
-            </div>
           </div>
         </div>
       </div>

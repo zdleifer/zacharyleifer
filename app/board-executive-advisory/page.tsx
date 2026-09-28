@@ -101,7 +101,7 @@ export default function BoardExecutiveAdvisoryPage() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[#475569]">
               <span>Las Vegas, Nevada</span>
               <span aria-hidden="true">·</span>
-              <span>Available nationally and internationally</span>
+              <span>Available nationally</span>
             </div>
           </header>
 
@@ -295,7 +295,7 @@ export default function BoardExecutiveAdvisoryPage() {
 
             <p>
               I am open to corporate, private-company and nonprofit board opportunities and executive advisory
-              engagements. I am based in Las Vegas and available nationally and internationally.
+              engagements. I am based in Las Vegas and available nationally.
             </p>
 
             <p>

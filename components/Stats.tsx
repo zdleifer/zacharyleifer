@@ -37,6 +37,10 @@ export default function Stats() {
             </div>
           ))}
         </div>
+
+        <p className="text-xs text-[#475569] mt-8 reveal">
+          Selected outcomes from prior executive and operator roles. They are not promises, guarantees, or results from State of Mind Strategies client engagements.
+        </p>
       </div>
     </section>
   );

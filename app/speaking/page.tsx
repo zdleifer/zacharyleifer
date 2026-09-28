@@ -175,7 +175,7 @@ export default function SpeakingPage() {
                   Zachary Leifer speaks on AI strategy, customer data, commercial growth, enterprise transformation, organizational readiness, and the operating models that connect technology investment to measurable business results.
                 </h1>
                 <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-10">
-                  A commercial growth and transformation executive, he has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events and podcasts. Based in Las Vegas, Nevada, he travels nationally and internationally.
+                  A commercial growth and transformation executive, he has served as Chief Marketing Officer of 1/ST Technology, Chief Commercial Officer of PokerAtlas, and Vice President of Corporate Information Technology at Las Vegas Sands. He is available for keynotes, executive panels, leadership roundtables, board sessions, workshops, virtual events and podcasts. Based in Las Vegas, Nevada, he travels nationally.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a

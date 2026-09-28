@@ -10,7 +10,7 @@ export default function Footer() {
               Let's Connect.
             </p>
             <p className="text-white/60 text-base leading-relaxed max-w-xs">
-              Based in Las Vegas and available nationally and internationally for executive, speaking, board and advisory opportunities.
+              Based in Las Vegas and available nationally for executive, speaking, board, and advisory opportunities.
             </p>
           </div>
 
